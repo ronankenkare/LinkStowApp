@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "A8254FCD-DE3F-47A9-91BA-E59BD074D299",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:LinkStow.xcodeproj",
+      "identifier" : "05D2BE262DB5CB2B0007A6F1",
+      "name" : "LinkStow"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:LinkStow.xcodeproj",
+        "identifier" : "05D2BE352DB5CB2D0007A6F1",
+        "name" : "LinkStowTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:LinkStow.xcodeproj",
+        "identifier" : "05D2BE3F2DB5CB2D0007A6F1",
+        "name" : "LinkStowUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

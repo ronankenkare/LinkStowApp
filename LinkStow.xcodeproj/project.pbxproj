@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		056FFD4C2EF14B0E000D47AD /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 056FFD4B2EF14B0E000D47AD /* SwiftSoup */; };
+		05B122E02E3F128A00F5E0DB /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 05B122DF2E3F128A00F5E0DB /* SwiftSoup */; };
+		05D2BE5E2DB5E47D0007A6F1 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 05D2BE5D2DB5E47D0007A6F1 /* SwiftSoup */; };
+		05F496432EF4901B003B99AB /* LinkStow.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 05F4963A2EF487DF003B99AB /* LinkStow.xctestplan */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05D2BE372DB5CB2D0007A6F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05D2BE1F2DB5CB2B0007A6F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05D2BE262DB5CB2B0007A6F1;
+			remoteInfo = LinkStow;
+		};
+		05D2BE412DB5CB2D0007A6F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05D2BE1F2DB5CB2B0007A6F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05D2BE262DB5CB2B0007A6F1;
+			remoteInfo = LinkStow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		05E3F8692DD9D5820056DB5C /* Embed App Extension */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			name = "Embed App Extension";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		056FFD4D2EF14B20000D47AD /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk/System/iOSSupport/System/Library/Frameworks/AuthenticationServices.framework; sourceTree = DEVELOPER_DIR; };
+		05B122E12E3F129E00F5E0DB /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk/System/iOSSupport/System/Library/Frameworks/AuthenticationServices.framework; sourceTree = DEVELOPER_DIR; };
+		05D2BE272DB5CB2B0007A6F1 /* LinkStow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkStow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05D2BE362DB5CB2D0007A6F1 /* LinkStowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkStowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05D2BE402DB5CB2D0007A6F1 /* LinkStowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkStowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05F4963A2EF487DF003B99AB /* LinkStow.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = LinkStow.xctestplan; sourceTree = "<group>"; };
+		05FE155F2DC017C1004B53DC /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		05D2BE292DB5CB2B0007A6F1 /* LinkStow */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LinkStow;
+			sourceTree = "<group>";
+		};
+		05D2BE392DB5CB2D0007A6F1 /* LinkStowTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LinkStowTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05D2BE242DB5CB2B0007A6F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D2BE5E2DB5E47D0007A6F1 /* SwiftSoup in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D2BE332DB5CB2D0007A6F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B122E02E3F128A00F5E0DB /* SwiftSoup in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D2BE3D2DB5CB2D0007A6F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056FFD4C2EF14B0E000D47AD /* SwiftSoup in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05D2BE1E2DB5CB2B0007A6F1 = {
+			isa = PBXGroup;
+			children = (
+				05F4963A2EF487DF003B99AB /* LinkStow.xctestplan */,
+				05D2BE292DB5CB2B0007A6F1 /* LinkStow */,
+				05D2BE392DB5CB2D0007A6F1 /* LinkStowTests */,
+				05FE155E2DC017C0004B53DC /* Frameworks */,
+				05D2BE282DB5CB2B0007A6F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05D2BE282DB5CB2B0007A6F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05D2BE272DB5CB2B0007A6F1 /* LinkStow.app */,
+				05D2BE362DB5CB2D0007A6F1 /* LinkStowTests.xctest */,
+				05D2BE402DB5CB2D0007A6F1 /* LinkStowUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05FE155E2DC017C0004B53DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				056FFD4D2EF14B20000D47AD /* AuthenticationServices.framework */,
+				05B122E12E3F129E00F5E0DB /* AuthenticationServices.framework */,
+				05FE155F2DC017C1004B53DC /* AuthenticationServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05D2BE262DB5CB2B0007A6F1 /* LinkStow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05D2BE4A2DB5CB2D0007A6F1 /* Build configuration list for PBXNativeTarget "LinkStow" */;
+			buildPhases = (
+				05D2BE232DB5CB2B0007A6F1 /* Sources */,
+				05D2BE242DB5CB2B0007A6F1 /* Frameworks */,
+				05D2BE252DB5CB2B0007A6F1 /* Resources */,
+				05E3F8692DD9D5820056DB5C /* Embed App Extension */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				05D2BE292DB5CB2B0007A6F1 /* LinkStow */,
+			);
+			name = LinkStow;
+			packageProductDependencies = (
+				05D2BE5D2DB5E47D0007A6F1 /* SwiftSoup */,
+			);
+			productName = LinkStow;
+			productReference = 05D2BE272DB5CB2B0007A6F1 /* LinkStow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05D2BE352DB5CB2D0007A6F1 /* LinkStowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05D2BE4D2DB5CB2D0007A6F1 /* Build configuration list for PBXNativeTarget "LinkStowTests" */;
+			buildPhases = (
+				05D2BE322DB5CB2D0007A6F1 /* Sources */,
+				05D2BE332DB5CB2D0007A6F1 /* Frameworks */,
+				05D2BE342DB5CB2D0007A6F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05D2BE382DB5CB2D0007A6F1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				05D2BE392DB5CB2D0007A6F1 /* LinkStowTests */,
+			);
+			name = LinkStowTests;
+			packageProductDependencies = (
+				05B122DF2E3F128A00F5E0DB /* SwiftSoup */,
+			);
+			productName = LinkStowTests;
+			productReference = 05D2BE362DB5CB2D0007A6F1 /* LinkStowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		05D2BE3F2DB5CB2D0007A6F1 /* LinkStowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05D2BE502DB5CB2D0007A6F1 /* Build configuration list for PBXNativeTarget "LinkStowUITests" */;
+			buildPhases = (
+				05D2BE3C2DB5CB2D0007A6F1 /* Sources */,
+				05D2BE3D2DB5CB2D0007A6F1 /* Frameworks */,
+				05D2BE3E2DB5CB2D0007A6F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05D2BE422DB5CB2D0007A6F1 /* PBXTargetDependency */,
+			);
+			name = LinkStowUITests;
+			packageProductDependencies = (
+				056FFD4B2EF14B0E000D47AD /* SwiftSoup */,
+			);
+			productName = LinkStowUITests;
+			productReference = 05D2BE402DB5CB2D0007A6F1 /* LinkStowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05D2BE1F2DB5CB2B0007A6F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					05D2BE262DB5CB2B0007A6F1 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					05D2BE352DB5CB2D0007A6F1 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 05D2BE262DB5CB2B0007A6F1;
+					};
+					05D2BE3F2DB5CB2D0007A6F1 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 05D2BE262DB5CB2B0007A6F1;
+					};
+				};
+			};
+			buildConfigurationList = 05D2BE222DB5CB2B0007A6F1 /* Build configuration list for PBXProject "LinkStow" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05D2BE1E2DB5CB2B0007A6F1;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				05D2BE5C2DB5E47D0007A6F1 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 05D2BE282DB5CB2B0007A6F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05D2BE262DB5CB2B0007A6F1 /* LinkStow */,
+				05D2BE352DB5CB2D0007A6F1 /* LinkStowTests */,
+				05D2BE3F2DB5CB2D0007A6F1 /* LinkStowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05D2BE252DB5CB2B0007A6F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D2BE342DB5CB2D0007A6F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05F496432EF4901B003B99AB /* LinkStow.xctestplan in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D2BE3E2DB5CB2D0007A6F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05D2BE232DB5CB2B0007A6F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D2BE322DB5CB2D0007A6F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D2BE3C2DB5CB2D0007A6F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05D2BE382DB5CB2D0007A6F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05D2BE262DB5CB2B0007A6F1 /* LinkStow */;
+			targetProxy = 05D2BE372DB5CB2D0007A6F1 /* PBXContainerItemProxy */;
+		};
+		05D2BE422DB5CB2D0007A6F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05D2BE262DB5CB2B0007A6F1 /* LinkStow */;
+			targetProxy = 05D2BE412DB5CB2D0007A6F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05D2BE482DB5CB2D0007A6F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = X38ZYC92BN;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		05D2BE492DB5CB2D0007A6F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = X38ZYC92BN;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05D2BE4B2DB5CB2D0007A6F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphoneos*]" = "App Icon";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = LinkStow/LinkStow.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X38ZYC92BN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LinkStow-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = LinkStow;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Face ID is used to unlock hidden group.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2025.12.20;
+				"MARKETING_VERSION[sdk=iphoneos*]" = 2025.12.20;
+				PRODUCT_BUNDLE_IDENTIFIER = ronankenkare.LinkStow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		05D2BE4C2DB5CB2D0007A6F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphoneos*]" = "App Icon";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = LinkStow/LinkStow.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X38ZYC92BN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LinkStow-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = LinkStow;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Face ID is used to unlock hidden group.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2025.12.20;
+				"MARKETING_VERSION[sdk=iphoneos*]" = 2025.12.20;
+				PRODUCT_BUNDLE_IDENTIFIER = ronankenkare.LinkStow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		05D2BE4E2DB5CB2D0007A6F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X38ZYC92BN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ronankenkare.LinkStowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinkStow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LinkStow";
+			};
+			name = Debug;
+		};
+		05D2BE4F2DB5CB2D0007A6F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X38ZYC92BN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ronankenkare.LinkStowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinkStow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LinkStow";
+			};
+			name = Release;
+		};
+		05D2BE512DB5CB2D0007A6F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X38ZYC92BN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ronankenkare.LinkStowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = LinkStow;
+			};
+			name = Debug;
+		};
+		05D2BE522DB5CB2D0007A6F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X38ZYC92BN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ronankenkare.LinkStowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = LinkStow;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05D2BE222DB5CB2B0007A6F1 /* Build configuration list for PBXProject "LinkStow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05D2BE482DB5CB2D0007A6F1 /* Debug */,
+				05D2BE492DB5CB2D0007A6F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05D2BE4A2DB5CB2D0007A6F1 /* Build configuration list for PBXNativeTarget "LinkStow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05D2BE4B2DB5CB2D0007A6F1 /* Debug */,
+				05D2BE4C2DB5CB2D0007A6F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05D2BE4D2DB5CB2D0007A6F1 /* Build configuration list for PBXNativeTarget "LinkStowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05D2BE4E2DB5CB2D0007A6F1 /* Debug */,
+				05D2BE4F2DB5CB2D0007A6F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05D2BE502DB5CB2D0007A6F1 /* Build configuration list for PBXNativeTarget "LinkStowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05D2BE512DB5CB2D0007A6F1 /* Debug */,
+				05D2BE522DB5CB2D0007A6F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		05D2BE5C2DB5E47D0007A6F1 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		056FFD4B2EF14B0E000D47AD /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05D2BE5C2DB5E47D0007A6F1 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		05B122DF2E3F128A00F5E0DB /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05D2BE5C2DB5E47D0007A6F1 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		05D2BE5D2DB5E47D0007A6F1 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05D2BE5C2DB5E47D0007A6F1 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 05D2BE1F2DB5CB2B0007A6F1 /* Project object */;
+}
