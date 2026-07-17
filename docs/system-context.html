@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Detailed LinkStow system context diagram and external interfaces.">
+  <title>System Context — LinkStow</title>
+  <link rel="icon" href="assets/linkstow-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html"><img src="assets/linkstow-icon.png" alt=""><span>Link<span>Stow</span> Systems</span></a>
+      <nav class="top-nav" aria-label="Diagram pages">
+        <a href="system-context.html" aria-current="page">Context</a><a href="component-architecture.html">Architecture</a>
+        <a href="save-link-flow.html">Save flow</a><a href="data-model.html">Data</a>
+        <a href="main-state-machine.html">States</a><a href="hidden-link-security.html">Security</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">01 · System context</p>
+      <h1>LinkStow lives on the device.</h1>
+      <p>The app stores links locally, reaches public websites for enrichment, and delegates protected or system-owned actions to iOS.</p>
+      <div class="page-meta" aria-label="System summary">
+        <span class="badge">iOS application</span><span class="badge">Local-first data</span>
+        <span class="badge">Public web metadata</span><span class="badge">No LinkStow backend</span>
+      </div>
+    </section>
+
+    <section class="section diagram-shell" aria-labelledby="context-title">
+      <div class="diagram-title">
+        <div><h2 id="context-title">System boundary and interfaces</h2><p>Labeled relationships show what crosses each boundary. The dashed cluster contains capabilities and data that remain on the user’s iOS device.</p></div>
+        <span class="badge">C4 context / SysML IBD</span>
+      </div>
+
+      <div class="mermaid-stage" role="group" aria-label="Detailed context diagram showing the LinkStow user, the on-device app, local storage, iOS capabilities, public websites, and the data exchanged between them.">
+        <pre class="mermaid">
+flowchart LR
+    USER(["LinkStow user"])
+    WEB["Public websites&lt;br/&gt;HTML pages and image assets"]
+
+    subgraph DEVICE["iOS device"]
+        direction TB
+        APP["LinkStow iOS app&lt;br/&gt;save · organize · find · open · share · hide"]
+        STORE[("SwiftData local store&lt;br/&gt;links · groups · symbols")]
+        PREFS[("UserDefaults / AppStorage&lt;br/&gt;hidden feature + line limits")]
+        AUTH["LocalAuthentication&lt;br/&gt;Face ID · Touch ID · passcode"]
+        CLIP["Clipboard"]
+        BROWSER["System browser"]
+        SHARE["Share sheet"]
+        QR["Core Image QR rendering"]
+
+        APP <-->|"query + mutate models"| STORE
+        APP <-->|"read + write preferences"| PREFS
+        APP -->|"request device-owner check"| AUTH
+        AUTH -->|"success / failure only"| APP
+        CLIP -->|"pasted URL text"| APP
+        APP -->|"validated http(s) URL"| BROWSER
+        APP -->|"URL or QR image"| SHARE
+        APP -->|"URL string"| QR
+        QR -->|"generated image"| APP
+    end
+
+    USER -->|"paste · type · edit · filter · swipe"| APP
+    APP -->|"links · lists · sheets · alerts"| USER
+    APP -->|"HTTPS/HTTP requests via URLSession"| WEB
+    WEB -->|"status · HTML · favicon bytes"| APP
+    BROWSER -->|"website experience"| USER
+    SHARE -->|"selected destination"| USER
+        </pre>
+      </div>
+
+      <div class="legend">
+        <span class="legend-pill">LinkStow-owned behavior</span><span class="legend-pill blue">Network exchange</span>
+        <span class="legend-pill green">Persistent local data</span><span class="legend-pill red">Protected access decision</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div><p class="eyebrow">Boundary detail</p><h2>What crosses the system boundary</h2></div>
+        <p>The context view separates saved user content from temporary network responses and OS-mediated operations.</p>
+      </div>
+      <div class="detail-grid">
+        <article class="detail-card"><span class="card-number">IN</span><h3>User input</h3><p>URL text, link edits, group selections, symbol choices, visibility choices, filters, sorting, and swipe actions enter through SwiftUI.</p></article>
+        <article class="detail-card"><span class="card-number">WEB</span><h3>Website enrichment</h3><p>URLSession retrieves a response and HTML. SwiftSoup extracts title, description, icon links, and Open Graph image references.</p></article>
+        <article class="detail-card"><span class="card-number">OS</span><h3>Device-owned actions</h3><p>Authentication UI, browser launch, sharing destinations, clipboard access, and QR image handling stay behind Apple platform interfaces.</p></article>
+      </div>
+    </section>
+
+    <div class="callout"><strong>Data-locality statement:</strong> the current source contains no LinkStow account service, cloud database, analytics endpoint, or application backend. Public website content is fetched only to validate or enrich a link.</div>
+
+    <div class="source-list" aria-label="Source locations">
+      <code>App/ModelContainerProvider.swift</code><code>Services/LinkMetadataService.swift</code>
+      <code>Services/Authentication.swift</code><code>View/MainView.swift</code><code>View/QRCodeView.swift</code>
+    </div>
+  </main>
+
+  <footer class="page-footer"><a class="pill-link" href="index.html">← Overview</a><a class="pill-link" href="component-architecture.html">Next: Architecture →</a></footer>
+  <script defer src="vendor/mermaid.min.js"></script>
+  <script defer src="diagrams.js"></script>
+</body>
+</html>

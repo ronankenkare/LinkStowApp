@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Detailed LinkStow domain model, relationships, and persistence rules.">
+  <title>Data Model — LinkStow</title>
+  <link rel="icon" href="assets/linkstow-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html"><img src="assets/linkstow-icon.png" alt=""><span>Link<span>Stow</span> Systems</span></a>
+      <nav class="top-nav" aria-label="Diagram pages">
+        <a href="system-context.html">Context</a><a href="component-architecture.html">Architecture</a>
+        <a href="save-link-flow.html">Save flow</a><a href="data-model.html" aria-current="page">Data</a>
+        <a href="main-state-machine.html">States</a><a href="hidden-link-security.html">Security</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">04 · Data model</p>
+      <h1>Relationships carry behavior.</h1>
+      <p>Link, Group, and Symbol models hold persistent content. Their update and deletion rules determine what can coexist and what happens when records change.</p>
+      <div class="page-meta"><span class="badge">Three SwiftData models</span><span class="badge">Many-to-many groups</span><span class="badge">Nullify deletion</span></div>
+    </section>
+
+    <section class="section diagram-shell" aria-labelledby="model-title">
+      <div class="diagram-title">
+        <div><h2 id="model-title">Persistent domain model</h2><p>Composition arrows identify each model’s visual identity. The many-to-many relationship is explicitly inverse-managed by SwiftData.</p></div>
+        <span class="badge">Class / block definition</span>
+      </div>
+
+      <div class="mermaid-stage" role="group" aria-label="Detailed class diagram for LinkModel, GroupModel, SymbolModel, SymbolType, and UserDefaults-backed application preferences.">
+        <pre class="mermaid">
+classDiagram
+    class LinkModel {
+        +String url
+        +String title
+        +String caption
+        +SymbolModel symbol
+        +Bool reminderEnabled
+        +Date reminderDate
+        +Bool reminderAllDay
+        +GroupModel[] groups
+        +Bool isHidden
+        +updateLink()
+        +checkLinkInGroup()
+        +toggleHideLink()
+        +viewSymbol()
+    }
+
+    class GroupModel {
+        +String name
+        +SymbolModel symbol
+        +LinkModel[] links
+        +updateGroup()
+        +getSymbolColor()
+    }
+
+    class SymbolModel {
+        +Data faviconData
+        +String icon
+        +String emoji
+        +String symbolTypeRaw
+        +Double colorR
+        +Double colorG
+        +Double colorB
+        +Double alpha
+        +updateSymbol()
+        +getColor()
+        +getSymbolType()
+    }
+
+    class SymbolType {
+        &lt;&lt;enumeration&gt;&gt;
+        favicon
+        icon
+        emoji
+    }
+
+    class AppPreferences {
+        +Bool hiddenGroupActive
+        +Int titleLineLimit
+        +Int captionLineLimit
+    }
+
+    class UserDefaults {
+        &lt;&lt;platform store&gt;&gt;
+    }
+
+    LinkModel "*" -- "*" GroupModel : groups / inverse links
+    LinkModel "1" *-- "1" SymbolModel : link symbol
+    GroupModel "1" *-- "1" SymbolModel : group symbol
+    SymbolModel --> SymbolType : decoded from raw value
+    AppPreferences --> UserDefaults : AppStorage keys
+        </pre>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div><p class="eyebrow">Invariant map</p><h2>Rules that keep records consistent</h2></div>
+        <p>These rules execute during model updates or persistence operations, not only as presentation behavior.</p>
+      </div>
+      <div class="detail-grid">
+        <article class="detail-card"><span class="card-number">H</span><h3>Hidden excludes groups</h3><p><code>updateLink()</code> sets <code>isHidden = true</code> and replaces <code>groups</code> with an empty array. Hidden and regular group membership cannot coexist after this update path.</p></article>
+        <article class="detail-card"><span class="card-number">G</span><h3>Group deletion preserves links</h3><p>The Link-to-Group relationship uses a nullify delete rule. Removing a group removes its reference from each link without deleting those links.</p></article>
+        <article class="detail-card"><span class="card-number">R</span><h3>Reminder disabled clears time</h3><p>When reminders are disabled, the model sets <code>reminderDate = nil</code> and <code>reminderAllDay = false</code> rather than retaining inactive scheduling state.</p></article>
+        <article class="detail-card"><span class="card-number">S</span><h3>Symbol type has a safe fallback</h3><p>The enum is stored as a raw string. An unknown value decodes to <code>.icon</code>, keeping the display path valid.</p></article>
+        <article class="detail-card"><span class="card-number">C</span><h3>Color becomes primitive data</h3><p>SwiftUI Color is converted into RGBA doubles for persistence and reconstructed when the symbol is rendered.</p></article>
+        <article class="detail-card"><span class="card-number">P</span><h3>Preferences use a separate store</h3><p>Hidden-feature availability and title/caption line limits live in UserDefaults rather than SwiftData records.</p></article>
+      </div>
+    </section>
+
+    <section class="section diagram-shell" aria-labelledby="lifecycle-title">
+      <div class="diagram-title">
+        <div><h2 id="lifecycle-title">Record lifecycle</h2><p>New records are deliberately created outside the context, then inserted only after a valid form submission.</p></div>
+        <span class="badge">Persistence boundary</span>
+      </div>
+      <div class="mermaid-stage" role="group" aria-label="Record lifecycle from unsaved model through editor save, SwiftData insertion, observation, update, and deletion.">
+        <pre class="mermaid">
+flowchart LR
+    CREATE["createLink() or createNewGroup()"] --> DRAFT["Unsaved model&lt;br/&gt;not in ModelContext"]
+    DRAFT -->|"Cancel"| DROP["Discard in-memory draft"]
+    DRAFT -->|"Save valid form"| APPLY["Apply edited fields + domain rules"]
+    APPLY --> INSERT["ModelContext.insert"]
+    INSERT --> QUERY["@Query publishes record"]
+    QUERY -->|"Edit"| UPDATE["Mutate model + context.save"]
+    UPDATE --> QUERY
+    QUERY -->|"Delete"| DELETE["ModelContext.delete + save"]
+    DELETE --> NULLIFY["Relationship cleanup&lt;br/&gt;group deletion nullifies links"]
+        </pre>
+      </div>
+    </section>
+
+    <div class="callout warning"><strong>As-built feature boundary:</strong> reminder fields are persistent and update logic exists, but the editor’s <code>reminderSection</code> is currently commented out and app notification setup is still a placeholder.</div>
+
+    <div class="source-list" aria-label="Source locations">
+      <code>Models/Link.swift</code><code>Models/Group.swift</code><code>Models/Symbol.swift</code>
+      <code>Models/UserDefaults.swift</code><code>App/ModelContainerProvider.swift</code>
+    </div>
+  </main>
+
+  <footer class="page-footer"><a class="pill-link" href="save-link-flow.html">← Save flow</a><a class="pill-link" href="main-state-machine.html">Next: State machine →</a></footer>
+  <script defer src="vendor/mermaid.min.js"></script>
+  <script defer src="diagrams.js"></script>
+</body>
+</html>

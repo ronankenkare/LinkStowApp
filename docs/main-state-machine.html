@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Detailed LinkStow main action and filter state machines.">
+  <title>Main State Machine — LinkStow</title>
+  <link rel="icon" href="assets/linkstow-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html"><img src="assets/linkstow-icon.png" alt=""><span>Link<span>Stow</span> Systems</span></a>
+      <nav class="top-nav" aria-label="Diagram pages">
+        <a href="system-context.html">Context</a><a href="component-architecture.html">Architecture</a>
+        <a href="save-link-flow.html">Save flow</a><a href="data-model.html">Data</a>
+        <a href="main-state-machine.html" aria-current="page">States</a><a href="hidden-link-security.html">Security</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">05 · Behavioral state view</p>
+      <h1>The home screen runs two state systems.</h1>
+      <p>The primary URL control manages capture and draft creation. A separate filter selector chooses visible, grouped, or authenticated hidden records.</p>
+      <div class="page-meta"><span class="badge">MainButtonState</span><span class="badge">FilterState</span><span class="badge">One dormant state</span></div>
+    </section>
+
+    <section class="section diagram-shell" aria-labelledby="button-state-title">
+      <div class="diagram-title">
+        <div><h2 id="button-state-title">Primary action state machine</h2><p>Transitions change the button label, button color, keyboard meaning, and action handler. The editor draft is shown as an outcome outside the enum.</p></div>
+        <span class="badge">MainButtonState</span>
+      </div>
+      <div class="mermaid-stage" role="group" aria-label="State machine for Paste Link, Search Link, Link Not Found, Add Link, editor draft creation, reset behavior, and the currently unreachable Filter Link state.">
+        <pre class="mermaid">
+stateDiagram-v2
+    [*] --> PasteLink: MainView initializes
+
+    PasteLink --> SearchLink: User types non-empty text
+    SearchLink --> PasteLink: User clears text
+
+    PasteLink --> Verifying: Paste reads clipboard
+    SearchLink --> Verifying: Tap Search
+    Verifying --> AddLink: URL verified + metadata fetched
+    Verifying --> LinkNotFound: nil result or error
+
+    AddLink --> EditorDraft: Tap Add / create unsaved LinkModel
+    LinkNotFound --> EditorDraft: Add Link as Entered
+    EditorDraft --> PasteLink: resetMainController()
+
+    state "Paste Link" as PasteLink
+    state "Search Link" as SearchLink
+    state "Verifying URL + metadata" as Verifying
+    state "Link Not Found" as LinkNotFound
+    state "Add Link" as AddLink
+    state "Editor sheet receives draft" as EditorDraft
+    state "Filter Link — defined but unreachable" as FilterLink
+
+    note right of FilterLink
+      Label, color, action case, and text-filter logic exist.
+      No current call transitions mainState to .filterLink.
+    end note
+        </pre>
+      </div>
+    </section>
+
+    <section class="section diagram-shell" aria-labelledby="filter-state-title">
+      <div class="diagram-title">
+        <div><h2 id="filter-state-title">Filter selection state machine</h2><p>Only one selection type is active at a time. Selecting the active bubble again returns to the unfiltered visible-link list.</p></div>
+        <span class="badge">FilterState</span>
+      </div>
+      <div class="mermaid-stage" role="group" aria-label="Filter states for all visible links, a selected group, hidden authentication, hidden links, unfiltered links, and ascending or descending sorting.">
+        <pre class="mermaid">
+stateDiagram-v2
+    [*] --> Unfiltered
+
+    Unfiltered --> AllSelected: Tap All
+    AllSelected --> Unfiltered: Tap All again
+
+    Unfiltered --> GroupSelected: Tap a group
+    GroupSelected --> Unfiltered: Tap selected group again
+    GroupSelected --> GroupSelected: Choose a different group
+
+    Unfiltered --> Authenticating: Tap Hidden
+    Authenticating --> HiddenSelected: Device authentication succeeds
+    Authenticating --> Unfiltered: Failure, cancel, or error
+    HiddenSelected --> Unfiltered: Tap Hidden again
+
+    AllSelected --> AllSelected: Toggle name sort
+    GroupSelected --> GroupSelected: Toggle name sort
+    HiddenSelected --> HiddenSelected: Toggle name sort
+
+    state "Visible links · no selected bubble" as Unfiltered
+    state "All visible links · controls collapsed" as AllSelected
+    state "Visible links in one group" as GroupSelected
+    state "Device-owner authentication" as Authenticating
+    state "Hidden links" as HiddenSelected
+
+    note right of HiddenSelected
+      Hidden bubble is present only when
+      hiddenGroupActive is enabled in preferences.
+    end note
+        </pre>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div><p class="eyebrow">State outputs</p><h2>What each state changes</h2></div>
+        <p>The state enums do not exist in isolation; they select data sources, visuals, and allowed operations.</p>
+      </div>
+      <div class="detail-grid">
+        <article class="detail-card"><span class="card-number">A</span><h3>Action semantics</h3><p>MainButtonState selects Paste, Search, Add as Entered, Add, or Filter behavior and its matching label/color.</p></article>
+        <article class="detail-card"><span class="card-number">D</span><h3>Data source</h3><p>Hidden selection switches from the visible SwiftData query to the hidden query. A group selection then filters by identity membership.</p></article>
+        <article class="detail-card"><span class="card-number">V</span><h3>Visible controls</h3><p>When a filter is selected, unrelated group bubbles collapse and the sort-direction bubble appears beside the active choice.</p></article>
+      </div>
+    </section>
+
+    <div class="callout danger"><strong>Reachability gap:</strong> <code>.filterLink</code> is fully represented in the UI and in <code>filteredLinks</code>, but no source path calls <code>changeMainState(to: .filterLink)</code>. Text filtering is therefore dormant in the current build.</div>
+
+    <div class="source-list" aria-label="Source locations">
+      <code>View/MainView.swift — MainButtonState</code><code>View/MainView.swift — FilterState</code>
+      <code>View/MainView.swift — changeFilterState()</code><code>View/MainView.swift — filteredLinks</code>
+    </div>
+  </main>
+
+  <footer class="page-footer"><a class="pill-link" href="data-model.html">← Data model</a><a class="pill-link" href="hidden-link-security.html">Next: Security →</a></footer>
+  <script defer src="vendor/mermaid.min.js"></script>
+  <script defer src="diagrams.js"></script>
+</body>
+</html>
