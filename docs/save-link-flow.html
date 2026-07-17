@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Detailed LinkStow save-link sequence and metadata fallback flow.">
+  <title>Save a Link — LinkStow</title>
+  <link rel="icon" href="assets/linkstow-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html"><img src="assets/linkstow-icon.png" alt=""><span>Link<span>Stow</span> Systems</span></a>
+      <nav class="top-nav" aria-label="Diagram pages">
+        <a href="system-context.html">Context</a><a href="component-architecture.html">Architecture</a>
+        <a href="save-link-flow.html" aria-current="page">Save flow</a><a href="data-model.html">Data</a>
+        <a href="main-state-machine.html">States</a><a href="hidden-link-security.html">Security</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">03 · Runtime sequence</p>
+      <h1>A URL becomes an editable draft.</h1>
+      <p>Verification and enrichment happen before the editor opens. Persistence waits until the user confirms the completed model.</p>
+      <div class="page-meta"><span class="badge">Async network path</span><span class="badge">Recoverable failure</span><span class="badge">Deferred insert</span></div>
+    </section>
+
+    <section class="section diagram-shell" aria-labelledby="save-title">
+      <div class="diagram-title">
+        <div><h2 id="save-title">URL-to-persistence sequence</h2><p>Read downward. Alternate blocks show manual versus pasted input, successful versus failed verification, optional authentication, and new versus existing saves.</p></div>
+        <span class="badge">Activity / sequence view</span>
+      </div>
+
+      <div class="mermaid-stage" role="group" aria-label="Detailed sequence from URL entry through verification, metadata retrieval, draft editing, optional hidden authentication, domain rule application, and SwiftData persistence.">
+        <pre class="mermaid">
+sequenceDiagram
+    autonumber
+    actor User
+    participant Main as MainView
+    participant Ctrl as MainController
+    participant Meta as LinkMetadataService
+    participant Web as Website
+    participant Editor as LinkEditorView
+    participant VM as LinkEditorViewModel
+    participant Model as LinkModel
+    participant Data as SwiftData
+
+    alt Paste action
+        User->>Main: Tap Paste
+        Main->>Main: Read UIPasteboard text
+    else Manual entry
+        User->>Main: Type URL and tap Search
+    end
+
+    Main->>Ctrl: verifyLink(input)
+    Ctrl->>Meta: verifyLink(input)
+    Meta->>Web: Request original URL
+
+    alt Original is reachable
+        Web-->>Meta: HTTP 200...399 + parseable HTML
+        Meta-->>Main: Verified original URL
+    else Input has no HTTP scheme
+        Meta->>Web: Request https:// + input
+        alt HTTPS is reachable
+            Web-->>Meta: Valid response
+            Meta-->>Main: Normalized HTTPS URL
+        else HTTPS fails
+            Meta->>Web: Request http:// + input
+            Web-->>Meta: Valid response or failure
+            Meta-->>Main: Normalized HTTP URL or nil
+        end
+    end
+
+    alt URL verified
+        Main->>Ctrl: fetchWebsiteTitle(URL)
+        Ctrl->>Meta: parse title
+        Meta->>Web: Download page HTML
+        Web-->>Meta: HTML response
+        Meta-->>Main: title or nil
+
+        Main->>Ctrl: fetchWebsiteDescription(URL)
+        Ctrl->>Meta: parse meta description
+        Meta->>Web: Download page HTML
+        Web-->>Meta: HTML response
+        Meta-->>Main: description or nil
+
+        Main->>Ctrl: fetchWebsiteIcon(URL)
+        Ctrl->>Meta: find + download image
+        Meta->>Web: Download page and candidate icon
+        Web-->>Meta: HTML + image bytes
+        Meta-->>Main: favicon data or nil
+        Main->>Main: state = addLink
+    else Verification failed or threw
+        Main->>Main: state = linkNotFound
+        User->>Main: Add Link as Entered
+    end
+
+    User->>Main: Tap Add
+    Main->>Ctrl: createLink(URL, metadata)
+    Ctrl-->>Main: Unsaved LinkModel
+    Main->>Main: Reset entry state
+    Main->>Editor: Present sheet with draft
+    Editor->>VM: initialize(from draft, isNew)
+    User->>Editor: Edit fields, symbol, groups, visibility
+
+    opt User marks link hidden
+        VM->>VM: authenticateUser()
+        VM-->>Editor: Set isHidden only on success
+    end
+
+    User->>Editor: Tap Save
+    Editor->>VM: save(draft, isNew)
+    VM->>Ctrl: addLink or updateLink
+    Ctrl->>Model: updateLink(all edited values)
+    alt Hidden
+        Model->>Model: isHidden = true, groups = empty
+    else Visible
+        Model->>Model: isHidden = false, groups = selected groups
+    end
+    alt New link
+        Ctrl->>Data: insert(LinkModel)
+    else Existing link
+        Ctrl->>Data: save ModelContext
+    end
+    Data-->>Main: @Query publishes updated list
+        </pre>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div><p class="eyebrow">Nested fallback</p><h2>How icon enrichment searches</h2></div>
+        <p>The favicon operation has its own ordered decision chain after the page HTML has been retrieved.</p>
+      </div>
+      <div class="mermaid-stage" role="group" aria-label="Favicon discovery fallback from icon link tags to Open Graph image and finally root favicon.ico.">
+        <pre class="mermaid">
+flowchart LR
+    HTML["Parse page HTML"] --> REL["First rel~=icon candidate"]
+    REL -->|"download succeeds"| DONE["Return image bytes"]
+    REL -->|"missing or invalid"| APPLE["Apple touch icon candidates"]
+    APPLE -->|"download succeeds"| DONE
+    APPLE -->|"missing or invalid"| MASK["Mask icon candidate"]
+    MASK -->|"download succeeds"| DONE
+    MASK -->|"missing or invalid"| OG["Open Graph image"]
+    OG -->|"download succeeds"| DONE
+    OG -->|"missing or invalid"| ROOT["/favicon.ico at site root"]
+    ROOT -->|"valid image or small blob"| DONE
+    ROOT -->|"failure"| NONE["Return nil; use default link icon"]
+        </pre>
+      </div>
+    </section>
+
+    <div class="detail-grid section">
+      <article class="detail-card"><span class="card-number">1</span><h3>Verification is tolerant</h3><p>A user can continue after verification failure. The draft is created from the literal input instead of losing the workflow.</p></article>
+      <article class="detail-card"><span class="card-number">2</span><h3>Metadata is optional</h3><p>Title, description, and icon return empty or nil independently. Each missing field has a UI fallback.</p></article>
+      <article class="detail-card"><span class="card-number">3</span><h3>Saving is explicit</h3><p>The model remains outside ModelContext while the editor is open, so cancelling a new-link sheet leaves no persisted record.</p></article>
+    </div>
+
+    <div class="callout warning"><strong>As-built network characteristic:</strong> verification, title, description, and icon retrieval each request the page separately. A successful save path can download the same HTML at least four times before any icon-image request.</div>
+
+    <div class="source-list" aria-label="Source locations">
+      <code>View/MainView.swift</code><code>Services/LinkMetadataService.swift</code>
+      <code>ViewModels/LinkEditorViewModel.swift</code><code>Controllers/MainController.swift</code><code>Models/Link.swift</code>
+    </div>
+  </main>
+
+  <footer class="page-footer"><a class="pill-link" href="component-architecture.html">← Architecture</a><a class="pill-link" href="data-model.html">Next: Data model →</a></footer>
+  <script defer src="vendor/mermaid.min.js"></script>
+  <script defer src="diagrams.js"></script>
+</body>
+</html>

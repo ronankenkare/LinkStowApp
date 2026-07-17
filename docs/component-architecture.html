@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Detailed LinkStow component architecture and responsibility map.">
+  <title>Component Architecture — LinkStow</title>
+  <link rel="icon" href="assets/linkstow-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html"><img src="assets/linkstow-icon.png" alt=""><span>Link<span>Stow</span> Systems</span></a>
+      <nav class="top-nav" aria-label="Diagram pages">
+        <a href="system-context.html">Context</a><a href="component-architecture.html" aria-current="page">Architecture</a>
+        <a href="save-link-flow.html">Save flow</a><a href="data-model.html">Data</a>
+        <a href="main-state-machine.html">States</a><a href="hidden-link-security.html">Security</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">02 · Component architecture</p>
+      <h1>Reads are reactive. Writes are coordinated.</h1>
+      <p>SwiftUI observes SwiftData directly, while MainController coordinates mutations and metadata work. LinkEditorViewModel owns the editor’s temporary form state.</p>
+      <div class="page-meta"><span class="badge">SwiftUI</span><span class="badge">SwiftData</span><span class="badge">Observation</span><span class="badge">SwiftSoup</span></div>
+    </section>
+
+    <section class="section diagram-shell" aria-labelledby="architecture-title">
+      <div class="diagram-title">
+        <div><h2 id="architecture-title">Internal component map</h2><p>Arrows name the actual dependency or data path. The diagram includes app entry, views, state ownership, services, models, persistence, and platform adapters.</p></div>
+        <span class="badge">MVVM + Controller</span>
+      </div>
+
+      <div class="mermaid-stage" role="group" aria-label="Detailed LinkStow component architecture showing app startup, SwiftUI views, view model, controller, services, models, SwiftData, UserDefaults, and iOS adapters.">
+        <pre class="mermaid">
+flowchart LR
+    subgraph APP["LinkStow app"]
+        direction TB
+        ENTRY["@main LinkStowApp"]
+        ROOT["RootView&lt;br/&gt;inject ModelContainer + ModelContext"]
+
+        subgraph UI["SwiftUI presentation"]
+            direction TB
+            MAIN["MainView&lt;br/&gt;URL control · groups · list · swipe actions"]
+            LINKEDIT["LinkEditorView&lt;br/&gt;link fields · symbol · groups · hidden"]
+            GROUPEDIT["GroupEditorView&lt;br/&gt;name · symbol · color"]
+            PREF["PreferencesView&lt;br/&gt;line limits · hidden feature"]
+            QRVIEW["QRCodeView&lt;br/&gt;copy · share"]
+        end
+
+        subgraph STATE["State and coordination"]
+            direction TB
+            VM["LinkEditorViewModel&lt;br/&gt;temporary form state + save branch"]
+            CTRL["MainController&lt;br/&gt;link/group CRUD + URL policy"]
+        end
+
+        subgraph DOMAIN["Domain and persistence"]
+            direction TB
+            LINK["LinkModel"]
+            GROUP["GroupModel"]
+            SYMBOL["SymbolModel"]
+            CONTEXT["ModelContext"]
+            STORE[("SwiftData store")]
+        end
+
+        ENTRY -->|"creates scene"| ROOT
+        ROOT -->|"constructs with ModelContext"| MAIN
+        MAIN -->|"new/edit sheet"| LINKEDIT
+        MAIN -->|"preferences route"| PREF
+        MAIN -->|"QR sheet"| QRVIEW
+        LINKEDIT -->|"new/edit group sheet"| GROUPEDIT
+        LINKEDIT -->|"owns @State"| VM
+
+        MAIN -->|"create/delete/open/metadata"| CTRL
+        VM -->|"addLink or updateLink"| CTRL
+        GROUPEDIT -->|"add/update/delete group"| CTRL
+        PREF -->|"open help URL"| CTRL
+
+        MAIN -->|"@Query visible/hidden/groups"| CONTEXT
+        LINKEDIT -->|"@Query groups"| CONTEXT
+        GROUPEDIT -->|"@Query groups"| CONTEXT
+        CTRL -->|"insert/delete/save"| CONTEXT
+        CONTEXT <-->|"persist + observe"| STORE
+        CONTEXT <-->|"materialize"| LINK
+        CONTEXT <-->|"materialize"| GROUP
+        LINK -->|"one visual identity"| SYMBOL
+        GROUP -->|"one visual identity"| SYMBOL
+        LINK <-->|"many-to-many; nullify delete"| GROUP
+    end
+
+    CTRL -->|"verify + fetch metadata"| META["LinkMetadataService"]
+    META -->|"URLSession"| WEB["Public websites"]
+    META -->|"parse HTML"| SOUP["SwiftSoup"]
+    MAIN -->|"authenticate hidden filter"| AUTH["LocalAuthentication"]
+    VM -->|"authenticate hidden toggle"| AUTH
+    PREF -->|"authenticate feature enable"| AUTH
+    QRVIEW -->|"generate image"| QRGEN["QRCodeGenerator / Core Image"]
+    MAIN -->|"open URL"| UIAPP["UIApplication"]
+    MAIN -->|"share URL"| SHARE["UIActivityViewController"]
+    PREF <-->|"@AppStorage"| DEFAULTS[("UserDefaults")]
+        </pre>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div><p class="eyebrow">Responsibility split</p><h2>Where each kind of decision lives</h2></div>
+        <p>The architecture is small, but responsibility crosses three different state mechanisms: SwiftUI state, SwiftData observation, and controller-mediated writes.</p>
+      </div>
+      <div class="detail-grid">
+        <article class="detail-card"><span class="card-number">UI</span><h3>Views</h3><p>Own presentation state, sheets, alerts, filters, sorting, queries, and platform-facing actions such as sharing and browser launch.</p></article>
+        <article class="detail-card"><span class="card-number">VM</span><h3>Editor view model</h3><p>Copies a model into editable fields, guards the hidden toggle, calculates editor height, and chooses add versus update at save time.</p></article>
+        <article class="detail-card"><span class="card-number">CT</span><h3>MainController</h3><p>Provides one mutation surface for links and groups, enforces HTTP(S) on browser opening, and delegates URL metadata operations.</p></article>
+        <article class="detail-card"><span class="card-number">SV</span><h3>Services</h3><p>Isolate network parsing, authentication, and QR generation from the data model and most presentation code.</p></article>
+        <article class="detail-card"><span class="card-number">DM</span><h3>Domain models</h3><p>Store persistent fields and enforce update-time rules, including clearing groups whenever a link becomes hidden.</p></article>
+        <article class="detail-card"><span class="card-number">DB</span><h3>Persistence</h3><p>SwiftData publishes query changes to views. UserDefaults separately stores display preferences and hidden-feature availability.</p></article>
+      </div>
+    </section>
+
+    <div class="callout"><strong>Architectural seam:</strong> <code>createLink()</code> and <code>createNewGroup()</code> deliberately return unsaved models. The editor can be cancelled without inserting them; insertion happens only when the user saves.</div>
+
+    <div class="source-list" aria-label="Source locations">
+      <code>App/LinkStowApp.swift</code><code>App/RootView.swift</code><code>View/MainView.swift</code>
+      <code>ViewModels/LinkEditorViewModel.swift</code><code>Controllers/MainController.swift</code>
+    </div>
+  </main>
+
+  <footer class="page-footer"><a class="pill-link" href="system-context.html">← Context</a><a class="pill-link" href="save-link-flow.html">Next: Save flow →</a></footer>
+  <script defer src="vendor/mermaid.min.js"></script>
+  <script defer src="diagrams.js"></script>
+</body>
+</html>

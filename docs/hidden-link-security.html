@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Detailed LinkStow hidden-link authentication and trust-boundary sequence.">
+  <title>Hidden-Link Security — LinkStow</title>
+  <link rel="icon" href="assets/linkstow-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html"><img src="assets/linkstow-icon.png" alt=""><span>Link<span>Stow</span> Systems</span></a>
+      <nav class="top-nav" aria-label="Diagram pages">
+        <a href="system-context.html">Context</a><a href="component-architecture.html">Architecture</a>
+        <a href="save-link-flow.html">Save flow</a><a href="data-model.html">Data</a>
+        <a href="main-state-machine.html">States</a><a href="hidden-link-security.html" aria-current="page">Security</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">06 · Security sequence</p>
+      <h1>Three entry points share one trust decision.</h1>
+      <p>Enabling the hidden feature, viewing hidden records, and marking a link hidden all rely on the device-owner authentication policy supplied by iOS.</p>
+      <div class="page-meta"><span class="badge">LocalAuthentication</span><span class="badge">UI access control</span><span class="badge">Local data</span></div>
+    </section>
+
+    <section class="section diagram-shell" aria-labelledby="security-title">
+      <div class="diagram-title">
+        <div><h2 id="security-title">Hidden-link authentication sequence</h2><p>Read downward. iOS owns credential collection and evaluation; LinkStow receives a boolean result and applies the corresponding UI or model transition.</p></div>
+        <span class="badge">Trust boundary / sequence</span>
+      </div>
+
+      <div class="mermaid-stage" role="group" aria-label="Detailed security sequence for enabling the hidden feature, accessing hidden links, and marking a link hidden through LocalAuthentication.">
+        <pre class="mermaid">
+sequenceDiagram
+    autonumber
+    actor User
+    participant Pref as PreferencesView
+    participant Main as MainView
+    participant VM as LinkEditorViewModel
+    participant Auth as authenticateUser()
+    participant IOS as iOS device-owner policy
+    participant Defaults as UserDefaults
+    participant Model as LinkModel
+    participant Data as SwiftData
+
+    opt Enable the hidden-group feature
+        User->>Pref: Turn Hidden Group on
+        Pref->>Auth: authenticateUser(activation: true)
+        Auth->>IOS: canEvaluatePolicy(deviceOwnerAuthentication)
+        IOS-->>Auth: Capability available or unavailable
+        alt Policy can be evaluated
+            Auth->>IOS: evaluatePolicy(reason)
+            IOS-->>Auth: Success, cancel, or error
+        end
+        alt Authentication succeeds
+            Auth-->>Pref: true
+            Pref->>Defaults: hiddenGroupActive = true
+            Defaults-->>Main: Hidden bubble becomes available
+        else Authentication fails
+            Pref->>Pref: Revert toggle to previous value
+        end
+    end
+
+    opt Access hidden records
+        User->>Main: Tap locked Hidden bubble
+        Main->>Auth: authenticateUser(activation: false)
+        Auth->>IOS: evaluate device-owner policy
+        IOS-->>Auth: Result
+        alt Success
+            Auth-->>Main: true
+            Main->>Main: filterHiddenSelected = true
+            Data-->>Main: Supply hiddenLinks @Query
+            Main-->>User: Render hidden-link list
+        else Failure, cancel, or error
+            Main->>Main: isAuthenticating = false
+            Main-->>User: Keep hidden filter closed
+        end
+    end
+
+    opt Mark a visible link hidden
+        User->>VM: Toggle Hidden in editor
+        VM->>Auth: authenticateUser(activation: false)
+        Auth->>IOS: evaluate device-owner policy
+        IOS-->>Auth: Result
+        alt Success
+            VM->>VM: isHidden = true
+            User->>VM: Save editor
+            VM->>Model: updateLink(isHidden: true)
+            Model->>Model: Clear groups
+            Model->>Data: Persist hidden state
+        else Failure
+            VM->>VM: Leave isHidden false
+        end
+    end
+
+    opt Disable the hidden-group feature
+        User->>Pref: Turn Hidden Group off
+        Pref->>Defaults: hiddenGroupActive = false
+        Note over Pref,Defaults: Disabling does not request authentication
+    end
+        </pre>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div><p class="eyebrow">Security interpretation</p><h2>Control, asset, boundary, and limitation</h2></div>
+        <p>This view distinguishes what the code demonstrably protects from protections that are not implemented or asserted.</p>
+      </div>
+      <div class="detail-grid two">
+        <article class="detail-card"><span class="card-number">A</span><h3>Protected asset</h3><p>The app protects access to hidden-link UI paths and requires authentication before converting a visible editor draft into hidden state.</p></article>
+        <article class="detail-card"><span class="card-number">B</span><h3>Trust boundary</h3><p>Credential entry and biometric/passcode evaluation stay inside iOS. LinkStow supplies only a reason string and receives the policy result.</p></article>
+        <article class="detail-card"><span class="card-number">C</span><h3>Control behavior</h3><p>Failure leaves the prior state unchanged: preferences revert, the hidden filter stays closed, or the editor remains visible-state.</p></article>
+        <article class="detail-card"><span class="card-number">L</span><h3>Current limitation</h3><p>The code does not define a separately encrypted hidden-link database. The control is application-level authentication and concealment over local SwiftData.</p></article>
+      </div>
+    </section>
+
+    <div class="callout danger"><strong>As-built security note:</strong> turning the hidden feature off requires no authentication, and the source does not describe data-at-rest encryption beyond protections provided by the device and SwiftData environment.</div>
+
+    <div class="source-list" aria-label="Source locations">
+      <code>Services/Authentication.swift</code><code>View/PreferencesView.swift</code>
+      <code>View/MainView.swift — filterHiddenView()</code><code>ViewModels/LinkEditorViewModel.swift — toggleHidden()</code>
+      <code>Models/Link.swift — updateLink()</code>
+    </div>
+  </main>
+
+  <footer class="page-footer"><a class="pill-link" href="main-state-machine.html">← State machine</a><a class="pill-link" href="index.html">Back to overview →</a></footer>
+  <script defer src="vendor/mermaid.min.js"></script>
+  <script defer src="diagrams.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Systems engineering diagrams for the LinkStow iOS application.">
+  <title>LinkStow — Systems Guide</title>
+  <link rel="icon" href="assets/linkstow-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-current="page">
+        <img src="assets/linkstow-icon.png" alt="">
+        <span>Link<span>Stow</span> Systems</span>
+      </a>
+      <nav class="top-nav" aria-label="Diagram pages">
+        <a href="system-context.html">Context</a>
+        <a href="component-architecture.html">Architecture</a>
+        <a href="save-link-flow.html">Save flow</a>
+        <a href="data-model.html">Data</a>
+        <a href="main-state-machine.html">States</a>
+        <a href="hidden-link-security.html">Security</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Systems engineering guide</p>
+      <h1>How LinkStow works.</h1>
+      <p>
+        Six views of the same system—from its environment and internal structure
+        to its most important user flow, data rules, UI states, and privacy boundary.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Diagram set</p>
+          <h2>Choose the question you want answered</h2>
+        </div>
+        <p>Start with context for a quick introduction. Continue into architecture and behavior for a technical handoff.</p>
+      </div>
+
+      <div class="card-grid">
+        <a class="doc-card" href="system-context.html">
+          <div class="card-top"><span class="card-number">01</span><span class="arrow-link" aria-hidden="true">→</span></div>
+          <h2>System context</h2>
+          <p>Who uses LinkStow, what lives on the device, and which external systems it touches.</p>
+          <span class="accent-line"></span>
+        </a>
+
+        <a class="doc-card blue" href="component-architecture.html">
+          <div class="card-top"><span class="card-number">02</span><span class="arrow-link" aria-hidden="true">→</span></div>
+          <h2>Component architecture</h2>
+          <p>How SwiftUI views, the editor view model, controller, services, models, and SwiftData cooperate.</p>
+          <span class="accent-line"></span>
+        </a>
+
+        <a class="doc-card green" href="save-link-flow.html">
+          <div class="card-top"><span class="card-number">03</span><span class="arrow-link" aria-hidden="true">→</span></div>
+          <h2>Save a link</h2>
+          <p>The end-to-end activity from pasted URL through verification, metadata enrichment, editing, and persistence.</p>
+          <span class="accent-line"></span>
+        </a>
+
+        <a class="doc-card yellow" href="data-model.html">
+          <div class="card-top"><span class="card-number">04</span><span class="arrow-link" aria-hidden="true">→</span></div>
+          <h2>Data model</h2>
+          <p>The Link, Group, and Symbol records plus the relationship and visibility rules that keep them consistent.</p>
+          <span class="accent-line"></span>
+        </a>
+
+        <a class="doc-card blue" href="main-state-machine.html">
+          <div class="card-top"><span class="card-number">05</span><span class="arrow-link" aria-hidden="true">→</span></div>
+          <h2>Main UI state machine</h2>
+          <p>The primary action’s active transitions, plus the defined Filter state that is not yet wired to a transition.</p>
+          <span class="accent-line"></span>
+        </a>
+
+        <a class="doc-card red" href="hidden-link-security.html">
+          <div class="card-top"><span class="card-number">06</span><span class="arrow-link" aria-hidden="true">→</span></div>
+          <h2>Hidden-link security</h2>
+          <p>The trust boundary and authentication decisions that control access to hidden links.</p>
+          <span class="accent-line"></span>
+        </a>
+      </div>
+    </section>
+
+    <aside class="note">
+      <span class="note-icon" aria-hidden="true">i</span>
+      <div><strong>As-built scope.</strong> These pages describe the current source. Reminder data exists, but the reminder editor and notification setup are not yet active.</div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">LinkStow systems documentation · Local-first iOS link management</footer>
+</body>
+</html>
