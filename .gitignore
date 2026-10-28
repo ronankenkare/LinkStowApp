@@ -1,0 +1,7 @@
+# macOS Finder metadata
+.DS_Store
+._.DS_Store
+
+# Python verification-tool bytecode
+__pycache__/
+*.py[cod]

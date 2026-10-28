@@ -1,0 +1,1975 @@
+{
+  "format": "linkstow-configuration-traces",
+  "version": 1,
+  "scope": "Authored configuration/resource evidence, not runtime call edges or test execution.",
+  "artifacts": [
+    {
+      "key": "build:complete",
+      "path": "LinkStow.xcodeproj/project.pbxproj",
+      "symbol": "build:complete",
+      "status": "active",
+      "start_line": 1,
+      "end_line": 680,
+      "sha256": "a9237e66816bd375acd2074f8e12b05bc7584e7b0c4fec21abcb876debd28d5f",
+      "id": "code-artifact-ee879224-53bc-4d24-b6ff-ae3d8439dbf2"
+    },
+    {
+      "key": "build:Debug:plist-input",
+      "path": "LinkStow.xcodeproj/project.pbxproj",
+      "symbol": "build:Debug:plist-input",
+      "status": "active",
+      "start_line": 447,
+      "end_line": 447,
+      "sha256": "a9237e66816bd375acd2074f8e12b05bc7584e7b0c4fec21abcb876debd28d5f",
+      "id": "code-artifact-844d4abe-1825-4b0e-97db-2fed99f5f9f4"
+    },
+    {
+      "key": "build:Debug:generated-plist",
+      "path": "LinkStow.xcodeproj/project.pbxproj",
+      "symbol": "build:Debug:generated-plist",
+      "status": "active",
+      "start_line": 446,
+      "end_line": 446,
+      "sha256": "a9237e66816bd375acd2074f8e12b05bc7584e7b0c4fec21abcb876debd28d5f",
+      "id": "code-artifact-c721a52a-f8fe-4191-b4ed-e10a4ca7038a"
+    },
+    {
+      "key": "build:Debug:face-id-purpose",
+      "path": "LinkStow.xcodeproj/project.pbxproj",
+      "symbol": "build:Debug:face-id-purpose",
+      "status": "active",
+      "start_line": 451,
+      "end_line": 451,
+      "sha256": "a9237e66816bd375acd2074f8e12b05bc7584e7b0c4fec21abcb876debd28d5f",
+      "id": "code-artifact-52553ecb-e912-4ee3-8805-6ace708d84b1"
+    },
+    {
+      "key": "build:Debug:generated-launch-screen",
+      "path": "LinkStow.xcodeproj/project.pbxproj",
+      "symbol": "build:Debug:generated-launch-screen",
+      "status": "active",
+      "start_line": 454,
+      "end_line": 454,
+      "sha256": "a9237e66816bd375acd2074f8e12b05bc7584e7b0c4fec21abcb876debd28d5f",
+      "id": "code-artifact-3e434895-b55a-4ca1-9e26-84a09a3eb677"
+    },
+    {
+      "key": "build:Debug:signing-input",
+      "path": "LinkStow.xcodeproj/project.pbxproj",
+      "symbol": "build:Debug:signing-input",
+      "status": "active",
+      "start_line": 440,
+      "end_line": 440,
+      "sha256": "a9237e66816bd375acd2074f8e12b05bc7584e7b0c4fec21abcb876debd28d5f",
+      "id": "code-artifact-6f4307ed-5a16-48db-b621-6ef2546d33de"
+    },
+    {
+      "key": "build:Debug:app-icon",
+      "path": "LinkStow.xcodeproj/project.pbxproj",
+      "symbol": "build:Debug:app-icon",
+      "status": "active",
+      "start_line": 437,
+      "end_line": 437,
+      "sha256": "a9237e66816bd375acd2074f8e12b05bc7584e7b0c4fec21abcb876debd28d5f",
+      "id": "code-artifact-825c61c6-a735-41d2-bdf9-9a3146b4049a"
+    },
+    {
+      "key": "build:Debug:accent-color",
+      "path": "LinkStow.xcodeproj/project.pbxproj",
+      "symbol": "build:Debug:accent-color",
+      "status": "active",
+      "start_line": 438,
+      "end_line": 438,
+      "sha256": "a9237e66816bd375acd2074f8e12b05bc7584e7b0c4fec21abcb876debd28d5f",
+      "id": "code-artifact-f2d04e87-64d2-46b8-8811-bed3e0c47766"
+    },
+    {
+      "key": "build:Release:plist-input",
+      "path": "LinkStow.xcodeproj/project.pbxproj",
+      "symbol": "build:Release:plist-input",
+      "status": "active",
+      "start_line": 490,
+      "end_line": 490,
+      "sha256": "a9237e66816bd375acd2074f8e12b05bc7584e7b0c4fec21abcb876debd28d5f",
+      "id": "code-artifact-459e21c0-36d6-46ab-8abe-553caa6fdaa9"
+    },
+    {
+      "key": "build:Release:generated-plist",
+      "path": "LinkStow.xcodeproj/project.pbxproj",
+      "symbol": "build:Release:generated-plist",
+      "status": "active",
+      "start_line": 489,
+      "end_line": 489,
+      "sha256": "a9237e66816bd375acd2074f8e12b05bc7584e7b0c4fec21abcb876debd28d5f",
+      "id": "code-artifact-7f106840-41a8-4b7d-8e51-c1c1c9e95df2"
+    },
+    {
+      "key": "build:Release:face-id-purpose",
+      "path": "LinkStow.xcodeproj/project.pbxproj",
+      "symbol": "build:Release:face-id-purpose",
+      "status": "active",
+      "start_line": 494,
+      "end_line": 494,
+      "sha256": "a9237e66816bd375acd2074f8e12b05bc7584e7b0c4fec21abcb876debd28d5f",
+      "id": "code-artifact-0571d7e1-8fc2-4977-9e84-4ca95530af00"
+    },
+    {
+      "key": "build:Release:generated-launch-screen",
+      "path": "LinkStow.xcodeproj/project.pbxproj",
+      "symbol": "build:Release:generated-launch-screen",
+      "status": "active",
+      "start_line": 497,
+      "end_line": 497,
+      "sha256": "a9237e66816bd375acd2074f8e12b05bc7584e7b0c4fec21abcb876debd28d5f",
+      "id": "code-artifact-bdc0a246-ec90-42bf-9bc5-05f3459be0e3"
+    },
+    {
+      "key": "build:Release:signing-input",
+      "path": "LinkStow.xcodeproj/project.pbxproj",
+      "symbol": "build:Release:signing-input",
+      "status": "active",
+      "start_line": 483,
+      "end_line": 483,
+      "sha256": "a9237e66816bd375acd2074f8e12b05bc7584e7b0c4fec21abcb876debd28d5f",
+      "id": "code-artifact-d8fd33cb-cb46-475d-8f7d-c51e2ee27980"
+    },
+    {
+      "key": "build:Release:app-icon",
+      "path": "LinkStow.xcodeproj/project.pbxproj",
+      "symbol": "build:Release:app-icon",
+      "status": "active",
+      "start_line": 480,
+      "end_line": 480,
+      "sha256": "a9237e66816bd375acd2074f8e12b05bc7584e7b0c4fec21abcb876debd28d5f",
+      "id": "code-artifact-a6e4b7f6-a914-402f-ba01-82d3e94b4e8c"
+    },
+    {
+      "key": "build:Release:accent-color",
+      "path": "LinkStow.xcodeproj/project.pbxproj",
+      "symbol": "build:Release:accent-color",
+      "status": "active",
+      "start_line": 481,
+      "end_line": 481,
+      "sha256": "a9237e66816bd375acd2074f8e12b05bc7584e7b0c4fec21abcb876debd28d5f",
+      "id": "code-artifact-e029675e-93ab-4753-83fa-51e42988ed7a"
+    },
+    {
+      "key": "build:synchronized-app-folder",
+      "path": "LinkStow.xcodeproj/project.pbxproj",
+      "symbol": "LinkStow synchronized source/resource folder",
+      "status": "active",
+      "start_line": 57,
+      "end_line": 62,
+      "sha256": "a9237e66816bd375acd2074f8e12b05bc7584e7b0c4fec21abcb876debd28d5f",
+      "id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2"
+    },
+    {
+      "key": "config:info-plist",
+      "path": "LinkStow-Info.plist",
+      "symbol": "config:info-plist",
+      "status": "empty-input",
+      "start_line": 1,
+      "end_line": 5,
+      "sha256": "97704a8960b4facceef54397a08fb5d0a456247c3627359215aa2a27df22656c",
+      "id": "code-artifact-7095b027-1671-4b6f-befd-8b06c59e13cc"
+    },
+    {
+      "key": "config:entitlements",
+      "path": "LinkStow/LinkStow.entitlements",
+      "symbol": "config:entitlements",
+      "status": "empty-input",
+      "start_line": 1,
+      "end_line": 5,
+      "sha256": "97704a8960b4facceef54397a08fb5d0a456247c3627359215aa2a27df22656c",
+      "id": "code-artifact-f7593ab6-677c-46c1-8808-d28bac2718e1"
+    },
+    {
+      "key": "resource:storyboard",
+      "path": "LinkStow/App/LaunchScreen.storyboard",
+      "symbol": "resource:storyboard",
+      "status": "not-selected-by-launch-settings",
+      "start_line": 1,
+      "end_line": 64,
+      "sha256": "fc7b2c0a8c70d535d7302dc6a0fbce93968722e1405458567addea3e02893c2e",
+      "id": "code-artifact-7422ebfe-71fa-4890-ae53-0387d8bfc1c8"
+    },
+    {
+      "key": "config:scheme",
+      "path": "LinkStow.xcodeproj/xcshareddata/xcschemes/LinkStow.xcscheme",
+      "symbol": "config:scheme",
+      "status": "active",
+      "start_line": 1,
+      "end_line": 107,
+      "sha256": "f979a866a236873d11e052f0840083f8310f9450a05015f873d50ee4d762aa15",
+      "id": "code-artifact-6a3516ef-3557-45a5-a89a-c74f98080b80"
+    },
+    {
+      "key": "config:test-plan",
+      "path": "LinkStow.xctestplan",
+      "symbol": "config:test-plan",
+      "status": "active",
+      "start_line": 1,
+      "end_line": 38,
+      "sha256": "e060b62b26a360d8fc9c4605ef50b818e3f5eccf567a4d57edcf1fc0a7502d9e",
+      "id": "code-artifact-9dcbd99e-ebab-4c25-af0f-987519158a04"
+    },
+    {
+      "key": "config:package-pin",
+      "path": "LinkStow.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved",
+      "symbol": "config:package-pin",
+      "status": "active",
+      "start_line": 1,
+      "end_line": 15,
+      "sha256": "71fcf03746bdca9254fbb3c08d050ba6919a50c1c30faa9f6c4569e93e7f4816",
+      "id": "code-artifact-8fe9171d-9035-40ac-8a90-ec5c59dd3a75"
+    },
+    {
+      "key": "build:swiftsoup-package",
+      "path": "LinkStow.xcodeproj/project.pbxproj",
+      "symbol": "SwiftSoup package declaration",
+      "status": "active",
+      "start_line": 651,
+      "end_line": 660,
+      "sha256": "a9237e66816bd375acd2074f8e12b05bc7584e7b0c4fec21abcb876debd28d5f",
+      "id": "code-artifact-3219132b-9eed-42ee-b124-d11bc069b677"
+    },
+    {
+      "key": "use:swiftsoup-import",
+      "path": "LinkStow/Services/LinkMetadataService.swift",
+      "symbol": "SwiftSoup import",
+      "status": "active",
+      "start_line": 3,
+      "end_line": 3,
+      "sha256": "87bebc8d05fb00815c4ec40b10ff3d7d504a5948d922a4ebf88444fd1fb11979",
+      "id": "code-artifact-be1169ba-b7d7-4e79-94be-2f99b6bdba5c"
+    },
+    {
+      "key": "tool:configuration-checker",
+      "path": "scripts/check_configuration_traces.py",
+      "symbol": "tool:configuration-checker",
+      "status": "active",
+      "start_line": 1,
+      "end_line": 112,
+      "sha256": "4055bb8d1c67ee14f432d2f146612083982f0b576d38304e9d42053588943500",
+      "id": "code-artifact-c22ca6f6-17a3-4a84-af26-682270c2d2bd"
+    },
+    {
+      "key": "asset:AccentColor",
+      "path": "LinkStow/Assets.xcassets/AccentColor.colorset/Contents.json",
+      "symbol": "asset:AccentColor",
+      "status": "configured-empty",
+      "start_line": 1,
+      "end_line": 20,
+      "sha256": "343584c0e324b27d6cbbc1cbb6e4d9e38d002f9c7be33fd9d6cd306d9bb59db0",
+      "id": "code-artifact-e5f55388-bca4-40cc-ac78-3ffac65f2949"
+    },
+    {
+      "key": "asset:App Icon",
+      "path": "LinkStow/Assets.xcassets/App Icon.appiconset/Contents.json",
+      "symbol": "asset:App Icon",
+      "status": "active",
+      "start_line": 1,
+      "end_line": 37,
+      "sha256": "18216adc4c079b8a76dd79164b0dd61d4c0d8f2c4c58ae37b27785fe1fb19e52",
+      "id": "code-artifact-d8c40654-6df5-4f6b-a6fc-e7334b62df10"
+    },
+    {
+      "key": "asset:DefaultAppColor",
+      "path": "LinkStow/Assets.xcassets/DefaultAppColor.colorset/Contents.json",
+      "symbol": "asset:DefaultAppColor",
+      "status": "active",
+      "start_line": 1,
+      "end_line": 20,
+      "sha256": "4c4fdd11ca0f0f85f83921ac563c861fcc75023a23ff3bfd15ada9a2bef6740d",
+      "id": "code-artifact-9a58eae2-9ab5-40ce-8a4b-fd4cfbd3e35f"
+    },
+    {
+      "key": "use:LinkStow/View/MainView.swift:DefaultAppColor",
+      "path": "LinkStow/View/MainView.swift",
+      "symbol": "Named asset reference: DefaultAppColor",
+      "status": "active",
+      "start_line": 174,
+      "end_line": 174,
+      "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+      "id": "code-artifact-f71dc74c-75a7-4921-8e36-9565bae360dd"
+    },
+    {
+      "key": "use:LinkStow/View/PreferencesView.swift:DefaultAppColor",
+      "path": "LinkStow/View/PreferencesView.swift",
+      "symbol": "Named asset reference: DefaultAppColor",
+      "status": "active",
+      "start_line": 38,
+      "end_line": 38,
+      "sha256": "494a008197f5c332c97bde48ce13804ea098a14e480a4fbbc02664801dde75d0",
+      "id": "code-artifact-2e755245-c1ef-445d-b364-cc64a14fe2ea"
+    },
+    {
+      "key": "asset:GroupBackground",
+      "path": "LinkStow/Assets.xcassets/GroupColor/GroupBackground.colorset/Contents.json",
+      "symbol": "asset:GroupBackground",
+      "status": "active",
+      "start_line": 1,
+      "end_line": 38,
+      "sha256": "6de6d673f1de56c363778c4333c6e3c3e331c39c3019e66156dd48374aeb701a",
+      "id": "code-artifact-b0bad363-ac7d-4da7-9c2d-6ea8a036ddec"
+    },
+    {
+      "key": "use:LinkStow/Models/Group.swift:GroupBackground",
+      "path": "LinkStow/Models/Group.swift",
+      "symbol": "Named asset reference: GroupBackground",
+      "status": "active",
+      "start_line": 86,
+      "end_line": 86,
+      "sha256": "cab8212468d6b22f56bdc09f8d7f437d4e3e09d57c573fc185437583551c0233",
+      "id": "code-artifact-12fb2a04-bdef-4de2-9286-2a0c4b732e01"
+    },
+    {
+      "key": "use:LinkStow/View/LinkEditorView.swift:GroupBackground",
+      "path": "LinkStow/View/LinkEditorView.swift",
+      "symbol": "Named asset reference: GroupBackground",
+      "status": "active",
+      "start_line": 526,
+      "end_line": 526,
+      "sha256": "e12a95e027d3d55dcd2bbd249b37ecdd6e3dcff5f8da1c909660702f769ffa05",
+      "id": "code-artifact-9548b834-4171-411c-8a07-45820ed5dfa4"
+    },
+    {
+      "key": "use:LinkStow/View/MainView.swift:GroupBackground",
+      "path": "LinkStow/View/MainView.swift",
+      "symbol": "Named asset reference: GroupBackground",
+      "status": "active",
+      "start_line": 574,
+      "end_line": 574,
+      "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+      "id": "code-artifact-c16ef2a6-b41d-412f-89c6-88235c462409"
+    },
+    {
+      "key": "asset:GroupBackgroundSelected",
+      "path": "LinkStow/Assets.xcassets/GroupColor/GroupBackgroundSelected.colorset/Contents.json",
+      "symbol": "asset:GroupBackgroundSelected",
+      "status": "active",
+      "start_line": 1,
+      "end_line": 28,
+      "sha256": "627915c60037d856199284fd5b26772980f5bd7319303a7539761c4c86e11863",
+      "id": "code-artifact-d94d7e6b-2dee-4423-8d06-13fb3ab434fc"
+    },
+    {
+      "key": "use:LinkStow/View/LinkEditorView.swift:GroupBackgroundSelected",
+      "path": "LinkStow/View/LinkEditorView.swift",
+      "symbol": "Named asset reference: GroupBackgroundSelected",
+      "status": "active",
+      "start_line": 526,
+      "end_line": 526,
+      "sha256": "e12a95e027d3d55dcd2bbd249b37ecdd6e3dcff5f8da1c909660702f769ffa05",
+      "id": "code-artifact-0ec5c94f-c870-4415-9807-46dfca3097ce"
+    },
+    {
+      "key": "use:LinkStow/View/MainView.swift:GroupBackgroundSelected",
+      "path": "LinkStow/View/MainView.swift",
+      "symbol": "Named asset reference: GroupBackgroundSelected",
+      "status": "active",
+      "start_line": 76,
+      "end_line": 76,
+      "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+      "id": "code-artifact-449a786a-05f1-4582-a512-6975b6f3cc48"
+    },
+    {
+      "key": "asset:GroupForeground",
+      "path": "LinkStow/Assets.xcassets/GroupColor/GroupForeground.colorset/Contents.json",
+      "symbol": "asset:GroupForeground",
+      "status": "active",
+      "start_line": 1,
+      "end_line": 28,
+      "sha256": "df2ea0389d8ba4f98214a032144f0dd0fb1075536f2a1005d0ca12e7dc5f2244",
+      "id": "code-artifact-04127730-dbb6-48c1-a8b6-6778e30c765a"
+    },
+    {
+      "key": "use:LinkStow/Models/Group.swift:GroupForeground",
+      "path": "LinkStow/Models/Group.swift",
+      "symbol": "Named asset reference: GroupForeground",
+      "status": "active",
+      "start_line": 85,
+      "end_line": 85,
+      "sha256": "cab8212468d6b22f56bdc09f8d7f437d4e3e09d57c573fc185437583551c0233",
+      "id": "code-artifact-121bce7f-d246-4265-8a60-9c143cb532fa"
+    },
+    {
+      "key": "use:LinkStow/View/LinkEditorView.swift:GroupForeground",
+      "path": "LinkStow/View/LinkEditorView.swift",
+      "symbol": "Named asset reference: GroupForeground",
+      "status": "active",
+      "start_line": 525,
+      "end_line": 525,
+      "sha256": "e12a95e027d3d55dcd2bbd249b37ecdd6e3dcff5f8da1c909660702f769ffa05",
+      "id": "code-artifact-1ffd95cf-7fb9-4b12-90b2-af61897f826a"
+    },
+    {
+      "key": "use:LinkStow/View/MainView.swift:GroupForeground",
+      "path": "LinkStow/View/MainView.swift",
+      "symbol": "Named asset reference: GroupForeground",
+      "status": "active",
+      "start_line": 573,
+      "end_line": 573,
+      "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+      "id": "code-artifact-9ea90681-5b5d-4b45-8678-c4b084f9bdc0"
+    },
+    {
+      "key": "asset:CaptionDemoColor",
+      "path": "LinkStow/Assets.xcassets/LinkDemoColors/CaptionDemoColor.colorset/Contents.json",
+      "symbol": "asset:CaptionDemoColor",
+      "status": "active",
+      "start_line": 1,
+      "end_line": 38,
+      "sha256": "d09b018eed8d5679418137b9223b2690a1600360831f0d689024896cb662b70c",
+      "id": "code-artifact-6d76faf5-8d9a-447c-bb96-ada0a0cf23f3"
+    },
+    {
+      "key": "use:LinkStow/View/PreferencesView.swift:CaptionDemoColor",
+      "path": "LinkStow/View/PreferencesView.swift",
+      "symbol": "Named asset reference: CaptionDemoColor",
+      "status": "active",
+      "start_line": 81,
+      "end_line": 81,
+      "sha256": "494a008197f5c332c97bde48ce13804ea098a14e480a4fbbc02664801dde75d0",
+      "id": "code-artifact-a3887061-8c88-49ce-a6cd-8ec16aa8d712"
+    },
+    {
+      "key": "asset:TitleDemoColor",
+      "path": "LinkStow/Assets.xcassets/LinkDemoColors/TitleDemoColor.colorset/Contents.json",
+      "symbol": "asset:TitleDemoColor",
+      "status": "active",
+      "start_line": 1,
+      "end_line": 38,
+      "sha256": "a27cff3cdfde2625385e9c597f2de5485b8609370671d77fa90789b939b64689",
+      "id": "code-artifact-953d7a42-e93f-4844-be9e-a693efcbe774"
+    },
+    {
+      "key": "use:LinkStow/View/PreferencesView.swift:TitleDemoColor",
+      "path": "LinkStow/View/PreferencesView.swift",
+      "symbol": "Named asset reference: TitleDemoColor",
+      "status": "active",
+      "start_line": 67,
+      "end_line": 67,
+      "sha256": "494a008197f5c332c97bde48ce13804ea098a14e480a4fbbc02664801dde75d0",
+      "id": "code-artifact-c6df17fc-c151-4a93-9a05-e73e2570beb8"
+    },
+    {
+      "key": "asset:LinkSilver",
+      "path": "LinkStow/Assets.xcassets/LinkSilver.colorset/Contents.json",
+      "symbol": "asset:LinkSilver",
+      "status": "unreferenced",
+      "start_line": 1,
+      "end_line": 56,
+      "sha256": "baba4e937ed5931c336414757b0cb9960a328ade0e56e9c18f414aef93702a44",
+      "id": "code-artifact-4aa717fd-03a0-4c40-9a5d-03eee03130fd"
+    },
+    {
+      "key": "asset:LinkStow_BigIcon",
+      "path": "LinkStow/Assets.xcassets/LinkStow_BigIcon.imageset/Contents.json",
+      "symbol": "asset:LinkStow_BigIcon",
+      "status": "documentation-only",
+      "start_line": 1,
+      "end_line": 21,
+      "sha256": "aa5d263eb268a75373d261a5e9dcfba63f050dd5c4b06a55b8b267ecf46c6989",
+      "id": "code-artifact-db6f0474-7727-4a51-839c-9d8eb0ee885b"
+    },
+    {
+      "key": "asset:AddButton",
+      "path": "LinkStow/Assets.xcassets/MainButton/AddButton.colorset/Contents.json",
+      "symbol": "asset:AddButton",
+      "status": "active",
+      "start_line": 1,
+      "end_line": 29,
+      "sha256": "ae41e7e5fa1c294662ab06d22c09825bfe40a00248714f5b703bea835e58edb2",
+      "id": "code-artifact-98e91a38-9e8d-4e29-a46a-1493fdfb5c20"
+    },
+    {
+      "key": "use:LinkStow/View/LinkEditorView.swift:AddButton",
+      "path": "LinkStow/View/LinkEditorView.swift",
+      "symbol": "Named asset reference: AddButton",
+      "status": "active",
+      "start_line": 571,
+      "end_line": 571,
+      "sha256": "e12a95e027d3d55dcd2bbd249b37ecdd6e3dcff5f8da1c909660702f769ffa05",
+      "id": "code-artifact-8eba646d-48d5-4866-9697-fb50961158d1"
+    },
+    {
+      "key": "use:LinkStow/View/MainView.swift:AddButton",
+      "path": "LinkStow/View/MainView.swift",
+      "symbol": "Named asset reference: AddButton",
+      "status": "active",
+      "start_line": 261,
+      "end_line": 261,
+      "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+      "id": "code-artifact-a0879845-ab6f-4ace-a498-01eef1cc06bd"
+    },
+    {
+      "key": "asset:CancelEditButton",
+      "path": "LinkStow/Assets.xcassets/MainButton/CancelEditButton.colorset/Contents.json",
+      "symbol": "asset:CancelEditButton",
+      "status": "unreferenced",
+      "start_line": 1,
+      "end_line": 29,
+      "sha256": "34061cdc4ae1644a0aabbf94c78f601c5aedfeda41a88a5397852b8eb9cb0f92",
+      "id": "code-artifact-71a8143a-f7c5-4158-8473-1b23c965acfd"
+    },
+    {
+      "key": "asset:FilterButton",
+      "path": "LinkStow/Assets.xcassets/MainButton/FilterButton.colorset/Contents.json",
+      "symbol": "asset:FilterButton",
+      "status": "dormant",
+      "start_line": 1,
+      "end_line": 29,
+      "sha256": "3725b02c2c6e24d4f3cc09b1736e333edcea2c35d7c706a260ef5f2f2076b516",
+      "id": "code-artifact-e060710c-17fd-49c0-99d4-66d3a91b668e"
+    },
+    {
+      "key": "use:LinkStow/View/MainView.swift:FilterButton",
+      "path": "LinkStow/View/MainView.swift",
+      "symbol": "Named asset reference: FilterButton",
+      "status": "dormant",
+      "start_line": 262,
+      "end_line": 262,
+      "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+      "id": "code-artifact-513aa28e-02cc-4f8b-99f2-d111c34f039e"
+    },
+    {
+      "key": "asset:LinkNotFoundButton",
+      "path": "LinkStow/Assets.xcassets/MainButton/LinkNotFoundButton.colorset/Contents.json",
+      "symbol": "asset:LinkNotFoundButton",
+      "status": "active",
+      "start_line": 1,
+      "end_line": 24,
+      "sha256": "8053db3ea51660c90e399b0ff05236267243593d69931dba3b83b0d1dbe20ab4",
+      "id": "code-artifact-4e10c463-95fa-42c4-a82f-c868c4d95909"
+    },
+    {
+      "key": "use:LinkStow/View/MainView.swift:LinkNotFoundButton",
+      "path": "LinkStow/View/MainView.swift",
+      "symbol": "Named asset reference: LinkNotFoundButton",
+      "status": "active",
+      "start_line": 260,
+      "end_line": 260,
+      "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+      "id": "code-artifact-b42a0d62-7a58-494a-a8e3-35e5aa66dc72"
+    },
+    {
+      "key": "asset:PasteButton",
+      "path": "LinkStow/Assets.xcassets/MainButton/PasteButton.colorset/Contents.json",
+      "symbol": "asset:PasteButton",
+      "status": "active",
+      "start_line": 1,
+      "end_line": 29,
+      "sha256": "72ca78f4ccd5ee9fbd8ed31e8b0352623b969b3aebfc0aca3a14c873cfeb8aa6",
+      "id": "code-artifact-2f3da71b-4f38-4d3f-a5d5-0b0f7e49955c"
+    },
+    {
+      "key": "use:LinkStow/View/MainView.swift:PasteButton",
+      "path": "LinkStow/View/MainView.swift",
+      "symbol": "Named asset reference: PasteButton",
+      "status": "active",
+      "start_line": 258,
+      "end_line": 258,
+      "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+      "id": "code-artifact-cecb78ef-b8de-45ce-87ee-87c96439fb9e"
+    },
+    {
+      "key": "asset:SearchButton",
+      "path": "LinkStow/Assets.xcassets/MainButton/SearchButton.colorset/Contents.json",
+      "symbol": "asset:SearchButton",
+      "status": "active",
+      "start_line": 1,
+      "end_line": 29,
+      "sha256": "97f12128968c0e30dd1ee2f594516d3ea5d43fbaea9854d5c06997020d1cd2db",
+      "id": "code-artifact-6bffa997-1112-4c06-a286-3a26f476e875"
+    },
+    {
+      "key": "use:LinkStow/View/MainView.swift:SearchButton",
+      "path": "LinkStow/View/MainView.swift",
+      "symbol": "Named asset reference: SearchButton",
+      "status": "active",
+      "start_line": 259,
+      "end_line": 259,
+      "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+      "id": "code-artifact-bc7c5dcc-82b6-43e1-bcd5-29bbd827e32c"
+    },
+    {
+      "key": "asset:UpdateButton",
+      "path": "LinkStow/Assets.xcassets/MainButton/UpdateButton.colorset/Contents.json",
+      "symbol": "asset:UpdateButton",
+      "status": "unreferenced",
+      "start_line": 1,
+      "end_line": 29,
+      "sha256": "fdd9b5d58f88680abc1b3dd0b01a1df2af3dd45a70d0a9f50ae16eea31412361",
+      "id": "code-artifact-bcb59fb8-ed92-4825-bccc-6c72da97b7ac"
+    },
+    {
+      "key": "asset:linkStow_icon",
+      "path": "LinkStow/Assets.xcassets/linkStow_icon.imageset/Contents.json",
+      "symbol": "asset:linkStow_icon",
+      "status": "active",
+      "start_line": 1,
+      "end_line": 21,
+      "sha256": "a6b0882ee0d2aaccf7393aaf275b5c607b5ac42b9f0477d337143facbd7ed532",
+      "id": "code-artifact-f96d886d-4d7e-45a5-8a99-1aff85fb439b"
+    },
+    {
+      "key": "use:LinkStow/View/MainView.swift:linkStow_icon",
+      "path": "LinkStow/View/MainView.swift",
+      "symbol": "Named asset reference: linkStow_icon",
+      "status": "active",
+      "start_line": 189,
+      "end_line": 189,
+      "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+      "id": "code-artifact-82faaa3b-a5c3-47c4-840f-17a135aae29a"
+    },
+    {
+      "key": "use:LinkStow/View/PreferencesView.swift:linkStow_icon",
+      "path": "LinkStow/View/PreferencesView.swift",
+      "symbol": "Named asset reference: linkStow_icon",
+      "status": "active",
+      "start_line": 33,
+      "end_line": 33,
+      "sha256": "494a008197f5c332c97bde48ce13804ea098a14e480a4fbbc02664801dde75d0",
+      "id": "code-artifact-7180ee48-c019-4e6f-aa78-ee4882b4f2a3"
+    },
+    {
+      "key": "use:storyboard-color",
+      "path": "LinkStow/App/LaunchScreen.storyboard",
+      "symbol": "Legacy storyboard color reference",
+      "status": "not-selected-by-launch-settings",
+      "start_line": 45,
+      "end_line": 45,
+      "sha256": "fc7b2c0a8c70d535d7302dc6a0fbce93968722e1405458567addea3e02893c2e",
+      "id": "code-artifact-162d3bf5-8c40-46d3-9983-f523b8f7e5de"
+    },
+    {
+      "key": "use:readme-brand",
+      "path": "README.md",
+      "symbol": "README branding image",
+      "status": "documentation-only",
+      "start_line": 2,
+      "end_line": 2,
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "id": "code-artifact-64b2bcd0-e535-42e7-a814-722fc9343f56"
+    }
+  ],
+  "edges": [
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-844d4abe-1825-4b0e-97db-2fed99f5f9f4",
+      "target_id": "code-artifact-ee879224-53bc-4d24-b6ff-ae3d8439dbf2",
+      "role": "configuration_part",
+      "rationale": "CONFIGURATION PART: Exact project setting/declaration within this Xcode project file."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-c721a52a-f8fe-4191-b4ed-e10a4ca7038a",
+      "target_id": "code-artifact-ee879224-53bc-4d24-b6ff-ae3d8439dbf2",
+      "role": "configuration_part",
+      "rationale": "CONFIGURATION PART: Exact project setting/declaration within this Xcode project file."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-52553ecb-e912-4ee3-8805-6ace708d84b1",
+      "target_id": "code-artifact-ee879224-53bc-4d24-b6ff-ae3d8439dbf2",
+      "role": "configuration_part",
+      "rationale": "CONFIGURATION PART: Exact project setting/declaration within this Xcode project file."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-3e434895-b55a-4ca1-9e26-84a09a3eb677",
+      "target_id": "code-artifact-ee879224-53bc-4d24-b6ff-ae3d8439dbf2",
+      "role": "configuration_part",
+      "rationale": "CONFIGURATION PART: Exact project setting/declaration within this Xcode project file."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-6f4307ed-5a16-48db-b621-6ef2546d33de",
+      "target_id": "code-artifact-ee879224-53bc-4d24-b6ff-ae3d8439dbf2",
+      "role": "configuration_part",
+      "rationale": "CONFIGURATION PART: Exact project setting/declaration within this Xcode project file."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-825c61c6-a735-41d2-bdf9-9a3146b4049a",
+      "target_id": "code-artifact-ee879224-53bc-4d24-b6ff-ae3d8439dbf2",
+      "role": "configuration_part",
+      "rationale": "CONFIGURATION PART: Exact project setting/declaration within this Xcode project file."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-f2d04e87-64d2-46b8-8811-bed3e0c47766",
+      "target_id": "code-artifact-ee879224-53bc-4d24-b6ff-ae3d8439dbf2",
+      "role": "configuration_part",
+      "rationale": "CONFIGURATION PART: Exact project setting/declaration within this Xcode project file."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-459e21c0-36d6-46ab-8abe-553caa6fdaa9",
+      "target_id": "code-artifact-ee879224-53bc-4d24-b6ff-ae3d8439dbf2",
+      "role": "configuration_part",
+      "rationale": "CONFIGURATION PART: Exact project setting/declaration within this Xcode project file."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-7f106840-41a8-4b7d-8e51-c1c1c9e95df2",
+      "target_id": "code-artifact-ee879224-53bc-4d24-b6ff-ae3d8439dbf2",
+      "role": "configuration_part",
+      "rationale": "CONFIGURATION PART: Exact project setting/declaration within this Xcode project file."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-0571d7e1-8fc2-4977-9e84-4ca95530af00",
+      "target_id": "code-artifact-ee879224-53bc-4d24-b6ff-ae3d8439dbf2",
+      "role": "configuration_part",
+      "rationale": "CONFIGURATION PART: Exact project setting/declaration within this Xcode project file."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-bdc0a246-ec90-42bf-9bc5-05f3459be0e3",
+      "target_id": "code-artifact-ee879224-53bc-4d24-b6ff-ae3d8439dbf2",
+      "role": "configuration_part",
+      "rationale": "CONFIGURATION PART: Exact project setting/declaration within this Xcode project file."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-d8fd33cb-cb46-475d-8f7d-c51e2ee27980",
+      "target_id": "code-artifact-ee879224-53bc-4d24-b6ff-ae3d8439dbf2",
+      "role": "configuration_part",
+      "rationale": "CONFIGURATION PART: Exact project setting/declaration within this Xcode project file."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-a6e4b7f6-a914-402f-ba01-82d3e94b4e8c",
+      "target_id": "code-artifact-ee879224-53bc-4d24-b6ff-ae3d8439dbf2",
+      "role": "configuration_part",
+      "rationale": "CONFIGURATION PART: Exact project setting/declaration within this Xcode project file."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-e029675e-93ab-4753-83fa-51e42988ed7a",
+      "target_id": "code-artifact-ee879224-53bc-4d24-b6ff-ae3d8439dbf2",
+      "role": "configuration_part",
+      "rationale": "CONFIGURATION PART: Exact project setting/declaration within this Xcode project file."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "target_id": "code-artifact-ee879224-53bc-4d24-b6ff-ae3d8439dbf2",
+      "role": "configuration_part",
+      "rationale": "CONFIGURATION PART: Exact project setting/declaration within this Xcode project file."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-3219132b-9eed-42ee-b124-d11bc069b677",
+      "target_id": "code-artifact-ee879224-53bc-4d24-b6ff-ae3d8439dbf2",
+      "role": "configuration_part",
+      "rationale": "CONFIGURATION PART: Exact project setting/declaration within this Xcode project file."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-ee879224-53bc-4d24-b6ff-ae3d8439dbf2",
+      "target_id": "system-of-interest-b98c803f-97d8-41fa-bd9e-7d144f1bf70f",
+      "role": "build_configuration_for",
+      "rationale": "BUILD CONFIGURATION FOR: Defines the application target and its configuration; not runtime calls."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-7095b027-1671-4b6f-befd-8b06c59e13cc",
+      "target_id": "code-artifact-844d4abe-1825-4b0e-97db-2fed99f5f9f4",
+      "role": "selected_configuration_input",
+      "rationale": "SELECTED CONFIGURATION INPUT: Empty base plist selected by INFOPLIST_FILE; generated keys come from project settings, not this empty dictionary."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-f7593ab6-677c-46c1-8808-d28bac2718e1",
+      "target_id": "code-artifact-6f4307ed-5a16-48db-b621-6ef2546d33de",
+      "role": "selected_signing_input",
+      "rationale": "SELECTED SIGNING INPUT: Empty entitlements file selected by CODE_SIGN_ENTITLEMENTS; declares no extra capabilities."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-844d4abe-1825-4b0e-97db-2fed99f5f9f4",
+      "target_id": "code-artifact-7095b027-1671-4b6f-befd-8b06c59e13cc",
+      "role": "selects_plist_input",
+      "rationale": "SELECTS PLIST INPUT: This app configuration names LinkStow-Info.plist."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-c721a52a-f8fe-4191-b4ed-e10a4ca7038a",
+      "target_id": "code-artifact-7095b027-1671-4b6f-befd-8b06c59e13cc",
+      "role": "generates_runtime_plist",
+      "rationale": "GENERATES RUNTIME PLIST: Project settings supply generated values alongside the empty base input; the packaged Info.plist is a build output."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-6f4307ed-5a16-48db-b621-6ef2546d33de",
+      "target_id": "code-artifact-f7593ab6-677c-46c1-8808-d28bac2718e1",
+      "role": "selects_signing_input",
+      "rationale": "SELECTS SIGNING INPUT: Selects this empty signing input; it does not provide device-owner authentication."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-52553ecb-e912-4ee3-8805-6ace708d84b1",
+      "target_id": "document-requirement-73920a9d-7f2e-49bb-86bd-538eeaaf7a4c",
+      "role": "supports_platform_declaration",
+      "rationale": "SUPPORTS PLATFORM DECLARATION: Provides NSFaceIDUsageDescription text if the OS uses Face ID for the deviceOwnerAuthentication policy. Policy also supports passcode; this string grants no authorization."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+      "target_id": "code-artifact-52553ecb-e912-4ee3-8805-6ace708d84b1",
+      "role": "platform_configuration_evidence",
+      "rationale": "PLATFORM CONFIGURATION EVIDENCE: Hidden-link UI uses LocalAuthentication; this setting supplies the Face ID purpose text in this build configuration."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-8446e60c-ab49-4893-b6df-69286282e4f0",
+      "target_id": "code-artifact-52553ecb-e912-4ee3-8805-6ace708d84b1",
+      "role": "associated_platform_purpose",
+      "rationale": "ASSOCIATED PLATFORM PURPOSE: OS Face ID presentation uses this declared purpose; not a direct Swift method call or entitlement grant."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-825c61c6-a735-41d2-bdf9-9a3146b4049a",
+      "target_id": "code-artifact-d8c40654-6df5-4f6b-a6fc-e7334b62df10",
+      "role": "selects_app_icon",
+      "rationale": "SELECTS APP ICON: Device SDK app-icon build setting selects this asset definition."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-f2d04e87-64d2-46b8-8811-bed3e0c47766",
+      "target_id": "code-artifact-e5f55388-bca4-40cc-ac78-3ffac65f2949",
+      "role": "selects_accent_color",
+      "rationale": "SELECTS ACCENT COLOR: Selects AccentColor; its current color entries have no assigned values."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-7422ebfe-71fa-4890-ae53-0387d8bfc1c8",
+      "target_id": "code-artifact-3e434895-b55a-4ca1-9e26-84a09a3eb677",
+      "role": "not_selected_at_launch",
+      "rationale": "NOT SELECTED AT LAUNCH: Effective Debug settings and declared Release settings select generated launch-screen metadata and contain no UILaunchStoryboardName."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-459e21c0-36d6-46ab-8abe-553caa6fdaa9",
+      "target_id": "code-artifact-7095b027-1671-4b6f-befd-8b06c59e13cc",
+      "role": "selects_plist_input",
+      "rationale": "SELECTS PLIST INPUT: This app configuration names LinkStow-Info.plist."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-7f106840-41a8-4b7d-8e51-c1c1c9e95df2",
+      "target_id": "code-artifact-7095b027-1671-4b6f-befd-8b06c59e13cc",
+      "role": "generates_runtime_plist",
+      "rationale": "GENERATES RUNTIME PLIST: Project settings supply generated values alongside the empty base input; the packaged Info.plist is a build output."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-d8fd33cb-cb46-475d-8f7d-c51e2ee27980",
+      "target_id": "code-artifact-f7593ab6-677c-46c1-8808-d28bac2718e1",
+      "role": "selects_signing_input",
+      "rationale": "SELECTS SIGNING INPUT: Selects this empty signing input; it does not provide device-owner authentication."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-0571d7e1-8fc2-4977-9e84-4ca95530af00",
+      "target_id": "document-requirement-73920a9d-7f2e-49bb-86bd-538eeaaf7a4c",
+      "role": "supports_platform_declaration",
+      "rationale": "SUPPORTS PLATFORM DECLARATION: Provides NSFaceIDUsageDescription text if the OS uses Face ID for the deviceOwnerAuthentication policy. Policy also supports passcode; this string grants no authorization."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+      "target_id": "code-artifact-0571d7e1-8fc2-4977-9e84-4ca95530af00",
+      "role": "platform_configuration_evidence",
+      "rationale": "PLATFORM CONFIGURATION EVIDENCE: Hidden-link UI uses LocalAuthentication; this setting supplies the Face ID purpose text in this build configuration."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-8446e60c-ab49-4893-b6df-69286282e4f0",
+      "target_id": "code-artifact-0571d7e1-8fc2-4977-9e84-4ca95530af00",
+      "role": "associated_platform_purpose",
+      "rationale": "ASSOCIATED PLATFORM PURPOSE: OS Face ID presentation uses this declared purpose; not a direct Swift method call or entitlement grant."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-a6e4b7f6-a914-402f-ba01-82d3e94b4e8c",
+      "target_id": "code-artifact-d8c40654-6df5-4f6b-a6fc-e7334b62df10",
+      "role": "selects_app_icon",
+      "rationale": "SELECTS APP ICON: Device SDK app-icon build setting selects this asset definition."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-e029675e-93ab-4753-83fa-51e42988ed7a",
+      "target_id": "code-artifact-e5f55388-bca4-40cc-ac78-3ffac65f2949",
+      "role": "selects_accent_color",
+      "rationale": "SELECTS ACCENT COLOR: Selects AccentColor; its current color entries have no assigned values."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-7422ebfe-71fa-4890-ae53-0387d8bfc1c8",
+      "target_id": "code-artifact-bdc0a246-ec90-42bf-9bc5-05f3459be0e3",
+      "role": "not_selected_at_launch",
+      "rationale": "NOT SELECTED AT LAUNCH: Effective Debug settings and declared Release settings select generated launch-screen metadata and contain no UILaunchStoryboardName."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+      "target_id": "code-artifact-7095b027-1671-4b6f-befd-8b06c59e13cc",
+      "role": "configuration_context",
+      "rationale": "CONFIGURATION CONTEXT: Build/resource evidence for the application boundary. The storyboard is explicitly not selected as the launch screen."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+      "target_id": "code-artifact-f7593ab6-677c-46c1-8808-d28bac2718e1",
+      "role": "configuration_context",
+      "rationale": "CONFIGURATION CONTEXT: Build/resource evidence for the application boundary. The storyboard is explicitly not selected as the launch screen."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+      "target_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "role": "configuration_context",
+      "rationale": "CONFIGURATION CONTEXT: Build/resource evidence for the application boundary. The storyboard is explicitly not selected as the launch screen."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+      "target_id": "code-artifact-3e434895-b55a-4ca1-9e26-84a09a3eb677",
+      "role": "configuration_context",
+      "rationale": "CONFIGURATION CONTEXT: Build/resource evidence for the application boundary. The storyboard is explicitly not selected as the launch screen."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+      "target_id": "code-artifact-7422ebfe-71fa-4890-ae53-0387d8bfc1c8",
+      "role": "configuration_context",
+      "rationale": "CONFIGURATION CONTEXT: Build/resource evidence for the application boundary. The storyboard is explicitly not selected as the launch screen."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-7422ebfe-71fa-4890-ae53-0387d8bfc1c8",
+      "target_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "role": "resource_in_source_folder",
+      "rationale": "RESOURCE IN SOURCE FOLDER: Present in the synchronized app source/resource folder; inclusion does not establish startup selection."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-e5f55388-bca4-40cc-ac78-3ffac65f2949",
+      "target_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "role": "catalog_resource_input",
+      "rationale": "CATALOG RESOURCE INPUT: Asset definition in the app asset catalog. Status: configured-empty. Inclusion is distinct from runtime use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-d8c40654-6df5-4f6b-a6fc-e7334b62df10",
+      "target_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "role": "catalog_resource_input",
+      "rationale": "CATALOG RESOURCE INPUT: Asset definition in the app asset catalog. Status: active. Inclusion is distinct from runtime use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "classifier-dfe7d00e-e290-4989-96f4-9f224dfdcbb9",
+      "target_id": "code-artifact-d8c40654-6df5-4f6b-a6fc-e7334b62df10",
+      "role": "visual_resource_evidence",
+      "rationale": "VISUAL RESOURCE EVIDENCE: This named asset supports visual presentation; inspect string/build-setting consumer traces for the exact use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-9a58eae2-9ab5-40ce-8a4b-fd4cfbd3e35f",
+      "target_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "role": "catalog_resource_input",
+      "rationale": "CATALOG RESOURCE INPUT: Asset definition in the app asset catalog. Status: active. Inclusion is distinct from runtime use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "classifier-dfe7d00e-e290-4989-96f4-9f224dfdcbb9",
+      "target_id": "code-artifact-9a58eae2-9ab5-40ce-8a4b-fd4cfbd3e35f",
+      "role": "visual_resource_evidence",
+      "rationale": "VISUAL RESOURCE EVIDENCE: This named asset supports visual presentation; inspect string/build-setting consumer traces for the exact use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-b0bad363-ac7d-4da7-9c2d-6ea8a036ddec",
+      "target_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "role": "catalog_resource_input",
+      "rationale": "CATALOG RESOURCE INPUT: Asset definition in the app asset catalog. Status: active. Inclusion is distinct from runtime use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "classifier-dfe7d00e-e290-4989-96f4-9f224dfdcbb9",
+      "target_id": "code-artifact-b0bad363-ac7d-4da7-9c2d-6ea8a036ddec",
+      "role": "visual_resource_evidence",
+      "rationale": "VISUAL RESOURCE EVIDENCE: This named asset supports visual presentation; inspect string/build-setting consumer traces for the exact use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-d94d7e6b-2dee-4423-8d06-13fb3ab434fc",
+      "target_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "role": "catalog_resource_input",
+      "rationale": "CATALOG RESOURCE INPUT: Asset definition in the app asset catalog. Status: active. Inclusion is distinct from runtime use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "classifier-dfe7d00e-e290-4989-96f4-9f224dfdcbb9",
+      "target_id": "code-artifact-d94d7e6b-2dee-4423-8d06-13fb3ab434fc",
+      "role": "visual_resource_evidence",
+      "rationale": "VISUAL RESOURCE EVIDENCE: This named asset supports visual presentation; inspect string/build-setting consumer traces for the exact use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-04127730-dbb6-48c1-a8b6-6778e30c765a",
+      "target_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "role": "catalog_resource_input",
+      "rationale": "CATALOG RESOURCE INPUT: Asset definition in the app asset catalog. Status: active. Inclusion is distinct from runtime use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "classifier-dfe7d00e-e290-4989-96f4-9f224dfdcbb9",
+      "target_id": "code-artifact-04127730-dbb6-48c1-a8b6-6778e30c765a",
+      "role": "visual_resource_evidence",
+      "rationale": "VISUAL RESOURCE EVIDENCE: This named asset supports visual presentation; inspect string/build-setting consumer traces for the exact use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-6d76faf5-8d9a-447c-bb96-ada0a0cf23f3",
+      "target_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "role": "catalog_resource_input",
+      "rationale": "CATALOG RESOURCE INPUT: Asset definition in the app asset catalog. Status: active. Inclusion is distinct from runtime use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "classifier-dfe7d00e-e290-4989-96f4-9f224dfdcbb9",
+      "target_id": "code-artifact-6d76faf5-8d9a-447c-bb96-ada0a0cf23f3",
+      "role": "visual_resource_evidence",
+      "rationale": "VISUAL RESOURCE EVIDENCE: This named asset supports visual presentation; inspect string/build-setting consumer traces for the exact use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-953d7a42-e93f-4844-be9e-a693efcbe774",
+      "target_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "role": "catalog_resource_input",
+      "rationale": "CATALOG RESOURCE INPUT: Asset definition in the app asset catalog. Status: active. Inclusion is distinct from runtime use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "classifier-dfe7d00e-e290-4989-96f4-9f224dfdcbb9",
+      "target_id": "code-artifact-953d7a42-e93f-4844-be9e-a693efcbe774",
+      "role": "visual_resource_evidence",
+      "rationale": "VISUAL RESOURCE EVIDENCE: This named asset supports visual presentation; inspect string/build-setting consumer traces for the exact use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-4aa717fd-03a0-4c40-9a5d-03eee03130fd",
+      "target_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "role": "catalog_resource_input",
+      "rationale": "CATALOG RESOURCE INPUT: Asset definition in the app asset catalog. Status: unreferenced. Inclusion is distinct from runtime use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-db6f0474-7727-4a51-839c-9d8eb0ee885b",
+      "target_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "role": "catalog_resource_input",
+      "rationale": "CATALOG RESOURCE INPUT: Asset definition in the app asset catalog. Status: documentation-only. Inclusion is distinct from runtime use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-98e91a38-9e8d-4e29-a46a-1493fdfb5c20",
+      "target_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "role": "catalog_resource_input",
+      "rationale": "CATALOG RESOURCE INPUT: Asset definition in the app asset catalog. Status: active. Inclusion is distinct from runtime use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "classifier-dfe7d00e-e290-4989-96f4-9f224dfdcbb9",
+      "target_id": "code-artifact-98e91a38-9e8d-4e29-a46a-1493fdfb5c20",
+      "role": "visual_resource_evidence",
+      "rationale": "VISUAL RESOURCE EVIDENCE: This named asset supports visual presentation; inspect string/build-setting consumer traces for the exact use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-71a8143a-f7c5-4158-8473-1b23c965acfd",
+      "target_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "role": "catalog_resource_input",
+      "rationale": "CATALOG RESOURCE INPUT: Asset definition in the app asset catalog. Status: unreferenced. Inclusion is distinct from runtime use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-e060710c-17fd-49c0-99d4-66d3a91b668e",
+      "target_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "role": "catalog_resource_input",
+      "rationale": "CATALOG RESOURCE INPUT: Asset definition in the app asset catalog. Status: dormant. Inclusion is distinct from runtime use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-4e10c463-95fa-42c4-a82f-c868c4d95909",
+      "target_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "role": "catalog_resource_input",
+      "rationale": "CATALOG RESOURCE INPUT: Asset definition in the app asset catalog. Status: active. Inclusion is distinct from runtime use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "classifier-dfe7d00e-e290-4989-96f4-9f224dfdcbb9",
+      "target_id": "code-artifact-4e10c463-95fa-42c4-a82f-c868c4d95909",
+      "role": "visual_resource_evidence",
+      "rationale": "VISUAL RESOURCE EVIDENCE: This named asset supports visual presentation; inspect string/build-setting consumer traces for the exact use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-2f3da71b-4f38-4d3f-a5d5-0b0f7e49955c",
+      "target_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "role": "catalog_resource_input",
+      "rationale": "CATALOG RESOURCE INPUT: Asset definition in the app asset catalog. Status: active. Inclusion is distinct from runtime use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "classifier-dfe7d00e-e290-4989-96f4-9f224dfdcbb9",
+      "target_id": "code-artifact-2f3da71b-4f38-4d3f-a5d5-0b0f7e49955c",
+      "role": "visual_resource_evidence",
+      "rationale": "VISUAL RESOURCE EVIDENCE: This named asset supports visual presentation; inspect string/build-setting consumer traces for the exact use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-6bffa997-1112-4c06-a286-3a26f476e875",
+      "target_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "role": "catalog_resource_input",
+      "rationale": "CATALOG RESOURCE INPUT: Asset definition in the app asset catalog. Status: active. Inclusion is distinct from runtime use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "classifier-dfe7d00e-e290-4989-96f4-9f224dfdcbb9",
+      "target_id": "code-artifact-6bffa997-1112-4c06-a286-3a26f476e875",
+      "role": "visual_resource_evidence",
+      "rationale": "VISUAL RESOURCE EVIDENCE: This named asset supports visual presentation; inspect string/build-setting consumer traces for the exact use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-bcb59fb8-ed92-4825-bccc-6c72da97b7ac",
+      "target_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "role": "catalog_resource_input",
+      "rationale": "CATALOG RESOURCE INPUT: Asset definition in the app asset catalog. Status: unreferenced. Inclusion is distinct from runtime use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-f96d886d-4d7e-45a5-8a99-1aff85fb439b",
+      "target_id": "code-artifact-225bdd64-d61d-4215-9bc0-b3c1437ec0f2",
+      "role": "catalog_resource_input",
+      "rationale": "CATALOG RESOURCE INPUT: Asset definition in the app asset catalog. Status: active. Inclusion is distinct from runtime use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "classifier-dfe7d00e-e290-4989-96f4-9f224dfdcbb9",
+      "target_id": "code-artifact-f96d886d-4d7e-45a5-8a99-1aff85fb439b",
+      "role": "visual_resource_evidence",
+      "rationale": "VISUAL RESOURCE EVIDENCE: This named asset supports visual presentation; inspect string/build-setting consumer traces for the exact use."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-f71dc74c-75a7-4921-8e36-9565bae360dd",
+      "target_id": "code-artifact-9a58eae2-9ab5-40ce-8a4b-fd4cfbd3e35f",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: active. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-f71dc74c-75a7-4921-8e36-9565bae360dd",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "source_part",
+      "rationale": "SOURCE PART: Source range containing the named resource lookup."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-2e755245-c1ef-445d-b364-cc64a14fe2ea",
+      "target_id": "code-artifact-9a58eae2-9ab5-40ce-8a4b-fd4cfbd3e35f",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: active. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-2e755245-c1ef-445d-b364-cc64a14fe2ea",
+      "target_id": "code-artifact-bfaaeef1-f768-4f12-ae68-55dfb23012cb",
+      "role": "source_part",
+      "rationale": "SOURCE PART: Source range containing the named resource lookup."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-12fb2a04-bdef-4de2-9286-2a0c4b732e01",
+      "target_id": "code-artifact-b0bad363-ac7d-4da7-9c2d-6ea8a036ddec",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: active. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-12fb2a04-bdef-4de2-9286-2a0c4b732e01",
+      "target_id": "code-artifact-9a1f8751-93d6-4191-9956-b157ba076df0",
+      "role": "source_part",
+      "rationale": "SOURCE PART: Source range containing the named resource lookup."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-9548b834-4171-411c-8a07-45820ed5dfa4",
+      "target_id": "code-artifact-b0bad363-ac7d-4da7-9c2d-6ea8a036ddec",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: active. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-9548b834-4171-411c-8a07-45820ed5dfa4",
+      "target_id": "code-artifact-aaea9ff4-463c-46d4-bf99-7adbd7f738d6",
+      "role": "source_part",
+      "rationale": "SOURCE PART: Source range containing the named resource lookup."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-c16ef2a6-b41d-412f-89c6-88235c462409",
+      "target_id": "code-artifact-b0bad363-ac7d-4da7-9c2d-6ea8a036ddec",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: active. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-c16ef2a6-b41d-412f-89c6-88235c462409",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "source_part",
+      "rationale": "SOURCE PART: Source range containing the named resource lookup."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-0ec5c94f-c870-4415-9807-46dfca3097ce",
+      "target_id": "code-artifact-d94d7e6b-2dee-4423-8d06-13fb3ab434fc",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: active. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-0ec5c94f-c870-4415-9807-46dfca3097ce",
+      "target_id": "code-artifact-aaea9ff4-463c-46d4-bf99-7adbd7f738d6",
+      "role": "source_part",
+      "rationale": "SOURCE PART: Source range containing the named resource lookup."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-449a786a-05f1-4582-a512-6975b6f3cc48",
+      "target_id": "code-artifact-d94d7e6b-2dee-4423-8d06-13fb3ab434fc",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: active. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-449a786a-05f1-4582-a512-6975b6f3cc48",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "source_part",
+      "rationale": "SOURCE PART: Source range containing the named resource lookup."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-121bce7f-d246-4265-8a60-9c143cb532fa",
+      "target_id": "code-artifact-04127730-dbb6-48c1-a8b6-6778e30c765a",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: active. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-121bce7f-d246-4265-8a60-9c143cb532fa",
+      "target_id": "code-artifact-9a1f8751-93d6-4191-9956-b157ba076df0",
+      "role": "source_part",
+      "rationale": "SOURCE PART: Source range containing the named resource lookup."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-1ffd95cf-7fb9-4b12-90b2-af61897f826a",
+      "target_id": "code-artifact-04127730-dbb6-48c1-a8b6-6778e30c765a",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: active. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-1ffd95cf-7fb9-4b12-90b2-af61897f826a",
+      "target_id": "code-artifact-aaea9ff4-463c-46d4-bf99-7adbd7f738d6",
+      "role": "source_part",
+      "rationale": "SOURCE PART: Source range containing the named resource lookup."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-9ea90681-5b5d-4b45-8678-c4b084f9bdc0",
+      "target_id": "code-artifact-04127730-dbb6-48c1-a8b6-6778e30c765a",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: active. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-9ea90681-5b5d-4b45-8678-c4b084f9bdc0",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "source_part",
+      "rationale": "SOURCE PART: Source range containing the named resource lookup."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-a3887061-8c88-49ce-a6cd-8ec16aa8d712",
+      "target_id": "code-artifact-6d76faf5-8d9a-447c-bb96-ada0a0cf23f3",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: active. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-a3887061-8c88-49ce-a6cd-8ec16aa8d712",
+      "target_id": "code-artifact-bfaaeef1-f768-4f12-ae68-55dfb23012cb",
+      "role": "source_part",
+      "rationale": "SOURCE PART: Source range containing the named resource lookup."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-c6df17fc-c151-4a93-9a05-e73e2570beb8",
+      "target_id": "code-artifact-953d7a42-e93f-4844-be9e-a693efcbe774",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: active. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-c6df17fc-c151-4a93-9a05-e73e2570beb8",
+      "target_id": "code-artifact-bfaaeef1-f768-4f12-ae68-55dfb23012cb",
+      "role": "source_part",
+      "rationale": "SOURCE PART: Source range containing the named resource lookup."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-8eba646d-48d5-4866-9697-fb50961158d1",
+      "target_id": "code-artifact-98e91a38-9e8d-4e29-a46a-1493fdfb5c20",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: active. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-8eba646d-48d5-4866-9697-fb50961158d1",
+      "target_id": "code-artifact-aaea9ff4-463c-46d4-bf99-7adbd7f738d6",
+      "role": "source_part",
+      "rationale": "SOURCE PART: Source range containing the named resource lookup."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-a0879845-ab6f-4ace-a498-01eef1cc06bd",
+      "target_id": "code-artifact-98e91a38-9e8d-4e29-a46a-1493fdfb5c20",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: active. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-a0879845-ab6f-4ace-a498-01eef1cc06bd",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "source_part",
+      "rationale": "SOURCE PART: Source range containing the named resource lookup."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-513aa28e-02cc-4f8b-99f2-d111c34f039e",
+      "target_id": "code-artifact-e060710c-17fd-49c0-99d4-66d3a91b668e",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: dormant. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-513aa28e-02cc-4f8b-99f2-d111c34f039e",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "source_part",
+      "rationale": "SOURCE PART: Source range containing the named resource lookup."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-b42a0d62-7a58-494a-a8e3-35e5aa66dc72",
+      "target_id": "code-artifact-4e10c463-95fa-42c4-a82f-c868c4d95909",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: active. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-b42a0d62-7a58-494a-a8e3-35e5aa66dc72",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "source_part",
+      "rationale": "SOURCE PART: Source range containing the named resource lookup."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-cecb78ef-b8de-45ce-87ee-87c96439fb9e",
+      "target_id": "code-artifact-2f3da71b-4f38-4d3f-a5d5-0b0f7e49955c",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: active. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-cecb78ef-b8de-45ce-87ee-87c96439fb9e",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "source_part",
+      "rationale": "SOURCE PART: Source range containing the named resource lookup."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-bc7c5dcc-82b6-43e1-bcd5-29bbd827e32c",
+      "target_id": "code-artifact-6bffa997-1112-4c06-a286-3a26f476e875",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: active. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-bc7c5dcc-82b6-43e1-bcd5-29bbd827e32c",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "source_part",
+      "rationale": "SOURCE PART: Source range containing the named resource lookup."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-82faaa3b-a5c3-47c4-840f-17a135aae29a",
+      "target_id": "code-artifact-f96d886d-4d7e-45a5-8a99-1aff85fb439b",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: active. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-82faaa3b-a5c3-47c4-840f-17a135aae29a",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "source_part",
+      "rationale": "SOURCE PART: Source range containing the named resource lookup."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-7180ee48-c019-4e6f-aa78-ee4882b4f2a3",
+      "target_id": "code-artifact-f96d886d-4d7e-45a5-8a99-1aff85fb439b",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: active. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-7180ee48-c019-4e6f-aa78-ee4882b4f2a3",
+      "target_id": "code-artifact-bfaaeef1-f768-4f12-ae68-55dfb23012cb",
+      "role": "source_part",
+      "rationale": "SOURCE PART: Source range containing the named resource lookup."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-162d3bf5-8c40-46d3-9983-f523b8f7e5de",
+      "target_id": "code-artifact-9a58eae2-9ab5-40ce-8a4b-fd4cfbd3e35f",
+      "role": "references_named_asset",
+      "rationale": "REFERENCES NAMED ASSET: Literal resource reference; status: not-selected-by-launch-settings. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-162d3bf5-8c40-46d3-9983-f523b8f7e5de",
+      "target_id": "code-artifact-7422ebfe-71fa-4890-ae53-0387d8bfc1c8",
+      "role": "storyboard_part",
+      "rationale": "STORYBOARD PART: Color attribute inside the unselected storyboard."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-64b2bcd0-e535-42e7-a814-722fc9343f56",
+      "target_id": "code-artifact-db6f0474-7727-4a51-839c-9d8eb0ee885b",
+      "role": "references_documentation_image",
+      "rationale": "REFERENCES DOCUMENTATION IMAGE: Literal resource reference; status: documentation-only. This is resource usage, not a function call."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-64b2bcd0-e535-42e7-a814-722fc9343f56",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "documentation_part",
+      "rationale": "DOCUMENTATION PART: Brand image reference within the README."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-6a3516ef-3557-45a5-a89a-c74f98080b80",
+      "target_id": "code-artifact-9dcbd99e-ebab-4c25-af0f-987519158a04",
+      "role": "selects_test_plan",
+      "rationale": "SELECTS TEST PLAN: The shared scheme points to LinkStow.xctestplan; this is configuration, not evidence that tests passed."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-6a3516ef-3557-45a5-a89a-c74f98080b80",
+      "target_id": "code-artifact-ee879224-53bc-4d24-b6ff-ae3d8439dbf2",
+      "role": "selects_build_target",
+      "rationale": "SELECTS BUILD TARGET: Build/launch actions select the LinkStow target defined by this project."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-9dcbd99e-ebab-4c25-af0f-987519158a04",
+      "target_id": "code-artifact-ee879224-53bc-4d24-b6ff-ae3d8439dbf2",
+      "role": "selects_test_targets",
+      "rationale": "SELECTS TEST TARGETS: Names LinkStowTests and LinkStowUITests; the UI target has no checked-in test sources. Scheme legacy UI Testable is marked skipped."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-9dcbd99e-ebab-4c25-af0f-987519158a04",
+      "target_id": "code-artifact-5dddc961-2c88-4ceb-a57b-63c29b14bc47",
+      "role": "configured_test_source",
+      "rationale": "CONFIGURED TEST SOURCE: Unit-test source belongs to the target named by the test plan; this is not test execution evidence."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-9dcbd99e-ebab-4c25-af0f-987519158a04",
+      "target_id": "code-artifact-f32f2350-a72f-4bf6-9fd3-d763a4b17ae2",
+      "role": "configured_test_source",
+      "rationale": "CONFIGURED TEST SOURCE: Unit-test source belongs to the target named by the test plan; this is not test execution evidence."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-9dcbd99e-ebab-4c25-af0f-987519158a04",
+      "target_id": "code-artifact-2aca0046-63d4-45aa-9fd6-d1d3df8e2f0a",
+      "role": "configured_test_source",
+      "rationale": "CONFIGURED TEST SOURCE: Unit-test source belongs to the target named by the test plan; this is not test execution evidence."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-9dcbd99e-ebab-4c25-af0f-987519158a04",
+      "target_id": "code-artifact-cfae0a82-57df-4b7e-9d61-cd8cd45e2688",
+      "role": "configured_test_source",
+      "rationale": "CONFIGURED TEST SOURCE: Unit-test source belongs to the target named by the test plan; this is not test execution evidence."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-9dcbd99e-ebab-4c25-af0f-987519158a04",
+      "target_id": "code-artifact-c3c91033-6d5e-4881-9e36-e1d4691ae54d",
+      "role": "configured_test_source",
+      "rationale": "CONFIGURED TEST SOURCE: Unit-test source belongs to the target named by the test plan; this is not test execution evidence."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-9dcbd99e-ebab-4c25-af0f-987519158a04",
+      "target_id": "code-artifact-155ec029-9dac-47b5-82e8-e7a0c0a99f58",
+      "role": "configured_test_source",
+      "rationale": "CONFIGURED TEST SOURCE: Unit-test source belongs to the target named by the test plan; this is not test execution evidence."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-9dcbd99e-ebab-4c25-af0f-987519158a04",
+      "target_id": "code-artifact-f23007c4-e1d0-48d4-b663-09b2ddbd3a94",
+      "role": "configured_test_source",
+      "rationale": "CONFIGURED TEST SOURCE: Unit-test source belongs to the target named by the test plan; this is not test execution evidence."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-9dcbd99e-ebab-4c25-af0f-987519158a04",
+      "target_id": "code-artifact-dc77196c-844d-4be5-911c-51f0bea8ce37",
+      "role": "configured_test_source",
+      "rationale": "CONFIGURED TEST SOURCE: Unit-test source belongs to the target named by the test plan; this is not test execution evidence."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-d2b6acf6-b4e2-41eb-a6ba-24055b5f5ac4",
+      "target_id": "code-artifact-6a3516ef-3557-45a5-a89a-c74f98080b80",
+      "role": "documented_test_workflow",
+      "rationale": "DOCUMENTED TEST WORKFLOW: README test command uses this scheme."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-d2b6acf6-b4e2-41eb-a6ba-24055b5f5ac4",
+      "target_id": "code-artifact-9dcbd99e-ebab-4c25-af0f-987519158a04",
+      "role": "documented_test_workflow",
+      "rationale": "DOCUMENTED TEST WORKFLOW: Shared scheme selects this plan; configured targets are not proof of execution."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-8fe9171d-9035-40ac-8a90-ec5c59dd3a75",
+      "target_id": "code-artifact-3219132b-9eed-42ee-b124-d11bc069b677",
+      "role": "locks_dependency",
+      "rationale": "LOCKS DEPENDENCY: Pins the SwiftSoup package used by the project; the lockfile is not a cache or log."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-3219132b-9eed-42ee-b124-d11bc069b677",
+      "target_id": "code-artifact-8fe9171d-9035-40ac-8a90-ec5c59dd3a75",
+      "role": "resolved_dependency",
+      "rationale": "RESOLVED DEPENDENCY: Project declares SwiftSoup; the resolved lock records its checked-in version and revision."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-be1169ba-b7d7-4e79-94be-2f99b6bdba5c",
+      "target_id": "code-artifact-8fe9171d-9035-40ac-8a90-ec5c59dd3a75",
+      "role": "imports_pinned_package",
+      "rationale": "IMPORTS PINNED PACKAGE: LinkMetadataService imports SwiftSoup; the resolved package supplies its HTML parser."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-68ced627-069e-4525-a5fa-c7ef264d924a",
+      "target_id": "code-artifact-8fe9171d-9035-40ac-8a90-ec5c59dd3a75",
+      "role": "external_dependency_evidence",
+      "rationale": "EXTERNAL DEPENDENCY EVIDENCE: Metadata retrieval uses the pinned SwiftSoup library."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-1496e45a-9d50-4be2-96a1-e986a58aa945",
+      "target_id": "code-artifact-6a3516ef-3557-45a5-a89a-c74f98080b80",
+      "role": "build_and_test_evidence",
+      "rationale": "BUILD AND TEST EVIDENCE: Developer workflow configuration for the source components, not an app subsystem."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-1761e7ba-af20-486b-a6a2-f3e7e7cb971b",
+      "target_id": "code-artifact-c22ca6f6-17a3-4a84-af26-682270c2d2bd",
+      "role": "calls_verifier",
+      "rationale": "CALLS VERIFIER: check_traceability.check delegates configuration/resource checks to check_configuration; developer tooling only."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-c22ca6f6-17a3-4a84-af26-682270c2d2bd",
+      "target_id": "code-artifact-1761e7ba-af20-486b-a6a2-f3e7e7cb971b",
+      "role": "verification_component",
+      "rationale": "VERIFICATION COMPONENT: Implements the configuration/resource portion of the documented trace-integrity checker."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-be1169ba-b7d7-4e79-94be-2f99b6bdba5c",
+      "target_id": "classifier-d2aa7d5f-11a1-42cc-bec9-62bdb55e9d03",
+      "role": "service_dependency",
+      "rationale": "SERVICE DEPENDENCY: The file-scope SwiftSoup import supplies symbols used by LinkMetadataService; this is an import dependency rather than containment inside the class declaration."
+    }
+  ],
+  "assets": [
+    {
+      "key": "asset:AccentColor",
+      "name": "AccentColor",
+      "path": "LinkStow/Assets.xcassets/AccentColor.colorset/Contents.json",
+      "status": "configured-empty",
+      "payloads": []
+    },
+    {
+      "key": "asset:App Icon",
+      "name": "App Icon",
+      "path": "LinkStow/Assets.xcassets/App Icon.appiconset/Contents.json",
+      "status": "active",
+      "payloads": [
+        {
+          "path": "LinkStow/Assets.xcassets/App Icon.appiconset/LightModeIcon_v4.png",
+          "sha256": "c0861af47a8b53d1e02c7b9a4959ed5ebdd9ff23385d6afb79fd99eb542353e8"
+        },
+        {
+          "path": "LinkStow/Assets.xcassets/App Icon.appiconset/DarkModeIcon_v3.png",
+          "sha256": "5717d5317d95cf2af7e1c6e9870aa4b5d7e6544234d00d2790fb88a6f33f00b2"
+        }
+      ]
+    },
+    {
+      "key": "asset:DefaultAppColor",
+      "name": "DefaultAppColor",
+      "path": "LinkStow/Assets.xcassets/DefaultAppColor.colorset/Contents.json",
+      "status": "active",
+      "payloads": []
+    },
+    {
+      "key": "asset:GroupBackground",
+      "name": "GroupBackground",
+      "path": "LinkStow/Assets.xcassets/GroupColor/GroupBackground.colorset/Contents.json",
+      "status": "active",
+      "payloads": []
+    },
+    {
+      "key": "asset:GroupBackgroundSelected",
+      "name": "GroupBackgroundSelected",
+      "path": "LinkStow/Assets.xcassets/GroupColor/GroupBackgroundSelected.colorset/Contents.json",
+      "status": "active",
+      "payloads": []
+    },
+    {
+      "key": "asset:GroupForeground",
+      "name": "GroupForeground",
+      "path": "LinkStow/Assets.xcassets/GroupColor/GroupForeground.colorset/Contents.json",
+      "status": "active",
+      "payloads": []
+    },
+    {
+      "key": "asset:CaptionDemoColor",
+      "name": "CaptionDemoColor",
+      "path": "LinkStow/Assets.xcassets/LinkDemoColors/CaptionDemoColor.colorset/Contents.json",
+      "status": "active",
+      "payloads": []
+    },
+    {
+      "key": "asset:TitleDemoColor",
+      "name": "TitleDemoColor",
+      "path": "LinkStow/Assets.xcassets/LinkDemoColors/TitleDemoColor.colorset/Contents.json",
+      "status": "active",
+      "payloads": []
+    },
+    {
+      "key": "asset:LinkSilver",
+      "name": "LinkSilver",
+      "path": "LinkStow/Assets.xcassets/LinkSilver.colorset/Contents.json",
+      "status": "unreferenced",
+      "payloads": []
+    },
+    {
+      "key": "asset:LinkStow_BigIcon",
+      "name": "LinkStow_BigIcon",
+      "path": "LinkStow/Assets.xcassets/LinkStow_BigIcon.imageset/Contents.json",
+      "status": "documentation-only",
+      "payloads": [
+        {
+          "path": "LinkStow/Assets.xcassets/LinkStow_BigIcon.imageset/LinkStow-big-logo.jpeg",
+          "sha256": "d573ef5f6718f14bba81db95b4c401497cd949858c84321d9b08d3ea02966725"
+        }
+      ]
+    },
+    {
+      "key": "asset:AddButton",
+      "name": "AddButton",
+      "path": "LinkStow/Assets.xcassets/MainButton/AddButton.colorset/Contents.json",
+      "status": "active",
+      "payloads": []
+    },
+    {
+      "key": "asset:CancelEditButton",
+      "name": "CancelEditButton",
+      "path": "LinkStow/Assets.xcassets/MainButton/CancelEditButton.colorset/Contents.json",
+      "status": "unreferenced",
+      "payloads": []
+    },
+    {
+      "key": "asset:FilterButton",
+      "name": "FilterButton",
+      "path": "LinkStow/Assets.xcassets/MainButton/FilterButton.colorset/Contents.json",
+      "status": "dormant",
+      "payloads": []
+    },
+    {
+      "key": "asset:LinkNotFoundButton",
+      "name": "LinkNotFoundButton",
+      "path": "LinkStow/Assets.xcassets/MainButton/LinkNotFoundButton.colorset/Contents.json",
+      "status": "active",
+      "payloads": []
+    },
+    {
+      "key": "asset:PasteButton",
+      "name": "PasteButton",
+      "path": "LinkStow/Assets.xcassets/MainButton/PasteButton.colorset/Contents.json",
+      "status": "active",
+      "payloads": []
+    },
+    {
+      "key": "asset:SearchButton",
+      "name": "SearchButton",
+      "path": "LinkStow/Assets.xcassets/MainButton/SearchButton.colorset/Contents.json",
+      "status": "active",
+      "payloads": []
+    },
+    {
+      "key": "asset:UpdateButton",
+      "name": "UpdateButton",
+      "path": "LinkStow/Assets.xcassets/MainButton/UpdateButton.colorset/Contents.json",
+      "status": "unreferenced",
+      "payloads": []
+    },
+    {
+      "key": "asset:linkStow_icon",
+      "name": "linkStow_icon",
+      "path": "LinkStow/Assets.xcassets/linkStow_icon.imageset/Contents.json",
+      "status": "active",
+      "payloads": [
+        {
+          "path": "LinkStow/Assets.xcassets/linkStow_icon.imageset/PlainLogo_v4.png",
+          "sha256": "739b4fde83beeebf1dac7d32c3cee3b6856b1fb4b675a4c3bd6b559d000e4eda"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "source_key": "use:LinkStow/View/MainView.swift:DefaultAppColor",
+      "target_key": "asset:DefaultAppColor",
+      "resource_name": "DefaultAppColor",
+      "expression": "Color(\"DefaultAppColor\"",
+      "role": "references_named_asset",
+      "status": "active"
+    },
+    {
+      "source_key": "use:LinkStow/View/PreferencesView.swift:DefaultAppColor",
+      "target_key": "asset:DefaultAppColor",
+      "resource_name": "DefaultAppColor",
+      "expression": "Color(\"DefaultAppColor\"",
+      "role": "references_named_asset",
+      "status": "active"
+    },
+    {
+      "source_key": "use:LinkStow/Models/Group.swift:GroupBackground",
+      "target_key": "asset:GroupBackground",
+      "resource_name": "GroupBackground",
+      "expression": "Color(\"GroupBackground\"",
+      "role": "references_named_asset",
+      "status": "active"
+    },
+    {
+      "source_key": "use:LinkStow/View/LinkEditorView.swift:GroupBackground",
+      "target_key": "asset:GroupBackground",
+      "resource_name": "GroupBackground",
+      "expression": "Color(\"GroupBackground\"",
+      "role": "references_named_asset",
+      "status": "active"
+    },
+    {
+      "source_key": "use:LinkStow/View/MainView.swift:GroupBackground",
+      "target_key": "asset:GroupBackground",
+      "resource_name": "GroupBackground",
+      "expression": "Color(\"GroupBackground\"",
+      "role": "references_named_asset",
+      "status": "active"
+    },
+    {
+      "source_key": "use:LinkStow/View/LinkEditorView.swift:GroupBackgroundSelected",
+      "target_key": "asset:GroupBackgroundSelected",
+      "resource_name": "GroupBackgroundSelected",
+      "expression": "Color(\"GroupBackgroundSelected\"",
+      "role": "references_named_asset",
+      "status": "active"
+    },
+    {
+      "source_key": "use:LinkStow/View/MainView.swift:GroupBackgroundSelected",
+      "target_key": "asset:GroupBackgroundSelected",
+      "resource_name": "GroupBackgroundSelected",
+      "expression": "Color(\"GroupBackgroundSelected\"",
+      "role": "references_named_asset",
+      "status": "active"
+    },
+    {
+      "source_key": "use:LinkStow/Models/Group.swift:GroupForeground",
+      "target_key": "asset:GroupForeground",
+      "resource_name": "GroupForeground",
+      "expression": "Color(\"GroupForeground\"",
+      "role": "references_named_asset",
+      "status": "active"
+    },
+    {
+      "source_key": "use:LinkStow/View/LinkEditorView.swift:GroupForeground",
+      "target_key": "asset:GroupForeground",
+      "resource_name": "GroupForeground",
+      "expression": "Color(\"GroupForeground\"",
+      "role": "references_named_asset",
+      "status": "active"
+    },
+    {
+      "source_key": "use:LinkStow/View/MainView.swift:GroupForeground",
+      "target_key": "asset:GroupForeground",
+      "resource_name": "GroupForeground",
+      "expression": "Color(\"GroupForeground\"",
+      "role": "references_named_asset",
+      "status": "active"
+    },
+    {
+      "source_key": "use:LinkStow/View/PreferencesView.swift:CaptionDemoColor",
+      "target_key": "asset:CaptionDemoColor",
+      "resource_name": "CaptionDemoColor",
+      "expression": "Color(\"CaptionDemoColor\"",
+      "role": "references_named_asset",
+      "status": "active"
+    },
+    {
+      "source_key": "use:LinkStow/View/PreferencesView.swift:TitleDemoColor",
+      "target_key": "asset:TitleDemoColor",
+      "resource_name": "TitleDemoColor",
+      "expression": "Color(\"TitleDemoColor\"",
+      "role": "references_named_asset",
+      "status": "active"
+    },
+    {
+      "source_key": "use:LinkStow/View/LinkEditorView.swift:AddButton",
+      "target_key": "asset:AddButton",
+      "resource_name": "AddButton",
+      "expression": "Color(\"AddButton\"",
+      "role": "references_named_asset",
+      "status": "active"
+    },
+    {
+      "source_key": "use:LinkStow/View/MainView.swift:AddButton",
+      "target_key": "asset:AddButton",
+      "resource_name": "AddButton",
+      "expression": "Color(\"AddButton\"",
+      "role": "references_named_asset",
+      "status": "active"
+    },
+    {
+      "source_key": "use:LinkStow/View/MainView.swift:FilterButton",
+      "target_key": "asset:FilterButton",
+      "resource_name": "FilterButton",
+      "expression": "Color(\"FilterButton\"",
+      "role": "references_named_asset",
+      "status": "dormant"
+    },
+    {
+      "source_key": "use:LinkStow/View/MainView.swift:LinkNotFoundButton",
+      "target_key": "asset:LinkNotFoundButton",
+      "resource_name": "LinkNotFoundButton",
+      "expression": "Color(\"LinkNotFoundButton\"",
+      "role": "references_named_asset",
+      "status": "active"
+    },
+    {
+      "source_key": "use:LinkStow/View/MainView.swift:PasteButton",
+      "target_key": "asset:PasteButton",
+      "resource_name": "PasteButton",
+      "expression": "Color(\"PasteButton\"",
+      "role": "references_named_asset",
+      "status": "active"
+    },
+    {
+      "source_key": "use:LinkStow/View/MainView.swift:SearchButton",
+      "target_key": "asset:SearchButton",
+      "resource_name": "SearchButton",
+      "expression": "Color(\"SearchButton\"",
+      "role": "references_named_asset",
+      "status": "active"
+    },
+    {
+      "source_key": "use:LinkStow/View/MainView.swift:linkStow_icon",
+      "target_key": "asset:linkStow_icon",
+      "resource_name": "linkStow_icon",
+      "expression": "Image(\"linkStow_icon\"",
+      "role": "references_named_asset",
+      "status": "active"
+    },
+    {
+      "source_key": "use:LinkStow/View/PreferencesView.swift:linkStow_icon",
+      "target_key": "asset:linkStow_icon",
+      "resource_name": "linkStow_icon",
+      "expression": "Image(\"linkStow_icon\"",
+      "role": "references_named_asset",
+      "status": "active"
+    },
+    {
+      "source_key": "use:storyboard-color",
+      "target_key": "asset:DefaultAppColor",
+      "resource_name": "DefaultAppColor",
+      "expression": "name=\"DefaultAppColor\"",
+      "role": "references_named_asset",
+      "status": "not-selected-by-launch-settings"
+    },
+    {
+      "source_key": "use:readme-brand",
+      "target_key": "asset:LinkStow_BigIcon",
+      "resource_name": "LinkStow_BigIcon",
+      "expression": "LinkStow/Assets.xcassets/LinkStow_BigIcon.imageset/LinkStow-big-logo.jpeg",
+      "role": "references_documentation_image",
+      "status": "documentation-only"
+    }
+  ],
+  "storyboard": {
+    "status": "not-selected-by-launch-settings",
+    "missing_images": [
+      "linkStack_icon"
+    ],
+    "verification": "Effective Xcode Debug iPhoneOS settings and declared Debug/Release settings use generated launch-screen metadata; no UILaunchStoryboardName is configured. App launch was not executed."
+  },
+  "test_targets": [
+    "LinkStowTests",
+    "LinkStowUITests"
+  ],
+  "swiftsoup_pin": {
+    "revision": "a81b1a5ac933dee8c6cfccf05d5ffcc5eb8c7ec4",
+    "version": "2.10.0"
+  },
+  "effective_debug_settings": {
+    "GENERATE_INFOPLIST_FILE": "YES",
+    "INFOPLIST_FILE": "LinkStow-Info.plist",
+    "INFOPLIST_KEY_NSFaceIDUsageDescription": "Face ID is used to unlock hidden group.",
+    "INFOPLIST_KEY_UILaunchScreen_Generation": "YES",
+    "INFOPLIST_KEY_UILaunchStoryboardName": null,
+    "CODE_SIGN_ENTITLEMENTS": "LinkStow/LinkStow.entitlements",
+    "IPHONEOS_DEPLOYMENT_TARGET": "26.0",
+    "SWIFT_VERSION": "5.0"
+  }
+}

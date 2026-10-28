@@ -1,0 +1,186 @@
+{
+  "format": "plus-c-project-part",
+  "version": 1,
+  "part": "diagram",
+  "project": {
+    "elements": [
+      {
+        "id": "diagram-3e478a9d-b35b-414f-8535-4c4a9543bb1c",
+        "kind": "diagram",
+        "ownerId": "project-fca6d9b3-8760-406f-bef7-e6c8e48344a4",
+        "name": "01 Stakeholder needs",
+        "documentation": "",
+        "properties": {
+          "diagramKind": "requirements",
+          "markdown": "## NEED-001 Capture and revisit useful links\n\nStakeholder: link owner. Save a URL with recognizable metadata, retain it locally, and reopen it later. Inferred from the existing implementation; not a separately approved stakeholder baseline.\n\n## NEED-002 Organize and retrieve a personal library\n\nLink owner: assign reusable groups, inspect nonhidden links, and sort saved links by title. Inferred from source; requires stakeholder review before becoming an approved baseline.\n\n## NEED-003 Control casual visibility of sensitive links\n\nDevice owner: keep hidden links out of the normal list and require device-owner authentication at selected UI entry points. This is a visibility need, not a claim of per-record encryption. Inferred from source; requires stakeholder review before becoming an approved baseline.\n\n## NEED-004 Recognize links in a comfortable presentation\n\nLink owner: customize symbols and colors and control title and caption line limits. Inferred from source; requires stakeholder review before becoming an approved baseline.\n\n## NEED-005 Reuse links outside the app\n\nLink owner and recipient: open supported web URLs, share URL values, and copy or share QR images. Inferred from source; requires stakeholder review before becoming an approved baseline.\n\n## NEED-006 Retain editable link details locally\n\nLink owner: persist edits, relationships, visibility and reminder intent across launches without an application backend. Notification delivery is not implemented. Inferred from source; requires stakeholder review before becoming an approved baseline.\n"
+        },
+        "createdAt": "2026-10-28T17:38:58.810Z",
+        "modifiedAt": "2026-10-28T17:42:40.243Z"
+      },
+      {
+        "id": "document-requirement-c1063b4d-e8aa-4387-ae96-b5bf4949deba",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "NEED-001 Capture and revisit useful links",
+        "documentation": "Stakeholder: link owner. Save a URL with recognizable metadata, retain it locally, and reopen it later. Inferred from the existing implementation; not a separately approved stakeholder baseline.",
+        "properties": {
+          "key": "NEED-001",
+          "title": "Capture and revisit useful links",
+          "statement": "Stakeholder: link owner. Save a URL with recognizable metadata, retain it locally, and reopen it later. Inferred from the existing implementation; not a separately approved stakeholder baseline."
+        },
+        "createdAt": "2026-10-28T17:38:58.816Z",
+        "modifiedAt": "2026-10-28T18:14:11.143Z"
+      },
+      {
+        "id": "document-requirement-c9c40395-b37e-4890-bcd0-caca5665e9c4",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "NEED-002 Organize and retrieve a personal library",
+        "documentation": "Link owner: assign reusable groups, inspect nonhidden links, and sort saved links by title. Inferred from source; requires stakeholder review before becoming an approved baseline.",
+        "properties": {
+          "key": "NEED-002",
+          "title": "Organize and retrieve a personal library",
+          "statement": "Link owner: assign reusable groups, inspect nonhidden links, and sort saved links by title. Inferred from source; requires stakeholder review before becoming an approved baseline."
+        },
+        "createdAt": "2026-10-28T17:42:40.248Z",
+        "modifiedAt": "2026-10-28T18:14:11.143Z"
+      },
+      {
+        "id": "document-requirement-dd252e7e-a6e3-4ff6-99d5-35811ed8353c",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "NEED-003 Control casual visibility of sensitive links",
+        "documentation": "Device owner: keep hidden links out of the normal list and require device-owner authentication at selected UI entry points. This is a visibility need, not a claim of per-record encryption. Inferred from source; requires stakeholder review before becoming an approved baseline.",
+        "properties": {
+          "key": "NEED-003",
+          "title": "Control casual visibility of sensitive links",
+          "statement": "Device owner: keep hidden links out of the normal list and require device-owner authentication at selected UI entry points. This is a visibility need, not a claim of per-record encryption. Inferred from source; requires stakeholder review before becoming an approved baseline."
+        },
+        "createdAt": "2026-10-28T17:42:40.248Z",
+        "modifiedAt": "2026-10-28T18:14:11.143Z"
+      },
+      {
+        "id": "document-requirement-f522b201-c872-42e2-a66a-2711de404a62",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "NEED-004 Recognize links in a comfortable presentation",
+        "documentation": "Link owner: customize symbols and colors and control title and caption line limits. Inferred from source; requires stakeholder review before becoming an approved baseline.",
+        "properties": {
+          "key": "NEED-004",
+          "title": "Recognize links in a comfortable presentation",
+          "statement": "Link owner: customize symbols and colors and control title and caption line limits. Inferred from source; requires stakeholder review before becoming an approved baseline."
+        },
+        "createdAt": "2026-10-28T17:42:40.248Z",
+        "modifiedAt": "2026-10-28T18:14:11.143Z"
+      },
+      {
+        "id": "document-requirement-cde7231a-b1ff-475f-9d97-349d5744d7c5",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "NEED-005 Reuse links outside the app",
+        "documentation": "Link owner and recipient: open supported web URLs, share URL values, and copy or share QR images. Inferred from source; requires stakeholder review before becoming an approved baseline.",
+        "properties": {
+          "key": "NEED-005",
+          "title": "Reuse links outside the app",
+          "statement": "Link owner and recipient: open supported web URLs, share URL values, and copy or share QR images. Inferred from source; requires stakeholder review before becoming an approved baseline."
+        },
+        "createdAt": "2026-10-28T17:42:40.248Z",
+        "modifiedAt": "2026-10-28T18:14:11.143Z"
+      },
+      {
+        "id": "document-requirement-783062cf-3757-41a3-8e06-59232f7c7084",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "NEED-006 Retain editable link details locally",
+        "documentation": "Link owner: persist edits, relationships, visibility and reminder intent across launches without an application backend. Notification delivery is not implemented. Inferred from source; requires stakeholder review before becoming an approved baseline.",
+        "properties": {
+          "key": "NEED-006",
+          "title": "Retain editable link details locally",
+          "statement": "Link owner: persist edits, relationships, visibility and reminder intent across launches without an application backend. Notification delivery is not implemented. Inferred from source; requires stakeholder review before becoming an approved baseline."
+        },
+        "createdAt": "2026-10-28T17:42:40.248Z",
+        "modifiedAt": "2026-10-28T18:14:11.143Z"
+      }
+    ],
+    "views": [
+      {
+        "id": "view-9a47b947-6863-42c5-904b-5f4f7f75504d",
+        "kind": "list",
+        "diagramId": "diagram-3e478a9d-b35b-414f-8535-4c4a9543bb1c",
+        "elementId": "document-requirement-c1063b4d-e8aa-4387-ae96-b5bf4949deba",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 2
+        },
+        "row": 0
+      },
+      {
+        "id": "view-c82b596e-7a4f-4020-a391-2ac509578955",
+        "kind": "list",
+        "diagramId": "diagram-3e478a9d-b35b-414f-8535-4c4a9543bb1c",
+        "elementId": "document-requirement-c9c40395-b37e-4890-bcd0-caca5665e9c4",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 6
+        },
+        "row": 4
+      },
+      {
+        "id": "view-295500f1-9552-4b25-a27b-c0fa84db4beb",
+        "kind": "list",
+        "diagramId": "diagram-3e478a9d-b35b-414f-8535-4c4a9543bb1c",
+        "elementId": "document-requirement-dd252e7e-a6e3-4ff6-99d5-35811ed8353c",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 10
+        },
+        "row": 8
+      },
+      {
+        "id": "view-ea0d1128-0b66-4252-962e-7a2cddf6e138",
+        "kind": "list",
+        "diagramId": "diagram-3e478a9d-b35b-414f-8535-4c4a9543bb1c",
+        "elementId": "document-requirement-f522b201-c872-42e2-a66a-2711de404a62",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 14
+        },
+        "row": 12
+      },
+      {
+        "id": "view-da6465bb-878c-4e53-b844-52b0569969f3",
+        "kind": "list",
+        "diagramId": "diagram-3e478a9d-b35b-414f-8535-4c4a9543bb1c",
+        "elementId": "document-requirement-cde7231a-b1ff-475f-9d97-349d5744d7c5",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 18
+        },
+        "row": 16
+      },
+      {
+        "id": "view-8b74f75d-c1ca-4c13-b472-faaa61aa4662",
+        "kind": "list",
+        "diagramId": "diagram-3e478a9d-b35b-414f-8535-4c4a9543bb1c",
+        "elementId": "document-requirement-783062cf-3757-41a3-8e06-59232f7c7084",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 22
+        },
+        "row": 20
+      }
+    ]
+  }
+}

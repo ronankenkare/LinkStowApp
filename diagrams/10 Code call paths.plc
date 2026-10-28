@@ -1,0 +1,595 @@
+{
+  "format": "plus-c-project-part",
+  "version": 1,
+  "part": "diagram",
+  "project": {
+    "elements": [
+      {
+        "id": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "kind": "diagram",
+        "ownerId": "project-fca6d9b3-8760-406f-bef7-e6c8e48344a4",
+        "name": "10 Code call paths",
+        "documentation": "",
+        "properties": {
+          "diagramKind": "sequence",
+          "autoOrganize": false
+        },
+        "createdAt": "2026-10-28T18:09:02.490Z",
+        "modifiedAt": "2026-10-28T18:10:58.735Z"
+      },
+      {
+        "id": "participant-19d717ac-95b4-4ad5-9fc5-6fb105a727b7",
+        "kind": "participant",
+        "ownerId": null,
+        "name": "LinkEditorView",
+        "documentation": "The Save button calls the draft view model, then dismisses.",
+        "properties": {
+          "stereotype": "boundary",
+          "order": 0,
+          "lifelineStart": 0,
+          "lifelineEnd": null
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z"
+      },
+      {
+        "id": "participant-994ab74e-88ff-448c-a85d-dc5cce7dc52f",
+        "kind": "participant",
+        "ownerId": null,
+        "name": "LinkEditorViewModel",
+        "documentation": "Chooses add/update and resets draft state.",
+        "properties": {
+          "stereotype": "control",
+          "order": 1,
+          "lifelineStart": 0,
+          "lifelineEnd": null
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z"
+      },
+      {
+        "id": "participant-592317b0-4a50-4eff-833b-fd9b877fa6e4",
+        "kind": "participant",
+        "ownerId": null,
+        "name": "MainController",
+        "documentation": "Updates model fields; inserts or attempts a save.",
+        "properties": {
+          "stereotype": "control",
+          "order": 2,
+          "lifelineStart": 0,
+          "lifelineEnd": null
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z"
+      },
+      {
+        "id": "participant-fcd00cff-8ee9-4ea5-b067-38c490d01e7c",
+        "kind": "participant",
+        "ownerId": null,
+        "name": "LinkModel",
+        "documentation": "Updates link fields and hidden/group invariant.",
+        "properties": {
+          "stereotype": "entity",
+          "order": 3,
+          "lifelineStart": 0,
+          "lifelineEnd": null
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z"
+      },
+      {
+        "id": "participant-06eb348b-587e-449d-917b-eba34788020a",
+        "kind": "participant",
+        "ownerId": null,
+        "name": "SymbolModel",
+        "documentation": "Updates selected symbol and RGBA fields.",
+        "properties": {
+          "stereotype": "entity",
+          "order": 4,
+          "lifelineStart": 0,
+          "lifelineEnd": null
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z"
+      },
+      {
+        "id": "participant-344bca73-e91b-4212-8122-7b852014e036",
+        "kind": "participant",
+        "ownerId": null,
+        "name": "ModelContext (SwiftData)",
+        "documentation": "Platform service; add relies on autosave, update uses try? save().",
+        "properties": {
+          "stereotype": "database",
+          "order": 5,
+          "lifelineStart": 0,
+          "lifelineEnd": null
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z"
+      },
+      {
+        "id": "message-0ffe040c-3dfe-4e5a-a87a-dfe704597175",
+        "kind": "synchronous",
+        "ownerId": null,
+        "name": "save(link:isNew:mainController:)",
+        "documentation": "",
+        "properties": {
+          "order": 0
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z",
+        "sourceId": "participant-19d717ac-95b4-4ad5-9fc5-6fb105a727b7",
+        "targetId": "participant-994ab74e-88ff-448c-a85d-dc5cce7dc52f"
+      },
+      {
+        "id": "message-49f4b7e0-2c81-4034-96a7-cbc9929814f9",
+        "kind": "synchronous",
+        "ownerId": null,
+        "name": "addLink(...) [new link]",
+        "documentation": "",
+        "properties": {
+          "order": 1
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z",
+        "sourceId": "participant-994ab74e-88ff-448c-a85d-dc5cce7dc52f",
+        "targetId": "participant-592317b0-4a50-4eff-833b-fd9b877fa6e4"
+      },
+      {
+        "id": "message-3db2e5dd-886c-4936-8815-6d1d3e09cfa6",
+        "kind": "synchronous",
+        "ownerId": null,
+        "name": "updateLink(...)",
+        "documentation": "",
+        "properties": {
+          "order": 2
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z",
+        "sourceId": "participant-592317b0-4a50-4eff-833b-fd9b877fa6e4",
+        "targetId": "participant-fcd00cff-8ee9-4ea5-b067-38c490d01e7c"
+      },
+      {
+        "id": "message-a9a135ac-2be1-4976-ab15-b12673b8eb2e",
+        "kind": "synchronous",
+        "ownerId": null,
+        "name": "symbol.updateSymbol(...)",
+        "documentation": "",
+        "properties": {
+          "order": 3
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z",
+        "sourceId": "participant-fcd00cff-8ee9-4ea5-b067-38c490d01e7c",
+        "targetId": "participant-06eb348b-587e-449d-917b-eba34788020a"
+      },
+      {
+        "id": "message-bbb9eae2-d512-40e8-8000-424cca98d3fe",
+        "kind": "synchronous",
+        "ownerId": null,
+        "name": "insert(linkModel) — autosave later",
+        "documentation": "",
+        "properties": {
+          "order": 4
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z",
+        "sourceId": "participant-592317b0-4a50-4eff-833b-fd9b877fa6e4",
+        "targetId": "participant-344bca73-e91b-4212-8122-7b852014e036"
+      },
+      {
+        "id": "message-0506ec26-e99d-451b-9c07-9f5153179478",
+        "kind": "synchronous",
+        "ownerId": null,
+        "name": "updateLink(...) [existing link]",
+        "documentation": "",
+        "properties": {
+          "order": 5
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z",
+        "sourceId": "participant-994ab74e-88ff-448c-a85d-dc5cce7dc52f",
+        "targetId": "participant-592317b0-4a50-4eff-833b-fd9b877fa6e4"
+      },
+      {
+        "id": "message-25d99f8e-1a21-4f5b-91d4-a9107f975cbf",
+        "kind": "synchronous",
+        "ownerId": null,
+        "name": "updateLink(...)",
+        "documentation": "",
+        "properties": {
+          "order": 6
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z",
+        "sourceId": "participant-592317b0-4a50-4eff-833b-fd9b877fa6e4",
+        "targetId": "participant-fcd00cff-8ee9-4ea5-b067-38c490d01e7c"
+      },
+      {
+        "id": "message-19314c70-9a94-4555-add9-7b0a2879b5a4",
+        "kind": "synchronous",
+        "ownerId": null,
+        "name": "symbol.updateSymbol(...)",
+        "documentation": "",
+        "properties": {
+          "order": 7
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z",
+        "sourceId": "participant-fcd00cff-8ee9-4ea5-b067-38c490d01e7c",
+        "targetId": "participant-06eb348b-587e-449d-917b-eba34788020a"
+      },
+      {
+        "id": "message-d5dd028b-ec99-47f1-a2ac-3891b79445d9",
+        "kind": "synchronous",
+        "ownerId": null,
+        "name": "try? save() — errors suppressed",
+        "documentation": "",
+        "properties": {
+          "order": 8
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z",
+        "sourceId": "participant-592317b0-4a50-4eff-833b-fd9b877fa6e4",
+        "targetId": "participant-344bca73-e91b-4212-8122-7b852014e036"
+      },
+      {
+        "id": "message-09850b73-6b50-4828-be36-c28de2958143",
+        "kind": "synchronous",
+        "ownerId": null,
+        "name": "reset()",
+        "documentation": "",
+        "properties": {
+          "order": 9
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z",
+        "sourceId": "participant-994ab74e-88ff-448c-a85d-dc5cce7dc52f",
+        "targetId": "participant-994ab74e-88ff-448c-a85d-dc5cce7dc52f"
+      },
+      {
+        "id": "message-f08a9bc8-fd13-45ef-aa4c-8e50e2df2135",
+        "kind": "reply",
+        "ownerId": null,
+        "name": "Return to Save action",
+        "documentation": "",
+        "properties": {
+          "order": 10
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z",
+        "sourceId": "participant-994ab74e-88ff-448c-a85d-dc5cce7dc52f",
+        "targetId": "participant-19d717ac-95b4-4ad5-9fc5-6fb105a727b7"
+      },
+      {
+        "id": "message-c8d032a0-c5e5-4cfc-bbe6-b944f69b7214",
+        "kind": "synchronous",
+        "ownerId": null,
+        "name": "dismiss()",
+        "documentation": "",
+        "properties": {
+          "order": 11
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z",
+        "sourceId": "participant-19d717ac-95b4-4ad5-9fc5-6fb105a727b7",
+        "targetId": "participant-19d717ac-95b4-4ad5-9fc5-6fb105a727b7"
+      },
+      {
+        "id": "fragment-97ed2284-836a-4313-a291-35c9fb0e5917",
+        "kind": "fragment",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "stereotype": "alt",
+          "startOrder": 1,
+          "endOrder": 8,
+          "participantIds": [
+            "participant-994ab74e-88ff-448c-a85d-dc5cce7dc52f",
+            "participant-592317b0-4a50-4eff-833b-fd9b877fa6e4",
+            "participant-fcd00cff-8ee9-4ea5-b067-38c490d01e7c",
+            "participant-06eb348b-587e-449d-917b-eba34788020a",
+            "participant-344bca73-e91b-4212-8122-7b852014e036"
+          ]
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z"
+      },
+      {
+        "id": "operand-a5855400-ff59-4c53-bddb-a42212672089",
+        "kind": "operand",
+        "ownerId": "fragment-97ed2284-836a-4313-a291-35c9fb0e5917",
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "guard": "isNew == true",
+          "startOrder": 1,
+          "endOrder": 4,
+          "order": 0
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z"
+      },
+      {
+        "id": "operand-171d8d3f-e09c-4f7d-b10a-336e720ce35a",
+        "kind": "operand",
+        "ownerId": "fragment-97ed2284-836a-4313-a291-35c9fb0e5917",
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "guard": "isNew == false",
+          "startOrder": 5,
+          "endOrder": 8,
+          "order": 1
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z"
+      },
+      {
+        "id": "note-a7e0da1d-bdc5-441f-bf84-728980244d88",
+        "kind": "note",
+        "ownerId": null,
+        "name": "",
+        "documentation": "Code-level save path. Calls are shown in source order; routine synchronous returns are omitted. alt branches are mutually exclusive. Exact caller/callee source spans are linked to the messages. Broader capture/authentication/QR connections are traced directly between code parts.",
+        "properties": {
+          "targetKind": "diagram",
+          "targetId": null
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z"
+      },
+      {
+        "id": "note-94872808-7fc3-4678-ab2e-a0ec27804f95",
+        "kind": "note",
+        "ownerId": null,
+        "name": "",
+        "documentation": "ModelContext is an external platform service. New links are inserted and rely on autosave; existing links call try? save(). The hidden/group invariant is applied in LinkModel.updateLink. This is a manually inspected static path, not runtime profiling or a compiler-generated call graph.",
+        "properties": {
+          "targetKind": "diagram",
+          "targetId": null
+        },
+        "createdAt": "2026-10-28T18:10:58.106Z",
+        "modifiedAt": "2026-10-28T18:16:29.011Z"
+      }
+    ],
+    "views": [
+      {
+        "id": "view-848b0d9a-4dc2-47c1-af2b-1c86e2c6bfc7",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "participant-19d717ac-95b4-4ad5-9fc5-6fb105a727b7",
+        "parentViewId": null,
+        "style": {},
+        "slot": 0,
+        "offset": 150
+      },
+      {
+        "id": "view-f3175557-7064-44c9-82ec-482d5567b0bc",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "participant-994ab74e-88ff-448c-a85d-dc5cce7dc52f",
+        "parentViewId": null,
+        "style": {},
+        "slot": 1,
+        "offset": 370
+      },
+      {
+        "id": "view-caf53188-12ff-4a25-94fc-32c9c2fa91c3",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "participant-592317b0-4a50-4eff-833b-fd9b877fa6e4",
+        "parentViewId": null,
+        "style": {},
+        "slot": 2,
+        "offset": 590
+      },
+      {
+        "id": "view-635c4f67-31a4-4609-8ab1-61e3390911d5",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "participant-fcd00cff-8ee9-4ea5-b067-38c490d01e7c",
+        "parentViewId": null,
+        "style": {},
+        "slot": 3,
+        "offset": 810
+      },
+      {
+        "id": "view-95056c06-7849-4900-b538-743a91de71c4",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "participant-06eb348b-587e-449d-917b-eba34788020a",
+        "parentViewId": null,
+        "style": {},
+        "slot": 4,
+        "offset": 1030
+      },
+      {
+        "id": "view-1bf5000c-54af-4f7b-b54b-fc5dcf87e7f5",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "participant-344bca73-e91b-4212-8122-7b852014e036",
+        "parentViewId": null,
+        "style": {},
+        "slot": 5,
+        "offset": 1250
+      },
+      {
+        "id": "view-b054fec7-1f00-4421-8aea-99130d39029f",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "message-0ffe040c-3dfe-4e5a-a87a-dfe704597175",
+        "parentViewId": null,
+        "style": {},
+        "slot": 0,
+        "offset": null
+      },
+      {
+        "id": "view-d446280a-cdfb-410f-876e-34d4d67fe1e2",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "message-49f4b7e0-2c81-4034-96a7-cbc9929814f9",
+        "parentViewId": null,
+        "style": {},
+        "slot": 1,
+        "offset": null
+      },
+      {
+        "id": "view-e790987f-dc86-4e5e-926e-8cd8c782275a",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "message-3db2e5dd-886c-4936-8815-6d1d3e09cfa6",
+        "parentViewId": null,
+        "style": {},
+        "slot": 2,
+        "offset": null
+      },
+      {
+        "id": "view-c06c2aae-d3d2-4bb4-9e94-2ce5450a377d",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "message-a9a135ac-2be1-4976-ab15-b12673b8eb2e",
+        "parentViewId": null,
+        "style": {},
+        "slot": 3,
+        "offset": null
+      },
+      {
+        "id": "view-29097db1-726b-4399-af25-cc0632b9ef7c",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "message-bbb9eae2-d512-40e8-8000-424cca98d3fe",
+        "parentViewId": null,
+        "style": {},
+        "slot": 4,
+        "offset": null
+      },
+      {
+        "id": "view-d02dd78c-ec31-4c1b-a400-1a82b56faafc",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "message-0506ec26-e99d-451b-9c07-9f5153179478",
+        "parentViewId": null,
+        "style": {},
+        "slot": 5,
+        "offset": null
+      },
+      {
+        "id": "view-cb258275-d1b5-441f-ac5d-01380bb96753",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "message-25d99f8e-1a21-4f5b-91d4-a9107f975cbf",
+        "parentViewId": null,
+        "style": {},
+        "slot": 6,
+        "offset": null
+      },
+      {
+        "id": "view-3125e227-bd4c-4d27-8c6a-1d232b51d309",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "message-19314c70-9a94-4555-add9-7b0a2879b5a4",
+        "parentViewId": null,
+        "style": {},
+        "slot": 7,
+        "offset": null
+      },
+      {
+        "id": "view-ecc6c7c2-041c-4f4d-92e1-1d497ad5c64f",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "message-d5dd028b-ec99-47f1-a2ac-3891b79445d9",
+        "parentViewId": null,
+        "style": {},
+        "slot": 8,
+        "offset": null
+      },
+      {
+        "id": "view-af759942-c010-4a6a-855d-5d641b556222",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "message-09850b73-6b50-4828-be36-c28de2958143",
+        "parentViewId": null,
+        "style": {},
+        "slot": 9,
+        "offset": null
+      },
+      {
+        "id": "view-9625c6ba-cafd-4e2e-8331-3cef9dd53250",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "message-f08a9bc8-fd13-45ef-aa4c-8e50e2df2135",
+        "parentViewId": null,
+        "style": {},
+        "slot": 10,
+        "offset": null
+      },
+      {
+        "id": "view-e37c3538-63ce-452f-a1bb-8ff6bcdb0dca",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "message-c8d032a0-c5e5-4cfc-bbe6-b944f69b7214",
+        "parentViewId": null,
+        "style": {},
+        "slot": 11,
+        "offset": null
+      },
+      {
+        "id": "view-6887cf7b-651f-475c-9f26-8c6b64aac1d8",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "fragment-97ed2284-836a-4313-a291-35c9fb0e5917",
+        "parentViewId": null,
+        "style": {},
+        "slot": 1,
+        "offset": null
+      },
+      {
+        "id": "view-ff53cfa1-4980-4b99-8bd0-c1a92aef0d29",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "operand-a5855400-ff59-4c53-bddb-a42212672089",
+        "parentViewId": null,
+        "style": {},
+        "slot": 0,
+        "offset": null
+      },
+      {
+        "id": "view-5e10f8a7-9591-4727-b72d-5b9890b310c6",
+        "kind": "slot",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "operand-171d8d3f-e09c-4f7d-b10a-336e720ce35a",
+        "parentViewId": null,
+        "style": {},
+        "slot": 1,
+        "offset": null
+      },
+      {
+        "id": "view-8407dcec-4a3e-4916-9e5a-4e695caf8e71",
+        "kind": "shape",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "note-a7e0da1d-bdc5-441f-bf84-728980244d88",
+        "parentViewId": null,
+        "style": {},
+        "x": 1350,
+        "y": 42,
+        "width": 0,
+        "height": 0,
+        "collapsed": false
+      },
+      {
+        "id": "view-36afca66-dc39-4f0b-b1c1-e27739a62380",
+        "kind": "shape",
+        "diagramId": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+        "elementId": "note-94872808-7fc3-4678-ab2e-a0ec27804f95",
+        "parentViewId": null,
+        "style": {},
+        "x": 1350,
+        "y": 206,
+        "width": 0,
+        "height": 0,
+        "collapsed": false
+      }
+    ]
+  }
+}

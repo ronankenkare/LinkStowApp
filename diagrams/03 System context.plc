@@ -1,0 +1,575 @@
+{
+  "format": "plus-c-project-part",
+  "version": 1,
+  "part": "diagram",
+  "project": {
+    "elements": [
+      {
+        "id": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "kind": "diagram",
+        "ownerId": "project-fca6d9b3-8760-406f-bef7-e6c8e48344a4",
+        "name": "03 System context",
+        "documentation": "",
+        "properties": {
+          "diagramKind": "context",
+          "autoOrganize": true
+        },
+        "createdAt": "2026-10-28T17:42:49.556Z",
+        "modifiedAt": "2026-10-28T18:50:48.539Z"
+      },
+      {
+        "id": "system-of-interest-b98c803f-97d8-41fa-bd9e-7d144f1bf70f",
+        "kind": "system-of-interest",
+        "ownerId": null,
+        "name": "LinkStow iOS app",
+        "documentation": "Local SwiftUI application with SwiftData storage; no app backend or sync service.",
+        "properties": {},
+        "createdAt": "2026-10-28T17:42:49.561Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z"
+      },
+      {
+        "id": "entity-51b89834-e02a-4498-811b-0384e9ee7fd7",
+        "kind": "external-entity",
+        "ownerId": null,
+        "name": "Link owner / device owner",
+        "documentation": "Captures, edits, organizes and exports links.",
+        "properties": {
+          "category": "user"
+        },
+        "createdAt": "2026-10-28T17:42:49.561Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z"
+      },
+      {
+        "id": "entity-a7330d48-38c9-4dc3-93e7-2a83e27cc326",
+        "kind": "external-entity",
+        "ownerId": null,
+        "name": "Websites and icon hosts",
+        "documentation": "Untrusted remote HTML and icon bytes fetched by URLSession.",
+        "properties": {
+          "category": "system"
+        },
+        "createdAt": "2026-10-28T17:42:49.561Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z"
+      },
+      {
+        "id": "entity-8a9de75e-1f01-4be7-9eaf-032465e3fc7b",
+        "kind": "external-entity",
+        "ownerId": null,
+        "name": "SwiftData / local device storage",
+        "documentation": "Disk-backed store; persistence errors may be suppressed.",
+        "properties": {
+          "category": "system"
+        },
+        "createdAt": "2026-10-28T17:42:49.561Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z"
+      },
+      {
+        "id": "entity-c41acbd0-df53-4235-b17e-e66944423bfc",
+        "kind": "external-entity",
+        "ownerId": null,
+        "name": "LocalAuthentication",
+        "documentation": "deviceOwnerAuthentication permits biometrics or device passcode per OS policy.",
+        "properties": {
+          "category": "system"
+        },
+        "createdAt": "2026-10-28T17:42:49.561Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z"
+      },
+      {
+        "id": "entity-faca30f8-0cad-41fd-9a3e-463ac4e6dc9b",
+        "kind": "external-entity",
+        "ownerId": null,
+        "name": "iOS browser, pasteboard and share services",
+        "documentation": "UIApplication.open, UIPasteboard and UIActivityViewController.",
+        "properties": {
+          "category": "system"
+        },
+        "createdAt": "2026-10-28T17:42:49.561Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z"
+      },
+      {
+        "id": "entity-c03b4df2-879a-4597-ba85-15255a3b551f",
+        "kind": "external-entity",
+        "ownerId": null,
+        "name": "UserDefaults / AppStorage",
+        "documentation": "Hidden Group activation and row line-limit preferences.",
+        "properties": {
+          "category": "system"
+        },
+        "createdAt": "2026-10-28T17:42:49.561Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z"
+      },
+      {
+        "id": "flow-9edc3cf0-f398-4b8a-8a0b-41ec3094d95d",
+        "kind": "data",
+        "ownerId": null,
+        "name": "URLs, edits and library commands",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:42:49.561Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z",
+        "sourceId": "entity-51b89834-e02a-4498-811b-0384e9ee7fd7",
+        "targetId": "system-of-interest-b98c803f-97d8-41fa-bd9e-7d144f1bf70f"
+      },
+      {
+        "id": "flow-e2be4121-95e5-4f23-bad6-ef03fc1c02bf",
+        "kind": "data",
+        "ownerId": null,
+        "name": "Library rows, editors, QR images and status",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:42:49.561Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z",
+        "sourceId": "system-of-interest-b98c803f-97d8-41fa-bd9e-7d144f1bf70f",
+        "targetId": "entity-51b89834-e02a-4498-811b-0384e9ee7fd7"
+      },
+      {
+        "id": "flow-9f62e0e6-d1df-4696-ab86-d87dca1d4a98",
+        "kind": "data",
+        "ownerId": null,
+        "name": "URL requests and metadata/icon requests",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:42:49.561Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z",
+        "sourceId": "system-of-interest-b98c803f-97d8-41fa-bd9e-7d144f1bf70f",
+        "targetId": "entity-a7330d48-38c9-4dc3-93e7-2a83e27cc326"
+      },
+      {
+        "id": "flow-990c173d-c646-47ed-bfe8-36bbbaf51a49",
+        "kind": "data",
+        "ownerId": null,
+        "name": "HTTP status, HTML and icon bytes",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:42:49.561Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z",
+        "sourceId": "entity-a7330d48-38c9-4dc3-93e7-2a83e27cc326",
+        "targetId": "system-of-interest-b98c803f-97d8-41fa-bd9e-7d144f1bf70f"
+      },
+      {
+        "id": "flow-58ce830e-fc29-425a-9629-c7d15ae91914",
+        "kind": "data",
+        "ownerId": null,
+        "name": "Models, edits and deletion operations",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:42:49.561Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z",
+        "sourceId": "system-of-interest-b98c803f-97d8-41fa-bd9e-7d144f1bf70f",
+        "targetId": "entity-8a9de75e-1f01-4be7-9eaf-032465e3fc7b"
+      },
+      {
+        "id": "flow-b1e10fd5-3169-47d8-ac33-3738f36d4d7a",
+        "kind": "data",
+        "ownerId": null,
+        "name": "Persisted records and relationships",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:42:49.561Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z",
+        "sourceId": "entity-8a9de75e-1f01-4be7-9eaf-032465e3fc7b",
+        "targetId": "system-of-interest-b98c803f-97d8-41fa-bd9e-7d144f1bf70f"
+      },
+      {
+        "id": "flow-c386ec90-521b-4c61-8ca6-47d468463969",
+        "kind": "data",
+        "ownerId": null,
+        "name": "Device-owner authentication request",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:42:49.561Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z",
+        "sourceId": "system-of-interest-b98c803f-97d8-41fa-bd9e-7d144f1bf70f",
+        "targetId": "entity-c41acbd0-df53-4235-b17e-e66944423bfc"
+      },
+      {
+        "id": "flow-75d660d2-cfff-4c53-a294-45ab77c99c13",
+        "kind": "data",
+        "ownerId": null,
+        "name": "Success, failure, unavailable policy or error",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:42:49.561Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z",
+        "sourceId": "entity-c41acbd0-df53-4235-b17e-e66944423bfc",
+        "targetId": "system-of-interest-b98c803f-97d8-41fa-bd9e-7d144f1bf70f"
+      },
+      {
+        "id": "flow-8238db62-9004-4efb-a3d9-de0d8672a0e5",
+        "kind": "data",
+        "ownerId": null,
+        "name": "Pasted URL text",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:42:49.561Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z",
+        "sourceId": "entity-faca30f8-0cad-41fd-9a3e-463ac4e6dc9b",
+        "targetId": "system-of-interest-b98c803f-97d8-41fa-bd9e-7d144f1bf70f"
+      },
+      {
+        "id": "flow-2a583cb5-6003-4ecd-a5ba-8d3db34b8970",
+        "kind": "data",
+        "ownerId": null,
+        "name": "Web URLs, shared URLs and QR images",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:42:49.561Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z",
+        "sourceId": "system-of-interest-b98c803f-97d8-41fa-bd9e-7d144f1bf70f",
+        "targetId": "entity-faca30f8-0cad-41fd-9a3e-463ac4e6dc9b"
+      },
+      {
+        "id": "flow-a449d1bc-5f63-4db7-bc37-b8b494019231",
+        "kind": "data",
+        "ownerId": null,
+        "name": "Activation and appearance settings",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:42:49.561Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z",
+        "sourceId": "system-of-interest-b98c803f-97d8-41fa-bd9e-7d144f1bf70f",
+        "targetId": "entity-c03b4df2-879a-4597-ba85-15255a3b551f"
+      },
+      {
+        "id": "flow-085e48ca-08fa-41df-a0c9-6f3099ffeeb0",
+        "kind": "data",
+        "ownerId": null,
+        "name": "Persisted preference values",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:42:49.561Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z",
+        "sourceId": "entity-c03b4df2-879a-4597-ba85-15255a3b551f",
+        "targetId": "system-of-interest-b98c803f-97d8-41fa-bd9e-7d144f1bf70f"
+      },
+      {
+        "id": "note-e31fac0c-0eb3-490b-9fcf-ced52bbfd8fb",
+        "kind": "note",
+        "ownerId": null,
+        "name": "",
+        "documentation": "As implemented: iOS/UIKit application. Library storage is local; metadata retrieval contacts remote sites. Reminder fields exist, but no notification service is operational. Hidden links use UI gating, not app-level encryption.",
+        "properties": {
+          "targetKind": "diagram",
+          "targetId": null
+        },
+        "createdAt": "2026-10-28T17:42:49.561Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z"
+      },
+      {
+        "id": "note-1eaabcb3-3861-45a0-a0ef-3231e99535a7",
+        "kind": "note",
+        "ownerId": null,
+        "name": "",
+        "documentation": "Build inputs: base Info.plist and entitlements are empty. project.pbxproj supplies generated runtime keys and selects those inputs. Device-owner authentication is UI gating; the empty entitlements file grants no extra capability.",
+        "properties": {
+          "targetKind": "diagram",
+          "targetId": null
+        },
+        "createdAt": "2026-10-28T18:50:48.545Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z"
+      },
+      {
+        "id": "note-4b76602b-ef97-4058-92e0-dd2d694d04b8",
+        "kind": "note",
+        "ownerId": null,
+        "name": "",
+        "documentation": "LaunchScreen.storyboard is not selected by effective Debug launch settings or declared Release settings. It references missing linkStack_icon. Trace its real DefaultAppColor reference as an unselected resource; do not read it as the active launch UI.",
+        "properties": {
+          "targetKind": "diagram",
+          "targetId": null
+        },
+        "createdAt": "2026-10-28T18:50:48.545Z",
+        "modifiedAt": "2026-10-28T18:50:48.545Z"
+      }
+    ],
+    "views": [
+      {
+        "id": "view-5f5a0e7c-2351-4f18-a4bf-066f42114f0a",
+        "kind": "shape",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "system-of-interest-b98c803f-97d8-41fa-bd9e-7d144f1bf70f",
+        "parentViewId": null,
+        "style": {},
+        "x": 542,
+        "y": 369,
+        "width": 0,
+        "height": 0,
+        "collapsed": false
+      },
+      {
+        "id": "view-788ffafe-205e-44bd-8faa-b03030a81a2b",
+        "kind": "shape",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "entity-51b89834-e02a-4498-811b-0384e9ee7fd7",
+        "parentViewId": null,
+        "style": {},
+        "x": 542,
+        "y": 131,
+        "width": 0,
+        "height": 0,
+        "collapsed": false
+      },
+      {
+        "id": "view-9aae274e-bf40-4a89-81b1-cb5efe60937c",
+        "kind": "shape",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "entity-a7330d48-38c9-4dc3-93e7-2a83e27cc326",
+        "parentViewId": null,
+        "style": {},
+        "x": 223,
+        "y": 250,
+        "width": 0,
+        "height": 0,
+        "collapsed": false
+      },
+      {
+        "id": "view-4bacbc1b-8978-469c-a918-f6237fbf7f8e",
+        "kind": "shape",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "entity-8a9de75e-1f01-4be7-9eaf-032465e3fc7b",
+        "parentViewId": null,
+        "style": {},
+        "x": 223,
+        "y": 488,
+        "width": 0,
+        "height": 0,
+        "collapsed": false
+      },
+      {
+        "id": "view-eadf477c-491f-46d3-8aba-a720d633cfd0",
+        "kind": "shape",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "entity-c41acbd0-df53-4235-b17e-e66944423bfc",
+        "parentViewId": null,
+        "style": {},
+        "x": 542,
+        "y": 606,
+        "width": 0,
+        "height": 0,
+        "collapsed": false
+      },
+      {
+        "id": "view-a33e72c2-acb1-4c73-a4bc-42cc1593d645",
+        "kind": "shape",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "entity-faca30f8-0cad-41fd-9a3e-463ac4e6dc9b",
+        "parentViewId": null,
+        "style": {},
+        "x": 861,
+        "y": 488,
+        "width": 0,
+        "height": 0,
+        "collapsed": false
+      },
+      {
+        "id": "view-bd569687-af7d-4be4-9425-86dfb33a3f88",
+        "kind": "shape",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "entity-c03b4df2-879a-4597-ba85-15255a3b551f",
+        "parentViewId": null,
+        "style": {},
+        "x": 861,
+        "y": 250,
+        "width": 0,
+        "height": 0,
+        "collapsed": false
+      },
+      {
+        "id": "view-41c73038-23ba-40bf-9c67-7dab47b779d7",
+        "kind": "edge",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "flow-9edc3cf0-f398-4b8a-8a0b-41ec3094d95d",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-73642d0f-a8eb-43c8-83be-11a09db284ee",
+        "kind": "edge",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "flow-e2be4121-95e5-4f23-bad6-ef03fc1c02bf",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-9a345c68-56f1-4155-b821-77fc8982497f",
+        "kind": "edge",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "flow-9f62e0e6-d1df-4696-ab86-d87dca1d4a98",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-66f4a9b3-bb17-4a37-b5d1-8b6dde3e9b36",
+        "kind": "edge",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "flow-990c173d-c646-47ed-bfe8-36bbbaf51a49",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-b43d533e-57c8-4614-ad14-e0bb070b0191",
+        "kind": "edge",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "flow-58ce830e-fc29-425a-9629-c7d15ae91914",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-8bf65cae-dbd9-493a-9dea-7d6d5617f559",
+        "kind": "edge",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "flow-b1e10fd5-3169-47d8-ac33-3738f36d4d7a",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-0ee7193b-ecf2-491d-91ee-bf9ae105bcce",
+        "kind": "edge",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "flow-c386ec90-521b-4c61-8ca6-47d468463969",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-5da97fd4-6f00-41d0-8dc1-7334749bfe43",
+        "kind": "edge",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "flow-75d660d2-cfff-4c53-a294-45ab77c99c13",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-7d15ed61-0b4c-4c18-b8ae-ec104fb41ce7",
+        "kind": "edge",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "flow-8238db62-9004-4efb-a3d9-de0d8672a0e5",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-3fe203f2-a293-4bf4-a0bf-067953e17090",
+        "kind": "edge",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "flow-2a583cb5-6003-4ecd-a5ba-8d3db34b8970",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-37287646-e6a7-4392-aef8-d651f778834e",
+        "kind": "edge",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "flow-a449d1bc-5f63-4db7-bc37-b8b494019231",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-f5f61964-b77c-4040-abe8-c321bb6d77c9",
+        "kind": "edge",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "flow-085e48ca-08fa-41df-a0c9-6f3099ffeeb0",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-53885523-fe63-40e4-9c87-86f8d06c14e3",
+        "kind": "shape",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "note-e31fac0c-0eb3-490b-9fcf-ced52bbfd8fb",
+        "parentViewId": null,
+        "style": {},
+        "x": 986,
+        "y": 100,
+        "width": 0,
+        "height": 0,
+        "collapsed": false
+      },
+      {
+        "id": "view-11e3ac1e-8d42-40d1-b3ec-12f556bf6d6b",
+        "kind": "shape",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "note-1eaabcb3-3861-45a0-a0ef-3231e99535a7",
+        "parentViewId": null,
+        "style": {},
+        "x": 986,
+        "y": 249,
+        "width": 0,
+        "height": 0,
+        "collapsed": false
+      },
+      {
+        "id": "view-61a9744a-e595-4ce0-bb37-1116e2aece81",
+        "kind": "shape",
+        "diagramId": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+        "elementId": "note-4b76602b-ef97-4058-92e0-dd2d694d04b8",
+        "parentViewId": null,
+        "style": {},
+        "x": 986,
+        "y": 398,
+        "width": 0,
+        "height": 0,
+        "collapsed": false
+      }
+    ]
+  }
+}

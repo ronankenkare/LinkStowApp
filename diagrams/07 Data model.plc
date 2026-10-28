@@ -1,0 +1,740 @@
+{
+  "format": "plus-c-project-part",
+  "version": 1,
+  "part": "diagram",
+  "project": {
+    "elements": [
+      {
+        "id": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "kind": "diagram",
+        "ownerId": "project-fca6d9b3-8760-406f-bef7-e6c8e48344a4",
+        "name": "07 Data model",
+        "documentation": "",
+        "properties": {
+          "diagramKind": "class",
+          "autoOrganize": true
+        },
+        "createdAt": "2026-10-28T17:45:32.248Z",
+        "modifiedAt": "2026-10-28T17:53:16.977Z"
+      },
+      {
+        "id": "package-a9bd3591-88ef-4230-9ccc-1ad6efe7b4e2",
+        "kind": "package",
+        "ownerId": null,
+        "name": "LocalPersistence",
+        "documentation": "Bootstrap SwiftData; store models and maintain relationships and reminder fields.",
+        "properties": {},
+        "createdAt": "2026-10-28T17:42:49.953Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "package-ca3ffb0e-ada5-48f9-9979-99371c802d86",
+        "kind": "package",
+        "ownerId": null,
+        "name": "SymbolsPreferences",
+        "documentation": "Render visual identifiers and persist line-limit preferences.",
+        "properties": {},
+        "createdAt": "2026-10-28T17:42:49.953Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "classifier-e87d61ec-279c-4633-ac6b-431e585db792",
+        "kind": "class",
+        "ownerId": null,
+        "name": "LinkModel",
+        "documentation": "Persistent link, group inverse and update invariants.",
+        "properties": {
+          "stereotype": "Swift source",
+          "isAbstract": false
+        },
+        "createdAt": "2026-10-28T17:42:49.953Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "attribute-a969d885-7501-4dfc-82c2-d919108b34c2",
+        "kind": "attribute",
+        "ownerId": "classifier-e87d61ec-279c-4633-ac6b-431e585db792",
+        "name": "url",
+        "documentation": "",
+        "properties": {
+          "order": 0,
+          "visibility": "package",
+          "type": "String",
+          "multiplicity": "",
+          "defaultValue": "",
+          "isStatic": false,
+          "isDerived": false
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "attribute-63ebe89d-33d6-46cc-b87a-8a2695739915",
+        "kind": "attribute",
+        "ownerId": "classifier-e87d61ec-279c-4633-ac6b-431e585db792",
+        "name": "title",
+        "documentation": "",
+        "properties": {
+          "order": 1,
+          "visibility": "package",
+          "type": "String",
+          "multiplicity": "",
+          "defaultValue": "",
+          "isStatic": false,
+          "isDerived": false
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "attribute-7df8adec-39a7-47aa-8826-eb4f4ea9769b",
+        "kind": "attribute",
+        "ownerId": "classifier-e87d61ec-279c-4633-ac6b-431e585db792",
+        "name": "caption",
+        "documentation": "",
+        "properties": {
+          "order": 2,
+          "visibility": "package",
+          "type": "String",
+          "multiplicity": "",
+          "defaultValue": "",
+          "isStatic": false,
+          "isDerived": false
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "attribute-9dc972e6-18e8-4f26-b894-61aceca21040",
+        "kind": "attribute",
+        "ownerId": "classifier-e87d61ec-279c-4633-ac6b-431e585db792",
+        "name": "isHidden",
+        "documentation": "",
+        "properties": {
+          "order": 3,
+          "visibility": "package",
+          "type": "Bool",
+          "multiplicity": "",
+          "defaultValue": "",
+          "isStatic": false,
+          "isDerived": false
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "attribute-4d53da79-b2dd-4a18-8398-08cdcce28f80",
+        "kind": "attribute",
+        "ownerId": "classifier-e87d61ec-279c-4633-ac6b-431e585db792",
+        "name": "reminderEnabled",
+        "documentation": "",
+        "properties": {
+          "order": 4,
+          "visibility": "package",
+          "type": "Bool",
+          "multiplicity": "",
+          "defaultValue": "",
+          "isStatic": false,
+          "isDerived": false
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "attribute-559a1c3b-eedb-4b5b-8a78-f4a372fbd771",
+        "kind": "attribute",
+        "ownerId": "classifier-e87d61ec-279c-4633-ac6b-431e585db792",
+        "name": "reminderDate",
+        "documentation": "",
+        "properties": {
+          "order": 5,
+          "visibility": "package",
+          "type": "Date?",
+          "multiplicity": "",
+          "defaultValue": "",
+          "isStatic": false,
+          "isDerived": false
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "attribute-a5eb5534-7342-482f-a903-d9882f65174a",
+        "kind": "attribute",
+        "ownerId": "classifier-e87d61ec-279c-4633-ac6b-431e585db792",
+        "name": "reminderAllDay",
+        "documentation": "",
+        "properties": {
+          "order": 6,
+          "visibility": "package",
+          "type": "Bool",
+          "multiplicity": "",
+          "defaultValue": "",
+          "isStatic": false,
+          "isDerived": false
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "classifier-548c2d45-208f-4794-87ed-29bd10f16db2",
+        "kind": "class",
+        "ownerId": null,
+        "name": "GroupModel",
+        "documentation": "Persistent group and inverse links.",
+        "properties": {
+          "stereotype": "Swift source",
+          "isAbstract": false
+        },
+        "createdAt": "2026-10-28T17:42:49.953Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "attribute-97bd00f3-53b3-44fd-9ce3-607d10894fda",
+        "kind": "attribute",
+        "ownerId": "classifier-548c2d45-208f-4794-87ed-29bd10f16db2",
+        "name": "name",
+        "documentation": "",
+        "properties": {
+          "order": 0,
+          "visibility": "package",
+          "type": "String",
+          "multiplicity": "",
+          "defaultValue": "",
+          "isStatic": false,
+          "isDerived": false
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "classifier-eadfec97-d3bd-46fa-b5ac-2d7d74ba75b0",
+        "kind": "class",
+        "ownerId": null,
+        "name": "SymbolModel",
+        "documentation": "Persistent visual representation and color conversion.",
+        "properties": {
+          "stereotype": "Swift source",
+          "isAbstract": false
+        },
+        "createdAt": "2026-10-28T17:42:49.953Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "attribute-9a012671-2381-4020-9cfc-b1860141f6bc",
+        "kind": "attribute",
+        "ownerId": "classifier-eadfec97-d3bd-46fa-b5ac-2d7d74ba75b0",
+        "name": "faviconData",
+        "documentation": "",
+        "properties": {
+          "order": 0,
+          "visibility": "package",
+          "type": "Data?",
+          "multiplicity": "",
+          "defaultValue": "",
+          "isStatic": false,
+          "isDerived": false
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "attribute-d3ab9503-d0a2-4cbf-8930-d96f1d00fcf9",
+        "kind": "attribute",
+        "ownerId": "classifier-eadfec97-d3bd-46fa-b5ac-2d7d74ba75b0",
+        "name": "icon",
+        "documentation": "",
+        "properties": {
+          "order": 1,
+          "visibility": "package",
+          "type": "String",
+          "multiplicity": "",
+          "defaultValue": "",
+          "isStatic": false,
+          "isDerived": false
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "attribute-4481d65c-daf9-4f75-8ac3-bddf67e07b86",
+        "kind": "attribute",
+        "ownerId": "classifier-eadfec97-d3bd-46fa-b5ac-2d7d74ba75b0",
+        "name": "emoji",
+        "documentation": "",
+        "properties": {
+          "order": 2,
+          "visibility": "package",
+          "type": "String",
+          "multiplicity": "",
+          "defaultValue": "",
+          "isStatic": false,
+          "isDerived": false
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "attribute-5cdfdf6a-98f1-427e-8290-d8897d2f634c",
+        "kind": "attribute",
+        "ownerId": "classifier-eadfec97-d3bd-46fa-b5ac-2d7d74ba75b0",
+        "name": "symbolTypeRaw",
+        "documentation": "",
+        "properties": {
+          "order": 3,
+          "visibility": "package",
+          "type": "String",
+          "multiplicity": "",
+          "defaultValue": "",
+          "isStatic": false,
+          "isDerived": false
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "attribute-32c53843-28ba-4322-9b65-a8ce58feda0a",
+        "kind": "attribute",
+        "ownerId": "classifier-eadfec97-d3bd-46fa-b5ac-2d7d74ba75b0",
+        "name": "colorR",
+        "documentation": "",
+        "properties": {
+          "order": 4,
+          "visibility": "package",
+          "type": "Double",
+          "multiplicity": "",
+          "defaultValue": "",
+          "isStatic": false,
+          "isDerived": false
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "attribute-e6576c43-4aa9-45e5-aa84-5556ce130788",
+        "kind": "attribute",
+        "ownerId": "classifier-eadfec97-d3bd-46fa-b5ac-2d7d74ba75b0",
+        "name": "colorG",
+        "documentation": "",
+        "properties": {
+          "order": 5,
+          "visibility": "package",
+          "type": "Double",
+          "multiplicity": "",
+          "defaultValue": "",
+          "isStatic": false,
+          "isDerived": false
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "attribute-215c0085-4e36-4dbc-bef5-0f07ce4a5e26",
+        "kind": "attribute",
+        "ownerId": "classifier-eadfec97-d3bd-46fa-b5ac-2d7d74ba75b0",
+        "name": "colorB",
+        "documentation": "",
+        "properties": {
+          "order": 6,
+          "visibility": "package",
+          "type": "Double",
+          "multiplicity": "",
+          "defaultValue": "",
+          "isStatic": false,
+          "isDerived": false
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "attribute-55fada05-b37b-4c95-b21e-22e3eb3df13b",
+        "kind": "attribute",
+        "ownerId": "classifier-eadfec97-d3bd-46fa-b5ac-2d7d74ba75b0",
+        "name": "alpha",
+        "documentation": "",
+        "properties": {
+          "order": 7,
+          "visibility": "package",
+          "type": "Double",
+          "multiplicity": "",
+          "defaultValue": "",
+          "isStatic": false,
+          "isDerived": false
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "class-relationship-e0404375-6081-47fe-850b-413df8efccf4",
+        "kind": "association",
+        "ownerId": null,
+        "name": "groups / links; inverse; nullify",
+        "documentation": "",
+        "properties": {
+          "sourceEnd": {
+            "role": "links",
+            "multiplicity": "0..*",
+            "navigable": false
+          },
+          "targetEnd": {
+            "role": "groups",
+            "multiplicity": "0..*",
+            "navigable": false
+          }
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z",
+        "sourceId": "classifier-e87d61ec-279c-4633-ac6b-431e585db792",
+        "targetId": "classifier-548c2d45-208f-4794-87ed-29bd10f16db2"
+      },
+      {
+        "id": "class-relationship-6a50890f-6756-4f1a-92e0-2e328fa1b0d5",
+        "kind": "association",
+        "ownerId": null,
+        "name": "symbol",
+        "documentation": "",
+        "properties": {
+          "sourceEnd": {
+            "role": "",
+            "multiplicity": "",
+            "navigable": false
+          },
+          "targetEnd": {
+            "role": "",
+            "multiplicity": "1",
+            "navigable": false
+          }
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z",
+        "sourceId": "classifier-e87d61ec-279c-4633-ac6b-431e585db792",
+        "targetId": "classifier-eadfec97-d3bd-46fa-b5ac-2d7d74ba75b0"
+      },
+      {
+        "id": "class-relationship-b3f14c5b-727f-41c5-a59e-252685035c80",
+        "kind": "association",
+        "ownerId": null,
+        "name": "symbol",
+        "documentation": "",
+        "properties": {
+          "sourceEnd": {
+            "role": "",
+            "multiplicity": "",
+            "navigable": false
+          },
+          "targetEnd": {
+            "role": "",
+            "multiplicity": "1",
+            "navigable": false
+          }
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z",
+        "sourceId": "classifier-548c2d45-208f-4794-87ed-29bd10f16db2",
+        "targetId": "classifier-eadfec97-d3bd-46fa-b5ac-2d7d74ba75b0"
+      },
+      {
+        "id": "note-b9bca603-5057-4266-a18f-246f74ce5b10",
+        "kind": "note",
+        "ownerId": null,
+        "name": "",
+        "documentation": "Same project classifiers as the code view, not copies. Group membership is many-to-many with inverse and nullify deletion. No cascade rule is declared for symbol references. updateLink clears groups for hidden records; toggleHideLink/direct mutation bypass this rule.",
+        "properties": {
+          "targetKind": "diagram",
+          "targetId": null
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      },
+      {
+        "id": "note-c2628fe4-f575-4247-8bae-8451c20278bf",
+        "kind": "note",
+        "ownerId": null,
+        "name": "",
+        "documentation": "Reminder fields store intent only; disabling clears date/all-day. The editor passes its time toggle into reminderAllDay (known mapping mismatch). LinkModel.linkService is @Transient. SymbolModel is reached through persistent relationships although the explicit schema lists LinkModel and GroupModel.",
+        "properties": {
+          "targetKind": "diagram",
+          "targetId": null
+        },
+        "createdAt": "2026-10-28T17:45:32.252Z",
+        "modifiedAt": "2026-10-28T18:14:13.442Z"
+      }
+    ],
+    "views": [
+      {
+        "id": "view-af97143f-3033-47d3-8431-fe8475e91e10",
+        "kind": "shape",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "package-a9bd3591-88ef-4230-9ccc-1ad6efe7b4e2",
+        "parentViewId": null,
+        "style": {},
+        "x": 100,
+        "y": 100,
+        "width": 590,
+        "height": 312,
+        "collapsed": false
+      },
+      {
+        "id": "view-fcd7a2a4-ce41-4188-b434-15cd40f52404",
+        "kind": "shape",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "package-ca3ffb0e-ada5-48f9-9979-99371c802d86",
+        "parentViewId": null,
+        "style": {},
+        "x": 780,
+        "y": 90,
+        "width": 280,
+        "height": 332,
+        "collapsed": false
+      },
+      {
+        "id": "view-9d302dca-0da4-4082-bebd-09566ebc8c3e",
+        "kind": "shape",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "classifier-e87d61ec-279c-4633-ac6b-431e585db792",
+        "parentViewId": null,
+        "style": {},
+        "x": 1265,
+        "y": 256,
+        "width": 230,
+        "height": 244,
+        "collapsed": false
+      },
+      {
+        "id": "view-310cc840-5f9a-4fa5-80cd-e5d003e251b1",
+        "kind": "list",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "attribute-a969d885-7501-4dfc-82c2-d919108b34c2",
+        "parentViewId": null,
+        "style": {},
+        "row": 0
+      },
+      {
+        "id": "view-d6225d15-9d06-4573-b815-4111a0eaa03a",
+        "kind": "list",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "attribute-63ebe89d-33d6-46cc-b87a-8a2695739915",
+        "parentViewId": null,
+        "style": {},
+        "row": 1
+      },
+      {
+        "id": "view-0a9e9464-a7a7-4516-8e15-09760a407a21",
+        "kind": "list",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "attribute-7df8adec-39a7-47aa-8826-eb4f4ea9769b",
+        "parentViewId": null,
+        "style": {},
+        "row": 2
+      },
+      {
+        "id": "view-1a972138-f88a-4bfa-a83d-6f1adfa92d10",
+        "kind": "list",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "attribute-9dc972e6-18e8-4f26-b894-61aceca21040",
+        "parentViewId": null,
+        "style": {},
+        "row": 3
+      },
+      {
+        "id": "view-c64b9545-749a-4645-9e65-8dc90a9c39e7",
+        "kind": "list",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "attribute-4d53da79-b2dd-4a18-8398-08cdcce28f80",
+        "parentViewId": null,
+        "style": {},
+        "row": 4
+      },
+      {
+        "id": "view-09b4db10-2bed-49fc-82be-0dfc9002a5dd",
+        "kind": "list",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "attribute-559a1c3b-eedb-4b5b-8a78-f4a372fbd771",
+        "parentViewId": null,
+        "style": {},
+        "row": 5
+      },
+      {
+        "id": "view-041f74b0-94e3-4d47-8bb2-735ae8834a3d",
+        "kind": "list",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "attribute-a5eb5534-7342-482f-a903-d9882f65174a",
+        "parentViewId": null,
+        "style": {},
+        "row": 6
+      },
+      {
+        "id": "view-54a266a7-f522-459e-bded-ec38c4a57544",
+        "kind": "shape",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "classifier-548c2d45-208f-4794-87ed-29bd10f16db2",
+        "parentViewId": null,
+        "style": {},
+        "x": 1585,
+        "y": 256,
+        "width": 230,
+        "height": 150,
+        "collapsed": false
+      },
+      {
+        "id": "view-2e232c33-82de-4863-a475-e23e3ed1c988",
+        "kind": "list",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "attribute-97bd00f3-53b3-44fd-9ce3-607d10894fda",
+        "parentViewId": null,
+        "style": {},
+        "row": 0
+      },
+      {
+        "id": "view-68b4cef4-a567-4709-b59e-5e15520413b3",
+        "kind": "shape",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "classifier-eadfec97-d3bd-46fa-b5ac-2d7d74ba75b0",
+        "parentViewId": null,
+        "style": {},
+        "x": 1425,
+        "y": 644,
+        "width": 230,
+        "height": 264,
+        "collapsed": false
+      },
+      {
+        "id": "view-78ae93ec-20d4-40eb-9259-d41e98940570",
+        "kind": "list",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "attribute-9a012671-2381-4020-9cfc-b1860141f6bc",
+        "parentViewId": null,
+        "style": {},
+        "row": 0
+      },
+      {
+        "id": "view-15f37274-f207-4ead-bee0-05d9fa0db704",
+        "kind": "list",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "attribute-d3ab9503-d0a2-4cbf-8930-d96f1d00fcf9",
+        "parentViewId": null,
+        "style": {},
+        "row": 1
+      },
+      {
+        "id": "view-727939b5-d1d8-4d5e-ab57-27e24c89d470",
+        "kind": "list",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "attribute-4481d65c-daf9-4f75-8ac3-bddf67e07b86",
+        "parentViewId": null,
+        "style": {},
+        "row": 2
+      },
+      {
+        "id": "view-e1ab8bd3-3299-4143-83e5-3f674dbbb3a4",
+        "kind": "list",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "attribute-5cdfdf6a-98f1-427e-8290-d8897d2f634c",
+        "parentViewId": null,
+        "style": {},
+        "row": 3
+      },
+      {
+        "id": "view-0a78fdfe-2593-46a7-9b54-f40979dcf24f",
+        "kind": "list",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "attribute-32c53843-28ba-4322-9b65-a8ce58feda0a",
+        "parentViewId": null,
+        "style": {},
+        "row": 4
+      },
+      {
+        "id": "view-d2f8521c-336e-406c-9e28-c19620b69452",
+        "kind": "list",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "attribute-e6576c43-4aa9-45e5-aa84-5556ce130788",
+        "parentViewId": null,
+        "style": {},
+        "row": 5
+      },
+      {
+        "id": "view-c7669982-6fc1-4c49-8137-934896d3a7d7",
+        "kind": "list",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "attribute-215c0085-4e36-4dbc-bef5-0f07ce4a5e26",
+        "parentViewId": null,
+        "style": {},
+        "row": 6
+      },
+      {
+        "id": "view-2cd55546-20f4-4947-bd3a-7d77b487232c",
+        "kind": "list",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "attribute-55fada05-b37b-4c95-b21e-22e3eb3df13b",
+        "parentViewId": null,
+        "style": {},
+        "row": 7
+      },
+      {
+        "id": "view-ed3e5536-b0c8-4e9f-baa1-c91a3c30a279",
+        "kind": "edge",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "class-relationship-e0404375-6081-47fe-850b-413df8efccf4",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-bb16c219-d3f8-458e-9c08-6d9adab4a45d",
+        "kind": "edge",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "class-relationship-6a50890f-6756-4f1a-92e0-2e328fa1b0d5",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-1cd791bf-7b45-4459-99e7-7c2d69597ec7",
+        "kind": "edge",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "class-relationship-b3f14c5b-727f-41c5-a59e-252685035c80",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-65047b75-aedd-42b8-8acd-4501e1dfb07c",
+        "kind": "shape",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "note-b9bca603-5057-4266-a18f-246f74ce5b10",
+        "parentViewId": null,
+        "style": {},
+        "x": 3198,
+        "y": 90,
+        "width": 0,
+        "height": 0,
+        "collapsed": false
+      },
+      {
+        "id": "view-e94b20d0-f0a2-41c3-a2c2-91b4379e4c15",
+        "kind": "shape",
+        "diagramId": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+        "elementId": "note-c2628fe4-f575-4247-8bae-8451c20278bf",
+        "parentViewId": null,
+        "style": {},
+        "x": 3198,
+        "y": 254,
+        "width": 0,
+        "height": 0,
+        "collapsed": false
+      }
+    ]
+  }
+}

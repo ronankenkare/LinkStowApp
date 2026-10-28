@@ -1,0 +1,216 @@
+{
+  "baseline_commit": "8dfeb63a03b5bc15a3dd8bb44f636a8b2aec56a5",
+  "application_tests": "Not run; existing test sources were inspected and linked as partial evidence.",
+  "diagrams": [
+    {
+      "id": "diagram-3e478a9d-b35b-414f-8535-4c4a9543bb1c",
+      "title": "01 Stakeholder needs",
+      "kind": "requirements",
+      "validation": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+      "title": "02 System requirements",
+      "kind": "requirements",
+      "validation": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+      "title": "03 System context",
+      "kind": "context",
+      "validation": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "diagram-68ced627-069e-4525-a5fa-c7ef264d924a",
+      "title": "04 Component architecture",
+      "kind": "class",
+      "validation": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "diagram-1496e45a-9d50-4be2-96a1-e986a58aa945",
+      "title": "05 Subsystems to code",
+      "kind": "class",
+      "validation": {
+        "errors": 0,
+        "warnings": 1
+      }
+    },
+    {
+      "id": "diagram-ea71cb71-ba50-45fa-b4bd-a61ffc32cc37",
+      "title": "06 Save-link flow",
+      "kind": "activity",
+      "validation": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+      "title": "07 Data model",
+      "kind": "class",
+      "validation": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+      "title": "08 Main state machine",
+      "kind": "state-machine",
+      "validation": {
+        "errors": 0,
+        "warnings": 3
+      }
+    },
+    {
+      "id": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+      "title": "09 Hidden-link security",
+      "kind": "activity",
+      "validation": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+      "title": "10 Code call paths",
+      "kind": "sequence",
+      "validation": {
+        "errors": 0,
+        "warnings": 0
+      }
+    }
+  ],
+  "drift": {
+    "broken": [],
+    "stale": [],
+    "issues": []
+  },
+  "requirements_coverage": {
+    "total": 22,
+    "covered": 22,
+    "uncoveredIds": [],
+    "ratio": 1,
+    "direction": "something_derives_from_it",
+    "counting": "An element counts as covered when something derives from it \u2014 it has a trace pointing at it.",
+    "otherDirection": {
+      "direction": "it_derives_from_something",
+      "covered": 16,
+      "ratio": 0.7272727272727273,
+      "counting": "An element would count as covered when it derives from something \u2014 it has a trace pointing out of it."
+    },
+    "uncovered": []
+  },
+  "code_coverage": {
+    "total": 242,
+    "covered": 242,
+    "uncoveredIds": [],
+    "ratio": 1,
+    "direction": "it_derives_from_something",
+    "counting": "An element counts as covered when it derives from something \u2014 it has a trace pointing out of it.",
+    "otherDirection": {
+      "direction": "something_derives_from_it",
+      "covered": 153,
+      "ratio": 0.6322314049586777,
+      "counting": "An element would count as covered when something derives from it \u2014 it has a trace pointing at it."
+    },
+    "uncovered": []
+  },
+  "as_of_date": "2026-10-28",
+  "saved_file_check": {
+    "command": "python3 scripts/check_traceability.py",
+    "result": "passed",
+    "diagrams": 10,
+    "needs": 6,
+    "requirements": 16,
+    "source_artifacts": 217,
+    "traces": 709,
+    "code_to_code_connections": 51,
+    "readme_anchors": 25,
+    "readme_bridge_diagrams": 10,
+    "fault_injection_checks": [
+      "Detects a changed Swift source hash",
+      "Detects an unregistered new Swift file",
+      "Detects a missing subsystem-to-code chain",
+      "Detects a missing direct call-site-to-definition trace",
+      "Detects a shifted source range",
+      "Detects a missing diagram-to-README trace",
+      "Detects a missing README-to-code trace",
+      "Detects README content drift",
+      "Detects a removed configuration/resource edge",
+      "Detects a changed binary image payload",
+      "Detects a new untraced asset definition",
+      "Detects changed launch-storyboard selection"
+    ],
+    "configuration_resource_anchors": 65,
+    "configuration_resource_relationships": 138
+  },
+  "code_to_code": {
+    "connections": 51,
+    "native_trace_kind": "represents",
+    "meaning": "Explicit call-site-to-definition mapping; CALLS rationale",
+    "automatic_swift_graph_check": {
+      "source_files": 25,
+      "edges": 57,
+      "dropped": 0,
+      "scope": "Current Plus+C codeGraph implementation run over LinkStow and LinkStowTests Swift sources; heuristic type references, not compiler call resolution."
+    }
+  },
+  "readme_traces": {
+    "diagrams": 10,
+    "section_row_anchors": 25,
+    "relationships": 154,
+    "index": "docs/readme-traces.json"
+  },
+  "cleanup": {
+    "finder_files_removed": 4,
+    "optional_contents_removed": [
+      "LinkStow/Assets.xcassets/Contents.json",
+      "LinkStow/Assets.xcassets/GroupColor/Contents.json",
+      "LinkStow/Assets.xcassets/LinkDemoColors/Contents.json",
+      "LinkStow/Assets.xcassets/MainButton/Contents.json"
+    ],
+    "asset_definitions_retained": 18,
+    "asset_compilation": "Passed for iPhoneOS; before/after compiled named assets and rendition records match.",
+    "compiled_named_assets": 17,
+    "notes": "AccentColor has no assigned colors in the original asset definition and emits no named rendition in either baseline or cleaned catalog."
+  },
+  "configuration_resources": {
+    "anchors": 65,
+    "relationships": 138,
+    "asset_definitions": 18,
+    "literal_references": 22,
+    "image_payloads": 4,
+    "storyboard": {
+      "status": "not-selected-by-launch-settings",
+      "missing_images": [
+        "linkStack_icon"
+      ],
+      "verification": "Effective Xcode Debug iPhoneOS settings and declared Debug/Release settings use generated launch-screen metadata; no UILaunchStoryboardName is configured. App launch was not executed."
+    },
+    "effective_debug_settings": {
+      "GENERATE_INFOPLIST_FILE": "YES",
+      "INFOPLIST_FILE": "LinkStow-Info.plist",
+      "INFOPLIST_KEY_NSFaceIDUsageDescription": "Face ID is used to unlock hidden group.",
+      "INFOPLIST_KEY_UILaunchScreen_Generation": "YES",
+      "INFOPLIST_KEY_UILaunchStoryboardName": null,
+      "CODE_SIGN_ENTITLEMENTS": "LinkStow/LinkStow.entitlements",
+      "IPHONEOS_DEPLOYMENT_TARGET": "26.0",
+      "SWIFT_VERSION": "5.0"
+    },
+    "input_syntax": "XML/plist/JSON parsed successfully",
+    "application_tests": "Not run; no runtime application source or settings changed."
+  }
+}
