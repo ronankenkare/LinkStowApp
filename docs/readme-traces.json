@@ -1,0 +1,1591 @@
+{
+  "format": "linkstow-readme-traces",
+  "version": 1,
+  "readme": {
+    "path": "README.md",
+    "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+    "id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+    "start_line": 1,
+    "end_line": 130
+  },
+  "parts": [
+    {
+      "key": "overview",
+      "symbol": "README \u2014 Overview",
+      "title": "Overview",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-ada898f3-1dec-4ab9-9f74-5a63c38682a4",
+        "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+        "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e"
+      ],
+      "start_line": 5,
+      "end_line": 8,
+      "id": "code-artifact-bc46ef45-cd73-46b1-9eda-ed3d0f6f9adc"
+    },
+    {
+      "key": "feature-saving",
+      "symbol": "README \u2014 Feature: Smart link saving",
+      "title": "Feature: Smart link saving",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+        "code-artifact-d3bfcdaf-8aad-44ca-9fad-1adf8632fc5a",
+        "code-artifact-50637bb6-d675-4da1-902d-52c878361c0e"
+      ],
+      "start_line": 11,
+      "end_line": 11,
+      "id": "code-artifact-e958f1f9-8fa3-46b1-b39e-cb643f5df902"
+    },
+    {
+      "key": "feature-groups",
+      "symbol": "README \u2014 Feature: Groups",
+      "title": "Feature: Groups",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-0d222a7c-b462-40e7-8985-4b92648cb3f5",
+        "code-artifact-d3bfcdaf-8aad-44ca-9fad-1adf8632fc5a",
+        "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e",
+        "code-artifact-9a1f8751-93d6-4191-9956-b157ba076df0"
+      ],
+      "start_line": 12,
+      "end_line": 12,
+      "id": "code-artifact-a20bba91-7cfc-4679-88ba-fd296e43ca09"
+    },
+    {
+      "key": "feature-filtering",
+      "symbol": "README \u2014 Feature: Library filtering",
+      "title": "Feature: Library filtering",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152"
+      ],
+      "start_line": 13,
+      "end_line": 13,
+      "id": "code-artifact-5bfa1d28-c199-49e5-880c-ca1b523fecb6"
+    },
+    {
+      "key": "feature-hidden",
+      "symbol": "README \u2014 Feature: Hidden links",
+      "title": "Feature: Hidden links",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+        "code-artifact-bfaaeef1-f768-4f12-ae68-55dfb23012cb",
+        "code-artifact-3bff9460-3982-43c7-82a7-d27d645c656b",
+        "code-artifact-8446e60c-ab49-4893-b6df-69286282e4f0"
+      ],
+      "start_line": 14,
+      "end_line": 14,
+      "id": "code-artifact-003cead0-2f63-4dd3-8e9f-f1850be9a210"
+    },
+    {
+      "key": "feature-reminders",
+      "symbol": "README \u2014 Feature: Reminder fields",
+      "title": "Feature: Reminder fields",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e",
+        "code-artifact-3bff9460-3982-43c7-82a7-d27d645c656b",
+        "code-artifact-aaea9ff4-463c-46d4-bf99-7adbd7f738d6",
+        "code-artifact-ada898f3-1dec-4ab9-9f74-5a63c38682a4"
+      ],
+      "start_line": 15,
+      "end_line": 15,
+      "id": "code-artifact-ab2ba8ad-0f3d-4625-8761-02f5c319bdbd"
+    },
+    {
+      "key": "feature-qr",
+      "symbol": "README \u2014 Feature: QR codes",
+      "title": "Feature: QR codes",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-15068a32-c7ed-4627-a27a-d5a3ed7a2877",
+        "code-artifact-24790a7e-4fb8-4b8a-8501-2be5618b129d"
+      ],
+      "start_line": 16,
+      "end_line": 16,
+      "id": "code-artifact-9158f32e-2341-4863-90e0-6da6efb01f3c"
+    },
+    {
+      "key": "feature-symbols",
+      "symbol": "README \u2014 Feature: Custom symbols",
+      "title": "Feature: Custom symbols",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-aaea9ff4-463c-46d4-bf99-7adbd7f738d6",
+        "code-artifact-0d222a7c-b462-40e7-8985-4b92648cb3f5",
+        "code-artifact-af41ba10-342e-4c45-bf5c-e3073c3124b0"
+      ],
+      "start_line": 17,
+      "end_line": 17,
+      "id": "code-artifact-d7e44b00-6e69-4dd7-ae06-1400cb9b22f4"
+    },
+    {
+      "key": "feature-appearance",
+      "symbol": "README \u2014 Feature: Appearance settings",
+      "title": "Feature: Appearance settings",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-bfaaeef1-f768-4f12-ae68-55dfb23012cb",
+        "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152"
+      ],
+      "start_line": 18,
+      "end_line": 18,
+      "id": "code-artifact-a1c1f30f-d785-42bb-8435-3d1a2db1e840"
+    },
+    {
+      "key": "prerequisites",
+      "symbol": "README \u2014 Requirements / build settings",
+      "title": "Requirements / build settings",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-4d729977-1318-4870-a8d7-a073403b4bfc"
+      ],
+      "start_line": 20,
+      "end_line": 25,
+      "id": "code-artifact-df2cb27d-51b0-4509-bd88-85e7c24cdafe"
+    },
+    {
+      "key": "setup",
+      "symbol": "README \u2014 Getting started and local storage",
+      "title": "Getting started and local storage",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-ada898f3-1dec-4ab9-9f74-5a63c38682a4",
+        "code-artifact-cb1f48b8-7006-46c6-85cf-6311028f41ea"
+      ],
+      "start_line": 26,
+      "end_line": 34,
+      "id": "code-artifact-7917a88e-1ab9-4440-b1fd-c65644ffdacc"
+    },
+    {
+      "key": "structure",
+      "symbol": "README \u2014 Project structure",
+      "title": "Project structure",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-ada898f3-1dec-4ab9-9f74-5a63c38682a4",
+        "code-artifact-621dd448-dd11-4bcb-a650-2759c8873d2d",
+        "code-artifact-cb1f48b8-7006-46c6-85cf-6311028f41ea",
+        "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+        "code-artifact-d3bfcdaf-8aad-44ca-9fad-1adf8632fc5a",
+        "code-artifact-aaea9ff4-463c-46d4-bf99-7adbd7f738d6",
+        "code-artifact-3bff9460-3982-43c7-82a7-d27d645c656b",
+        "code-artifact-50637bb6-d675-4da1-902d-52c878361c0e",
+        "code-artifact-0d222a7c-b462-40e7-8985-4b92648cb3f5",
+        "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e",
+        "code-artifact-9a1f8751-93d6-4191-9956-b157ba076df0",
+        "code-artifact-af41ba10-342e-4c45-bf5c-e3073c3124b0",
+        "code-artifact-bfaaeef1-f768-4f12-ae68-55dfb23012cb",
+        "code-artifact-c1adf09d-8804-47f7-b3e1-4863a8828865",
+        "code-artifact-8446e60c-ab49-4893-b6df-69286282e4f0",
+        "code-artifact-24790a7e-4fb8-4b8a-8501-2be5618b129d",
+        "code-artifact-15068a32-c7ed-4627-a27a-d5a3ed7a2877"
+      ],
+      "start_line": 35,
+      "end_line": 63,
+      "id": "code-artifact-da4989c4-65a9-43de-b77d-4d504ce6d90d"
+    },
+    {
+      "key": "architecture",
+      "symbol": "README \u2014 Architecture",
+      "title": "Architecture",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-621dd448-dd11-4bcb-a650-2759c8873d2d",
+        "code-artifact-d3bfcdaf-8aad-44ca-9fad-1adf8632fc5a",
+        "code-artifact-3bff9460-3982-43c7-82a7-d27d645c656b",
+        "code-artifact-50637bb6-d675-4da1-902d-52c878361c0e",
+        "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+        "code-artifact-cb1f48b8-7006-46c6-85cf-6311028f41ea",
+        "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e",
+        "code-artifact-9a1f8751-93d6-4191-9956-b157ba076df0"
+      ],
+      "start_line": 64,
+      "end_line": 80,
+      "id": "code-artifact-ed718e89-1af4-4fdd-8c69-e23d98b5017a"
+    },
+    {
+      "key": "models",
+      "symbol": "README \u2014 Data models",
+      "title": "Data models",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e",
+        "code-artifact-9a1f8751-93d6-4191-9956-b157ba076df0",
+        "code-artifact-af41ba10-342e-4c45-bf5c-e3073c3124b0"
+      ],
+      "start_line": 81,
+      "end_line": 97,
+      "id": "code-artifact-3f82b63c-aecd-4733-a13a-422d0bf6c194"
+    },
+    {
+      "key": "tests",
+      "symbol": "README \u2014 Running tests and trace verification",
+      "title": "Running tests and trace verification",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-5dddc961-2c88-4ceb-a57b-63c29b14bc47",
+        "code-artifact-f32f2350-a72f-4bf6-9fd3-d763a4b17ae2",
+        "code-artifact-2aca0046-63d4-45aa-9fd6-d1d3df8e2f0a",
+        "code-artifact-cfae0a82-57df-4b7e-9d61-cd8cd45e2688",
+        "code-artifact-c3c91033-6d5e-4881-9e36-e1d4691ae54d",
+        "code-artifact-155ec029-9dac-47b5-82e8-e7a0c0a99f58",
+        "code-artifact-f23007c4-e1d0-48d4-b663-09b2ddbd3a94",
+        "code-artifact-dc77196c-844d-4be5-911c-51f0bea8ce37",
+        "code-artifact-1761e7ba-af20-486b-a6a2-f3e7e7cb971b"
+      ],
+      "start_line": 98,
+      "end_line": 114,
+      "id": "code-artifact-d2b6acf6-b4e2-41eb-a6ba-24055b5f5ac4"
+    },
+    {
+      "key": "diagram-needs",
+      "symbol": "README \u2014 Diagram bridge: 01 Stakeholder needs",
+      "title": "Diagram bridge: 01 Stakeholder needs",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+        "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e"
+      ],
+      "start_line": 121,
+      "end_line": 121,
+      "id": "code-artifact-c50f437a-1eda-4c2c-822c-08f5c2af0f67"
+    },
+    {
+      "key": "diagram-requirements",
+      "symbol": "README \u2014 Diagram bridge: 02 System requirements",
+      "title": "Diagram bridge: 02 System requirements",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-d3bfcdaf-8aad-44ca-9fad-1adf8632fc5a",
+        "code-artifact-3bff9460-3982-43c7-82a7-d27d645c656b",
+        "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+        "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e"
+      ],
+      "start_line": 122,
+      "end_line": 122,
+      "id": "code-artifact-1aaec6f1-191d-4fef-899a-3a242b1829d9"
+    },
+    {
+      "key": "diagram-context",
+      "symbol": "README \u2014 Diagram bridge: 03 System context",
+      "title": "Diagram bridge: 03 System context",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-cb1f48b8-7006-46c6-85cf-6311028f41ea",
+        "code-artifact-50637bb6-d675-4da1-902d-52c878361c0e",
+        "code-artifact-8446e60c-ab49-4893-b6df-69286282e4f0"
+      ],
+      "start_line": 123,
+      "end_line": 123,
+      "id": "code-artifact-44ace2e5-bcee-4239-88c2-d1f48d35b21f"
+    },
+    {
+      "key": "diagram-architecture",
+      "symbol": "README \u2014 Diagram bridge: 04 Component architecture",
+      "title": "Diagram bridge: 04 Component architecture",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-621dd448-dd11-4bcb-a650-2759c8873d2d",
+        "code-artifact-d3bfcdaf-8aad-44ca-9fad-1adf8632fc5a",
+        "code-artifact-3bff9460-3982-43c7-82a7-d27d645c656b"
+      ],
+      "start_line": 124,
+      "end_line": 124,
+      "id": "code-artifact-28da3173-a0c7-4e90-a31a-34070c3751c9"
+    },
+    {
+      "key": "diagram-code",
+      "symbol": "README \u2014 Diagram bridge: 05 Subsystems to code",
+      "title": "Diagram bridge: 05 Subsystems to code",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-ada898f3-1dec-4ab9-9f74-5a63c38682a4",
+        "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+        "code-artifact-aaea9ff4-463c-46d4-bf99-7adbd7f738d6"
+      ],
+      "start_line": 125,
+      "end_line": 125,
+      "id": "code-artifact-60053f02-f5ad-4946-ae4f-98f558750171"
+    },
+    {
+      "key": "diagram-save",
+      "symbol": "README \u2014 Diagram bridge: 06 Save-link flow",
+      "title": "Diagram bridge: 06 Save-link flow",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-dcecc3b6-267c-4c54-9a55-15dd23cd2f37",
+        "code-artifact-576d5fd5-63da-4828-860d-2a2c94246f9f",
+        "code-artifact-247793d7-84d4-42eb-82ae-ef009a3a637d"
+      ],
+      "start_line": 126,
+      "end_line": 126,
+      "id": "code-artifact-c93220a2-eca9-464f-9d68-b2aba4f93cab"
+    },
+    {
+      "key": "diagram-data",
+      "symbol": "README \u2014 Diagram bridge: 07 Data model",
+      "title": "Diagram bridge: 07 Data model",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e",
+        "code-artifact-9a1f8751-93d6-4191-9956-b157ba076df0",
+        "code-artifact-af41ba10-342e-4c45-bf5c-e3073c3124b0"
+      ],
+      "start_line": 127,
+      "end_line": 127,
+      "id": "code-artifact-c3e5b9fd-7340-4bee-a4f8-ead1aa462e19"
+    },
+    {
+      "key": "diagram-state",
+      "symbol": "README \u2014 Diagram bridge: 08 Main state machine",
+      "title": "Diagram bridge: 08 Main state machine",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+        "code-artifact-17bc04c3-d7cd-4ec4-9109-c87ccbfd9bc6"
+      ],
+      "start_line": 128,
+      "end_line": 128,
+      "id": "code-artifact-586cb1b8-5a71-4719-a6d4-d6f4279e9263"
+    },
+    {
+      "key": "diagram-security",
+      "symbol": "README \u2014 Diagram bridge: 09 Hidden-link security",
+      "title": "Diagram bridge: 09 Hidden-link security",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-8446e60c-ab49-4893-b6df-69286282e4f0",
+        "code-artifact-3bff9460-3982-43c7-82a7-d27d645c656b",
+        "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152"
+      ],
+      "start_line": 129,
+      "end_line": 129,
+      "id": "code-artifact-84cf7cdf-7b2b-42e9-8949-761305e63847"
+    },
+    {
+      "key": "diagram-calls",
+      "symbol": "README \u2014 Diagram bridge: 10 Code call paths",
+      "title": "Diagram bridge: 10 Code call paths",
+      "path": "README.md",
+      "sha256": "28aab411a2da14074d81821178a154346ed8ea27f50d57ba82a24f1b21616cdf",
+      "source_ids": [
+        "code-artifact-576d5fd5-63da-4828-860d-2a2c94246f9f",
+        "code-artifact-247793d7-84d4-42eb-82ae-ef009a3a637d",
+        "code-artifact-db390592-030b-4248-9674-c7f4adc938da",
+        "code-artifact-525be922-2b0e-48ea-9d1c-41122e5cc83f"
+      ],
+      "start_line": 130,
+      "end_line": 130,
+      "id": "code-artifact-82b7150a-fad0-4ea9-9db1-9c314df8c1fe"
+    }
+  ],
+  "diagram_bridges": [
+    {
+      "diagram_id": "diagram-3e478a9d-b35b-414f-8535-4c4a9543bb1c",
+      "title": "01 Stakeholder needs",
+      "source_ids": [
+        "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+        "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e"
+      ],
+      "readme_part_id": "code-artifact-c50f437a-1eda-4c2c-822c-08f5c2af0f67"
+    },
+    {
+      "diagram_id": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+      "title": "02 System requirements",
+      "source_ids": [
+        "code-artifact-d3bfcdaf-8aad-44ca-9fad-1adf8632fc5a",
+        "code-artifact-3bff9460-3982-43c7-82a7-d27d645c656b",
+        "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+        "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e"
+      ],
+      "readme_part_id": "code-artifact-1aaec6f1-191d-4fef-899a-3a242b1829d9"
+    },
+    {
+      "diagram_id": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+      "title": "03 System context",
+      "source_ids": [
+        "code-artifact-cb1f48b8-7006-46c6-85cf-6311028f41ea",
+        "code-artifact-50637bb6-d675-4da1-902d-52c878361c0e",
+        "code-artifact-8446e60c-ab49-4893-b6df-69286282e4f0"
+      ],
+      "readme_part_id": "code-artifact-44ace2e5-bcee-4239-88c2-d1f48d35b21f"
+    },
+    {
+      "diagram_id": "diagram-68ced627-069e-4525-a5fa-c7ef264d924a",
+      "title": "04 Component architecture",
+      "source_ids": [
+        "code-artifact-621dd448-dd11-4bcb-a650-2759c8873d2d",
+        "code-artifact-d3bfcdaf-8aad-44ca-9fad-1adf8632fc5a",
+        "code-artifact-3bff9460-3982-43c7-82a7-d27d645c656b"
+      ],
+      "readme_part_id": "code-artifact-28da3173-a0c7-4e90-a31a-34070c3751c9"
+    },
+    {
+      "diagram_id": "diagram-1496e45a-9d50-4be2-96a1-e986a58aa945",
+      "title": "05 Subsystems to code",
+      "source_ids": [
+        "code-artifact-ada898f3-1dec-4ab9-9f74-5a63c38682a4",
+        "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+        "code-artifact-aaea9ff4-463c-46d4-bf99-7adbd7f738d6"
+      ],
+      "readme_part_id": "code-artifact-60053f02-f5ad-4946-ae4f-98f558750171"
+    },
+    {
+      "diagram_id": "diagram-ea71cb71-ba50-45fa-b4bd-a61ffc32cc37",
+      "title": "06 Save-link flow",
+      "source_ids": [
+        "code-artifact-dcecc3b6-267c-4c54-9a55-15dd23cd2f37",
+        "code-artifact-576d5fd5-63da-4828-860d-2a2c94246f9f",
+        "code-artifact-247793d7-84d4-42eb-82ae-ef009a3a637d"
+      ],
+      "readme_part_id": "code-artifact-c93220a2-eca9-464f-9d68-b2aba4f93cab"
+    },
+    {
+      "diagram_id": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+      "title": "07 Data model",
+      "source_ids": [
+        "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e",
+        "code-artifact-9a1f8751-93d6-4191-9956-b157ba076df0",
+        "code-artifact-af41ba10-342e-4c45-bf5c-e3073c3124b0"
+      ],
+      "readme_part_id": "code-artifact-c3e5b9fd-7340-4bee-a4f8-ead1aa462e19"
+    },
+    {
+      "diagram_id": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+      "title": "08 Main state machine",
+      "source_ids": [
+        "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+        "code-artifact-17bc04c3-d7cd-4ec4-9109-c87ccbfd9bc6"
+      ],
+      "readme_part_id": "code-artifact-586cb1b8-5a71-4719-a6d4-d6f4279e9263"
+    },
+    {
+      "diagram_id": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+      "title": "09 Hidden-link security",
+      "source_ids": [
+        "code-artifact-8446e60c-ab49-4893-b6df-69286282e4f0",
+        "code-artifact-3bff9460-3982-43c7-82a7-d27d645c656b",
+        "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152"
+      ],
+      "readme_part_id": "code-artifact-84cf7cdf-7b2b-42e9-8949-761305e63847"
+    },
+    {
+      "diagram_id": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+      "title": "10 Code call paths",
+      "source_ids": [
+        "code-artifact-576d5fd5-63da-4828-860d-2a2c94246f9f",
+        "code-artifact-247793d7-84d4-42eb-82ae-ef009a3a637d",
+        "code-artifact-db390592-030b-4248-9674-c7f4adc938da",
+        "code-artifact-525be922-2b0e-48ea-9d1c-41122e5cc83f"
+      ],
+      "readme_part_id": "code-artifact-82b7150a-fad0-4ea9-9db1-9c314df8c1fe"
+    }
+  ],
+  "edges": [
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "target_id": "system-of-interest-b98c803f-97d8-41fa-bd9e-7d144f1bf70f",
+      "role": "readme-describes-system",
+      "rationale": "README is explanatory documentation of the implemented LinkStow system; it is not stakeholder approval or execution evidence."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-bc46ef45-cd73-46b1-9eda-ed3d0f6f9adc",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-bc46ef45-cd73-46b1-9eda-ed3d0f6f9adc",
+      "target_id": "code-artifact-ada898f3-1dec-4ab9-9f74-5a63c38682a4",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Overview describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-bc46ef45-cd73-46b1-9eda-ed3d0f6f9adc",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Overview describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-bc46ef45-cd73-46b1-9eda-ed3d0f6f9adc",
+      "target_id": "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Overview describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-e958f1f9-8fa3-46b1-b39e-cb643f5df902",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-e958f1f9-8fa3-46b1-b39e-cb643f5df902",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Smart link saving describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-e958f1f9-8fa3-46b1-b39e-cb643f5df902",
+      "target_id": "code-artifact-d3bfcdaf-8aad-44ca-9fad-1adf8632fc5a",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Smart link saving describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-e958f1f9-8fa3-46b1-b39e-cb643f5df902",
+      "target_id": "code-artifact-50637bb6-d675-4da1-902d-52c878361c0e",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Smart link saving describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-a20bba91-7cfc-4679-88ba-fd296e43ca09",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-a20bba91-7cfc-4679-88ba-fd296e43ca09",
+      "target_id": "code-artifact-0d222a7c-b462-40e7-8985-4b92648cb3f5",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Groups describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-a20bba91-7cfc-4679-88ba-fd296e43ca09",
+      "target_id": "code-artifact-d3bfcdaf-8aad-44ca-9fad-1adf8632fc5a",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Groups describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-a20bba91-7cfc-4679-88ba-fd296e43ca09",
+      "target_id": "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Groups describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-a20bba91-7cfc-4679-88ba-fd296e43ca09",
+      "target_id": "code-artifact-9a1f8751-93d6-4191-9956-b157ba076df0",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Groups describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-5bfa1d28-c199-49e5-880c-ca1b523fecb6",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-5bfa1d28-c199-49e5-880c-ca1b523fecb6",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Library filtering describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-003cead0-2f63-4dd3-8e9f-f1850be9a210",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-003cead0-2f63-4dd3-8e9f-f1850be9a210",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Hidden links describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-003cead0-2f63-4dd3-8e9f-f1850be9a210",
+      "target_id": "code-artifact-bfaaeef1-f768-4f12-ae68-55dfb23012cb",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Hidden links describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-003cead0-2f63-4dd3-8e9f-f1850be9a210",
+      "target_id": "code-artifact-3bff9460-3982-43c7-82a7-d27d645c656b",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Hidden links describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-003cead0-2f63-4dd3-8e9f-f1850be9a210",
+      "target_id": "code-artifact-8446e60c-ab49-4893-b6df-69286282e4f0",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Hidden links describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-ab2ba8ad-0f3d-4625-8761-02f5c319bdbd",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-ab2ba8ad-0f3d-4625-8761-02f5c319bdbd",
+      "target_id": "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Reminder fields describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-ab2ba8ad-0f3d-4625-8761-02f5c319bdbd",
+      "target_id": "code-artifact-3bff9460-3982-43c7-82a7-d27d645c656b",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Reminder fields describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-ab2ba8ad-0f3d-4625-8761-02f5c319bdbd",
+      "target_id": "code-artifact-aaea9ff4-463c-46d4-bf99-7adbd7f738d6",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Reminder fields describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-ab2ba8ad-0f3d-4625-8761-02f5c319bdbd",
+      "target_id": "code-artifact-ada898f3-1dec-4ab9-9f74-5a63c38682a4",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Reminder fields describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-9158f32e-2341-4863-90e0-6da6efb01f3c",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-9158f32e-2341-4863-90e0-6da6efb01f3c",
+      "target_id": "code-artifact-15068a32-c7ed-4627-a27a-d5a3ed7a2877",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: QR codes describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-9158f32e-2341-4863-90e0-6da6efb01f3c",
+      "target_id": "code-artifact-24790a7e-4fb8-4b8a-8501-2be5618b129d",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: QR codes describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-d7e44b00-6e69-4dd7-ae06-1400cb9b22f4",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-d7e44b00-6e69-4dd7-ae06-1400cb9b22f4",
+      "target_id": "code-artifact-aaea9ff4-463c-46d4-bf99-7adbd7f738d6",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Custom symbols describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-d7e44b00-6e69-4dd7-ae06-1400cb9b22f4",
+      "target_id": "code-artifact-0d222a7c-b462-40e7-8985-4b92648cb3f5",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Custom symbols describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-d7e44b00-6e69-4dd7-ae06-1400cb9b22f4",
+      "target_id": "code-artifact-af41ba10-342e-4c45-bf5c-e3073c3124b0",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Custom symbols describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-a1c1f30f-d785-42bb-8435-3d1a2db1e840",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-a1c1f30f-d785-42bb-8435-3d1a2db1e840",
+      "target_id": "code-artifact-bfaaeef1-f768-4f12-ae68-55dfb23012cb",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Appearance settings describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-a1c1f30f-d785-42bb-8435-3d1a2db1e840",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Feature: Appearance settings describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-df2cb27d-51b0-4509-bd88-85e7c24cdafe",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-df2cb27d-51b0-4509-bd88-85e7c24cdafe",
+      "target_id": "code-artifact-4d729977-1318-4870-a8d7-a073403b4bfc",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Requirements / build settings describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-7917a88e-1ab9-4440-b1fd-c65644ffdacc",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-7917a88e-1ab9-4440-b1fd-c65644ffdacc",
+      "target_id": "code-artifact-ada898f3-1dec-4ab9-9f74-5a63c38682a4",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Getting started and local storage describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-7917a88e-1ab9-4440-b1fd-c65644ffdacc",
+      "target_id": "code-artifact-cb1f48b8-7006-46c6-85cf-6311028f41ea",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Getting started and local storage describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-da4989c4-65a9-43de-b77d-4d504ce6d90d",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-da4989c4-65a9-43de-b77d-4d504ce6d90d",
+      "target_id": "code-artifact-ada898f3-1dec-4ab9-9f74-5a63c38682a4",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Project structure describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-da4989c4-65a9-43de-b77d-4d504ce6d90d",
+      "target_id": "code-artifact-621dd448-dd11-4bcb-a650-2759c8873d2d",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Project structure describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-da4989c4-65a9-43de-b77d-4d504ce6d90d",
+      "target_id": "code-artifact-cb1f48b8-7006-46c6-85cf-6311028f41ea",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Project structure describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-da4989c4-65a9-43de-b77d-4d504ce6d90d",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Project structure describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-da4989c4-65a9-43de-b77d-4d504ce6d90d",
+      "target_id": "code-artifact-d3bfcdaf-8aad-44ca-9fad-1adf8632fc5a",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Project structure describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-da4989c4-65a9-43de-b77d-4d504ce6d90d",
+      "target_id": "code-artifact-aaea9ff4-463c-46d4-bf99-7adbd7f738d6",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Project structure describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-da4989c4-65a9-43de-b77d-4d504ce6d90d",
+      "target_id": "code-artifact-3bff9460-3982-43c7-82a7-d27d645c656b",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Project structure describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-da4989c4-65a9-43de-b77d-4d504ce6d90d",
+      "target_id": "code-artifact-50637bb6-d675-4da1-902d-52c878361c0e",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Project structure describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-da4989c4-65a9-43de-b77d-4d504ce6d90d",
+      "target_id": "code-artifact-0d222a7c-b462-40e7-8985-4b92648cb3f5",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Project structure describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-da4989c4-65a9-43de-b77d-4d504ce6d90d",
+      "target_id": "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Project structure describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-da4989c4-65a9-43de-b77d-4d504ce6d90d",
+      "target_id": "code-artifact-9a1f8751-93d6-4191-9956-b157ba076df0",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Project structure describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-da4989c4-65a9-43de-b77d-4d504ce6d90d",
+      "target_id": "code-artifact-af41ba10-342e-4c45-bf5c-e3073c3124b0",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Project structure describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-da4989c4-65a9-43de-b77d-4d504ce6d90d",
+      "target_id": "code-artifact-bfaaeef1-f768-4f12-ae68-55dfb23012cb",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Project structure describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-da4989c4-65a9-43de-b77d-4d504ce6d90d",
+      "target_id": "code-artifact-c1adf09d-8804-47f7-b3e1-4863a8828865",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Project structure describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-da4989c4-65a9-43de-b77d-4d504ce6d90d",
+      "target_id": "code-artifact-8446e60c-ab49-4893-b6df-69286282e4f0",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Project structure describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-da4989c4-65a9-43de-b77d-4d504ce6d90d",
+      "target_id": "code-artifact-24790a7e-4fb8-4b8a-8501-2be5618b129d",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Project structure describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-da4989c4-65a9-43de-b77d-4d504ce6d90d",
+      "target_id": "code-artifact-15068a32-c7ed-4627-a27a-d5a3ed7a2877",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Project structure describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-ed718e89-1af4-4fdd-8c69-e23d98b5017a",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-ed718e89-1af4-4fdd-8c69-e23d98b5017a",
+      "target_id": "code-artifact-621dd448-dd11-4bcb-a650-2759c8873d2d",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Architecture describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-ed718e89-1af4-4fdd-8c69-e23d98b5017a",
+      "target_id": "code-artifact-d3bfcdaf-8aad-44ca-9fad-1adf8632fc5a",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Architecture describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-ed718e89-1af4-4fdd-8c69-e23d98b5017a",
+      "target_id": "code-artifact-3bff9460-3982-43c7-82a7-d27d645c656b",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Architecture describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-ed718e89-1af4-4fdd-8c69-e23d98b5017a",
+      "target_id": "code-artifact-50637bb6-d675-4da1-902d-52c878361c0e",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Architecture describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-ed718e89-1af4-4fdd-8c69-e23d98b5017a",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Architecture describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-ed718e89-1af4-4fdd-8c69-e23d98b5017a",
+      "target_id": "code-artifact-cb1f48b8-7006-46c6-85cf-6311028f41ea",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Architecture describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-ed718e89-1af4-4fdd-8c69-e23d98b5017a",
+      "target_id": "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Architecture describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-ed718e89-1af4-4fdd-8c69-e23d98b5017a",
+      "target_id": "code-artifact-9a1f8751-93d6-4191-9956-b157ba076df0",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Architecture describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-3f82b63c-aecd-4733-a13a-422d0bf6c194",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-3f82b63c-aecd-4733-a13a-422d0bf6c194",
+      "target_id": "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Data models describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-3f82b63c-aecd-4733-a13a-422d0bf6c194",
+      "target_id": "code-artifact-9a1f8751-93d6-4191-9956-b157ba076df0",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Data models describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-3f82b63c-aecd-4733-a13a-422d0bf6c194",
+      "target_id": "code-artifact-af41ba10-342e-4c45-bf5c-e3073c3124b0",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Data models describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-d2b6acf6-b4e2-41eb-a6ba-24055b5f5ac4",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-d2b6acf6-b4e2-41eb-a6ba-24055b5f5ac4",
+      "target_id": "code-artifact-5dddc961-2c88-4ceb-a57b-63c29b14bc47",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Running tests and trace verification describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-d2b6acf6-b4e2-41eb-a6ba-24055b5f5ac4",
+      "target_id": "code-artifact-f32f2350-a72f-4bf6-9fd3-d763a4b17ae2",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Running tests and trace verification describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-d2b6acf6-b4e2-41eb-a6ba-24055b5f5ac4",
+      "target_id": "code-artifact-2aca0046-63d4-45aa-9fd6-d1d3df8e2f0a",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Running tests and trace verification describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-d2b6acf6-b4e2-41eb-a6ba-24055b5f5ac4",
+      "target_id": "code-artifact-cfae0a82-57df-4b7e-9d61-cd8cd45e2688",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Running tests and trace verification describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-d2b6acf6-b4e2-41eb-a6ba-24055b5f5ac4",
+      "target_id": "code-artifact-c3c91033-6d5e-4881-9e36-e1d4691ae54d",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Running tests and trace verification describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-d2b6acf6-b4e2-41eb-a6ba-24055b5f5ac4",
+      "target_id": "code-artifact-155ec029-9dac-47b5-82e8-e7a0c0a99f58",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Running tests and trace verification describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-d2b6acf6-b4e2-41eb-a6ba-24055b5f5ac4",
+      "target_id": "code-artifact-f23007c4-e1d0-48d4-b663-09b2ddbd3a94",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Running tests and trace verification describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-d2b6acf6-b4e2-41eb-a6ba-24055b5f5ac4",
+      "target_id": "code-artifact-dc77196c-844d-4be5-911c-51f0bea8ce37",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Running tests and trace verification describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-d2b6acf6-b4e2-41eb-a6ba-24055b5f5ac4",
+      "target_id": "code-artifact-1761e7ba-af20-486b-a6a2-f3e7e7cb971b",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Running tests and trace verification describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-c50f437a-1eda-4c2c-822c-08f5c2af0f67",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-c50f437a-1eda-4c2c-822c-08f5c2af0f67",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 01 Stakeholder needs describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-c50f437a-1eda-4c2c-822c-08f5c2af0f67",
+      "target_id": "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 01 Stakeholder needs describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-1aaec6f1-191d-4fef-899a-3a242b1829d9",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-1aaec6f1-191d-4fef-899a-3a242b1829d9",
+      "target_id": "code-artifact-d3bfcdaf-8aad-44ca-9fad-1adf8632fc5a",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 02 System requirements describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-1aaec6f1-191d-4fef-899a-3a242b1829d9",
+      "target_id": "code-artifact-3bff9460-3982-43c7-82a7-d27d645c656b",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 02 System requirements describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-1aaec6f1-191d-4fef-899a-3a242b1829d9",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 02 System requirements describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-1aaec6f1-191d-4fef-899a-3a242b1829d9",
+      "target_id": "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 02 System requirements describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-44ace2e5-bcee-4239-88c2-d1f48d35b21f",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-44ace2e5-bcee-4239-88c2-d1f48d35b21f",
+      "target_id": "code-artifact-cb1f48b8-7006-46c6-85cf-6311028f41ea",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 03 System context describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-44ace2e5-bcee-4239-88c2-d1f48d35b21f",
+      "target_id": "code-artifact-50637bb6-d675-4da1-902d-52c878361c0e",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 03 System context describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-44ace2e5-bcee-4239-88c2-d1f48d35b21f",
+      "target_id": "code-artifact-8446e60c-ab49-4893-b6df-69286282e4f0",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 03 System context describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-28da3173-a0c7-4e90-a31a-34070c3751c9",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-28da3173-a0c7-4e90-a31a-34070c3751c9",
+      "target_id": "code-artifact-621dd448-dd11-4bcb-a650-2759c8873d2d",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 04 Component architecture describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-28da3173-a0c7-4e90-a31a-34070c3751c9",
+      "target_id": "code-artifact-d3bfcdaf-8aad-44ca-9fad-1adf8632fc5a",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 04 Component architecture describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-28da3173-a0c7-4e90-a31a-34070c3751c9",
+      "target_id": "code-artifact-3bff9460-3982-43c7-82a7-d27d645c656b",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 04 Component architecture describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-60053f02-f5ad-4946-ae4f-98f558750171",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-60053f02-f5ad-4946-ae4f-98f558750171",
+      "target_id": "code-artifact-ada898f3-1dec-4ab9-9f74-5a63c38682a4",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 05 Subsystems to code describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-60053f02-f5ad-4946-ae4f-98f558750171",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 05 Subsystems to code describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-60053f02-f5ad-4946-ae4f-98f558750171",
+      "target_id": "code-artifact-aaea9ff4-463c-46d4-bf99-7adbd7f738d6",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 05 Subsystems to code describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-c93220a2-eca9-464f-9d68-b2aba4f93cab",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-c93220a2-eca9-464f-9d68-b2aba4f93cab",
+      "target_id": "code-artifact-dcecc3b6-267c-4c54-9a55-15dd23cd2f37",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 06 Save-link flow describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-c93220a2-eca9-464f-9d68-b2aba4f93cab",
+      "target_id": "code-artifact-576d5fd5-63da-4828-860d-2a2c94246f9f",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 06 Save-link flow describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-c93220a2-eca9-464f-9d68-b2aba4f93cab",
+      "target_id": "code-artifact-247793d7-84d4-42eb-82ae-ef009a3a637d",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 06 Save-link flow describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-c3e5b9fd-7340-4bee-a4f8-ead1aa462e19",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-c3e5b9fd-7340-4bee-a4f8-ead1aa462e19",
+      "target_id": "code-artifact-5836852b-fb79-41ed-a538-75c641ee9a6e",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 07 Data model describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-c3e5b9fd-7340-4bee-a4f8-ead1aa462e19",
+      "target_id": "code-artifact-9a1f8751-93d6-4191-9956-b157ba076df0",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 07 Data model describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-c3e5b9fd-7340-4bee-a4f8-ead1aa462e19",
+      "target_id": "code-artifact-af41ba10-342e-4c45-bf5c-e3073c3124b0",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 07 Data model describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-586cb1b8-5a71-4719-a6d4-d6f4279e9263",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-586cb1b8-5a71-4719-a6d4-d6f4279e9263",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 08 Main state machine describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-586cb1b8-5a71-4719-a6d4-d6f4279e9263",
+      "target_id": "code-artifact-17bc04c3-d7cd-4ec4-9109-c87ccbfd9bc6",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 08 Main state machine describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-84cf7cdf-7b2b-42e9-8949-761305e63847",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-84cf7cdf-7b2b-42e9-8949-761305e63847",
+      "target_id": "code-artifact-8446e60c-ab49-4893-b6df-69286282e4f0",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 09 Hidden-link security describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-84cf7cdf-7b2b-42e9-8949-761305e63847",
+      "target_id": "code-artifact-3bff9460-3982-43c7-82a7-d27d645c656b",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 09 Hidden-link security describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-84cf7cdf-7b2b-42e9-8949-761305e63847",
+      "target_id": "code-artifact-dc754e4f-acdb-48c4-a9d2-0022a2bf5152",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 09 Hidden-link security describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "refines",
+      "source_id": "code-artifact-82b7150a-fad0-4ea9-9db1-9c314df8c1fe",
+      "target_id": "code-artifact-94eee4b2-a85a-40cd-afa3-44ca460e35fd",
+      "role": "readme-section",
+      "rationale": "A precise Markdown section/row within the README document. Whole-file SHA-256 records this documentation baseline."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-82b7150a-fad0-4ea9-9db1-9c314df8c1fe",
+      "target_id": "code-artifact-576d5fd5-63da-4828-860d-2a2c94246f9f",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 10 Code call paths describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-82b7150a-fad0-4ea9-9db1-9c314df8c1fe",
+      "target_id": "code-artifact-247793d7-84d4-42eb-82ae-ef009a3a637d",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 10 Code call paths describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-82b7150a-fad0-4ea9-9db1-9c314df8c1fe",
+      "target_id": "code-artifact-db390592-030b-4248-9674-c7f4adc938da",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 10 Code call paths describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "code-artifact-82b7150a-fad0-4ea9-9db1-9c314df8c1fe",
+      "target_id": "code-artifact-525be922-2b0e-48ea-9d1c-41122e5cc83f",
+      "role": "readme-to-code",
+      "rationale": "DOCUMENTS: Diagram bridge: 10 Code call paths describes the behavior/configuration in this source artifact. It does not claim successful test execution or add a runtime dependency."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-3e478a9d-b35b-414f-8535-4c4a9543bb1c",
+      "target_id": "code-artifact-c50f437a-1eda-4c2c-822c-08f5c2af0f67",
+      "role": "diagram-to-readme",
+      "rationale": "DOCUMENTED IN: 01 Stakeholder needs is explained by this README row and its linked sections; follow the README source traces to implementation."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+      "target_id": "code-artifact-1aaec6f1-191d-4fef-899a-3a242b1829d9",
+      "role": "diagram-to-readme",
+      "rationale": "DOCUMENTED IN: 02 System requirements is explained by this README row and its linked sections; follow the README source traces to implementation."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+      "target_id": "code-artifact-44ace2e5-bcee-4239-88c2-d1f48d35b21f",
+      "role": "diagram-to-readme",
+      "rationale": "DOCUMENTED IN: 03 System context is explained by this README row and its linked sections; follow the README source traces to implementation."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-68ced627-069e-4525-a5fa-c7ef264d924a",
+      "target_id": "code-artifact-28da3173-a0c7-4e90-a31a-34070c3751c9",
+      "role": "diagram-to-readme",
+      "rationale": "DOCUMENTED IN: 04 Component architecture is explained by this README row and its linked sections; follow the README source traces to implementation."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-1496e45a-9d50-4be2-96a1-e986a58aa945",
+      "target_id": "code-artifact-60053f02-f5ad-4946-ae4f-98f558750171",
+      "role": "diagram-to-readme",
+      "rationale": "DOCUMENTED IN: 05 Subsystems to code is explained by this README row and its linked sections; follow the README source traces to implementation."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-ea71cb71-ba50-45fa-b4bd-a61ffc32cc37",
+      "target_id": "code-artifact-c93220a2-eca9-464f-9d68-b2aba4f93cab",
+      "role": "diagram-to-readme",
+      "rationale": "DOCUMENTED IN: 06 Save-link flow is explained by this README row and its linked sections; follow the README source traces to implementation."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+      "target_id": "code-artifact-c3e5b9fd-7340-4bee-a4f8-ead1aa462e19",
+      "role": "diagram-to-readme",
+      "rationale": "DOCUMENTED IN: 07 Data model is explained by this README row and its linked sections; follow the README source traces to implementation."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+      "target_id": "code-artifact-586cb1b8-5a71-4719-a6d4-d6f4279e9263",
+      "role": "diagram-to-readme",
+      "rationale": "DOCUMENTED IN: 08 Main state machine is explained by this README row and its linked sections; follow the README source traces to implementation."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+      "target_id": "code-artifact-84cf7cdf-7b2b-42e9-8949-761305e63847",
+      "role": "diagram-to-readme",
+      "rationale": "DOCUMENTED IN: 09 Hidden-link security is explained by this README row and its linked sections; follow the README source traces to implementation."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+      "target_id": "code-artifact-82b7150a-fad0-4ea9-9db1-9c314df8c1fe",
+      "role": "diagram-to-readme",
+      "rationale": "DOCUMENTED IN: 10 Code call paths is explained by this README row and its linked sections; follow the README source traces to implementation."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-3e478a9d-b35b-414f-8535-4c4a9543bb1c",
+      "target_id": "code-artifact-bc46ef45-cd73-46b1-9eda-ed3d0f6f9adc",
+      "role": "diagram-to-readme-section",
+      "rationale": "README section explains the implemented capabilities represented by this diagram, including documented limitations."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+      "target_id": "code-artifact-e958f1f9-8fa3-46b1-b39e-cb643f5df902",
+      "role": "diagram-to-readme-section",
+      "rationale": "README section explains the implemented capabilities represented by this diagram, including documented limitations."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+      "target_id": "code-artifact-a20bba91-7cfc-4679-88ba-fd296e43ca09",
+      "role": "diagram-to-readme-section",
+      "rationale": "README section explains the implemented capabilities represented by this diagram, including documented limitations."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+      "target_id": "code-artifact-5bfa1d28-c199-49e5-880c-ca1b523fecb6",
+      "role": "diagram-to-readme-section",
+      "rationale": "README section explains the implemented capabilities represented by this diagram, including documented limitations."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+      "target_id": "code-artifact-003cead0-2f63-4dd3-8e9f-f1850be9a210",
+      "role": "diagram-to-readme-section",
+      "rationale": "README section explains the implemented capabilities represented by this diagram, including documented limitations."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+      "target_id": "code-artifact-ab2ba8ad-0f3d-4625-8761-02f5c319bdbd",
+      "role": "diagram-to-readme-section",
+      "rationale": "README section explains the implemented capabilities represented by this diagram, including documented limitations."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+      "target_id": "code-artifact-9158f32e-2341-4863-90e0-6da6efb01f3c",
+      "role": "diagram-to-readme-section",
+      "rationale": "README section explains the implemented capabilities represented by this diagram, including documented limitations."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+      "target_id": "code-artifact-d7e44b00-6e69-4dd7-ae06-1400cb9b22f4",
+      "role": "diagram-to-readme-section",
+      "rationale": "README section explains the implemented capabilities represented by this diagram, including documented limitations."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+      "target_id": "code-artifact-a1c1f30f-d785-42bb-8435-3d1a2db1e840",
+      "role": "diagram-to-readme-section",
+      "rationale": "README section explains the implemented capabilities represented by this diagram, including documented limitations."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+      "target_id": "code-artifact-3f82b63c-aecd-4733-a13a-422d0bf6c194",
+      "role": "diagram-to-readme-section",
+      "rationale": "README section explains the implemented capabilities represented by this diagram, including documented limitations."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+      "target_id": "code-artifact-bc46ef45-cd73-46b1-9eda-ed3d0f6f9adc",
+      "role": "diagram-to-readme-section",
+      "rationale": "README section explains the implemented capabilities represented by this diagram, including documented limitations."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-ffb57b6d-5807-4483-99df-369bb7711e75",
+      "target_id": "code-artifact-7917a88e-1ab9-4440-b1fd-c65644ffdacc",
+      "role": "diagram-to-readme-section",
+      "rationale": "README section explains the implemented capabilities represented by this diagram, including documented limitations."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-68ced627-069e-4525-a5fa-c7ef264d924a",
+      "target_id": "code-artifact-ed718e89-1af4-4fdd-8c69-e23d98b5017a",
+      "role": "diagram-to-readme-section",
+      "rationale": "README section explains the implemented capabilities represented by this diagram, including documented limitations."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-1496e45a-9d50-4be2-96a1-e986a58aa945",
+      "target_id": "code-artifact-da4989c4-65a9-43de-b77d-4d504ce6d90d",
+      "role": "diagram-to-readme-section",
+      "rationale": "README section explains the implemented capabilities represented by this diagram, including documented limitations."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-ea71cb71-ba50-45fa-b4bd-a61ffc32cc37",
+      "target_id": "code-artifact-e958f1f9-8fa3-46b1-b39e-cb643f5df902",
+      "role": "diagram-to-readme-section",
+      "rationale": "README section explains the implemented capabilities represented by this diagram, including documented limitations."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-ea71cb71-ba50-45fa-b4bd-a61ffc32cc37",
+      "target_id": "code-artifact-ed718e89-1af4-4fdd-8c69-e23d98b5017a",
+      "role": "diagram-to-readme-section",
+      "rationale": "README section explains the implemented capabilities represented by this diagram, including documented limitations."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-fac63831-46ee-4710-9a08-e52c61e7c8cb",
+      "target_id": "code-artifact-3f82b63c-aecd-4733-a13a-422d0bf6c194",
+      "role": "diagram-to-readme-section",
+      "rationale": "README section explains the implemented capabilities represented by this diagram, including documented limitations."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+      "target_id": "code-artifact-5bfa1d28-c199-49e5-880c-ca1b523fecb6",
+      "role": "diagram-to-readme-section",
+      "rationale": "README section explains the implemented capabilities represented by this diagram, including documented limitations."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+      "target_id": "code-artifact-003cead0-2f63-4dd3-8e9f-f1850be9a210",
+      "role": "diagram-to-readme-section",
+      "rationale": "README section explains the implemented capabilities represented by this diagram, including documented limitations."
+    },
+    {
+      "kind": "represents",
+      "source_id": "diagram-8e7a4542-ae38-464e-8e53-d53f926f63c7",
+      "target_id": "code-artifact-ed718e89-1af4-4fdd-8c69-e23d98b5017a",
+      "role": "diagram-to-readme-section",
+      "rationale": "README section explains the implemented capabilities represented by this diagram, including documented limitations."
+    },
+    {
+      "kind": "implements",
+      "source_id": "code-artifact-4d729977-1318-4870-a8d7-a073403b4bfc",
+      "target_id": "code-artifact-df2cb27d-51b0-4509-bd88-85e7c24cdafe",
+      "role": "configuration-enforces-readme",
+      "rationale": "Target settings enforce the iOS deployment target, supported platforms and Swift language mode documented in this README section."
+    },
+    {
+      "kind": "implements",
+      "source_id": "code-artifact-1761e7ba-af20-486b-a6a2-f3e7e7cb971b",
+      "target_id": "code-artifact-d2b6acf6-b4e2-41eb-a6ba-24055b5f5ac4",
+      "role": "checker-implements-readme",
+      "rationale": "This local tool implements the README trace-integrity verification command; this does not claim execution of application unit tests."
+    }
+  ]
+}

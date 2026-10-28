@@ -1,0 +1,1487 @@
+{
+  "format": "linkstow-code-connections",
+  "version": 1,
+  "scope": "Manually inspected key production flows; not exhaustive compiler call analysis.",
+  "native_kind": "represents",
+  "connections": [
+    {
+      "id": "CODE-001",
+      "category": "capture",
+      "caller": "MainView.searchButtonPressed",
+      "expression": "mainController.verifyLink",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainView.searchButtonPressed invokes MainController.verifyLink via mainController.verifyLink. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainView.searchButtonPressed.calls.MainController.verifyLink",
+        "path": "LinkStow/View/MainView.swift",
+        "symbol": "MainView.searchButtonPressed calls MainController.verifyLink",
+        "start_line": 334,
+        "end_line": 334,
+        "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+        "role": "call-site",
+        "id": "code-artifact-2d666cec-7c0b-4c5f-b4c0-908dbf2c4410"
+      },
+      "callee": {
+        "key": "MainController.verifyLink",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.verifyLink",
+        "start_line": 120,
+        "end_line": 122,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "definition",
+        "id": "code-artifact-79cdce4d-c012-4814-a793-1ad7d582558a"
+      }
+    },
+    {
+      "id": "CODE-002",
+      "category": "capture",
+      "caller": "MainView.searchButtonPressed",
+      "expression": "mainController.fetchWebsiteTitle",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainView.searchButtonPressed invokes MainController.fetchWebsiteTitle via mainController.fetchWebsiteTitle. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainView.searchButtonPressed.calls.MainController.fetchWebsiteTitle",
+        "path": "LinkStow/View/MainView.swift",
+        "symbol": "MainView.searchButtonPressed calls MainController.fetchWebsiteTitle",
+        "start_line": 336,
+        "end_line": 336,
+        "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+        "role": "call-site",
+        "id": "code-artifact-6c768065-43a5-46e7-9491-6cf85d9249f5"
+      },
+      "callee": {
+        "key": "MainController.fetchWebsiteTitle",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.fetchWebsiteTitle",
+        "start_line": 125,
+        "end_line": 127,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "definition",
+        "id": "code-artifact-fa423368-8083-4042-8cd7-77b611562510"
+      }
+    },
+    {
+      "id": "CODE-003",
+      "category": "capture",
+      "caller": "MainView.searchButtonPressed",
+      "expression": "mainController.fetchWebsiteDescription",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainView.searchButtonPressed invokes MainController.fetchWebsiteDescription via mainController.fetchWebsiteDescription. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainView.searchButtonPressed.calls.MainController.fetchWebsiteDescription",
+        "path": "LinkStow/View/MainView.swift",
+        "symbol": "MainView.searchButtonPressed calls MainController.fetchWebsiteDescription",
+        "start_line": 337,
+        "end_line": 337,
+        "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+        "role": "call-site",
+        "id": "code-artifact-58f63e21-6f46-46a3-a127-25844a3ac2aa"
+      },
+      "callee": {
+        "key": "MainController.fetchWebsiteDescription",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.fetchWebsiteDescription",
+        "start_line": 130,
+        "end_line": 132,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "definition",
+        "id": "code-artifact-802c5a85-c909-4a4a-8560-90aa01e54732"
+      }
+    },
+    {
+      "id": "CODE-004",
+      "category": "capture",
+      "caller": "MainView.searchButtonPressed",
+      "expression": "mainController.fetchWebsiteIcon",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainView.searchButtonPressed invokes MainController.fetchWebsiteIcon via mainController.fetchWebsiteIcon. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainView.searchButtonPressed.calls.MainController.fetchWebsiteIcon",
+        "path": "LinkStow/View/MainView.swift",
+        "symbol": "MainView.searchButtonPressed calls MainController.fetchWebsiteIcon",
+        "start_line": 338,
+        "end_line": 338,
+        "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+        "role": "call-site",
+        "id": "code-artifact-9bbb9236-9fe3-44b6-aa2e-b2f99b4346bc"
+      },
+      "callee": {
+        "key": "MainController.fetchWebsiteIcon",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.fetchWebsiteIcon",
+        "start_line": 135,
+        "end_line": 137,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "definition",
+        "id": "code-artifact-6e5d9344-261d-4f96-8d83-f65b8f67ad0e"
+      }
+    },
+    {
+      "id": "CODE-005",
+      "category": "capture",
+      "caller": "MainView.pasteButtonPressed",
+      "expression": "mainController.verifyLink",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainView.pasteButtonPressed invokes MainController.verifyLink via mainController.verifyLink. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainView.pasteButtonPressed.calls.MainController.verifyLink",
+        "path": "LinkStow/View/MainView.swift",
+        "symbol": "MainView.pasteButtonPressed calls MainController.verifyLink",
+        "start_line": 299,
+        "end_line": 299,
+        "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+        "role": "call-site",
+        "id": "code-artifact-5779938a-a160-4df8-9209-c25dd9865742"
+      },
+      "callee": {
+        "key": "MainController.verifyLink",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.verifyLink",
+        "start_line": 120,
+        "end_line": 122,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "definition",
+        "id": "code-artifact-79cdce4d-c012-4814-a793-1ad7d582558a"
+      }
+    },
+    {
+      "id": "CODE-006",
+      "category": "capture",
+      "caller": "MainView.pasteButtonPressed",
+      "expression": "mainController.fetchWebsiteTitle",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainView.pasteButtonPressed invokes MainController.fetchWebsiteTitle via mainController.fetchWebsiteTitle. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainView.pasteButtonPressed.calls.MainController.fetchWebsiteTitle",
+        "path": "LinkStow/View/MainView.swift",
+        "symbol": "MainView.pasteButtonPressed calls MainController.fetchWebsiteTitle",
+        "start_line": 302,
+        "end_line": 302,
+        "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+        "role": "call-site",
+        "id": "code-artifact-680bfbc6-2b02-4f06-9435-f74d23091b54"
+      },
+      "callee": {
+        "key": "MainController.fetchWebsiteTitle",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.fetchWebsiteTitle",
+        "start_line": 125,
+        "end_line": 127,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "definition",
+        "id": "code-artifact-fa423368-8083-4042-8cd7-77b611562510"
+      }
+    },
+    {
+      "id": "CODE-007",
+      "category": "capture",
+      "caller": "MainView.pasteButtonPressed",
+      "expression": "mainController.fetchWebsiteDescription",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainView.pasteButtonPressed invokes MainController.fetchWebsiteDescription via mainController.fetchWebsiteDescription. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainView.pasteButtonPressed.calls.MainController.fetchWebsiteDescription",
+        "path": "LinkStow/View/MainView.swift",
+        "symbol": "MainView.pasteButtonPressed calls MainController.fetchWebsiteDescription",
+        "start_line": 303,
+        "end_line": 303,
+        "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+        "role": "call-site",
+        "id": "code-artifact-3fbe3c3b-c791-45f8-b182-c2bb96c961d7"
+      },
+      "callee": {
+        "key": "MainController.fetchWebsiteDescription",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.fetchWebsiteDescription",
+        "start_line": 130,
+        "end_line": 132,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "definition",
+        "id": "code-artifact-802c5a85-c909-4a4a-8560-90aa01e54732"
+      }
+    },
+    {
+      "id": "CODE-008",
+      "category": "capture",
+      "caller": "MainView.pasteButtonPressed",
+      "expression": "mainController.fetchWebsiteIcon",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainView.pasteButtonPressed invokes MainController.fetchWebsiteIcon via mainController.fetchWebsiteIcon. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainView.pasteButtonPressed.calls.MainController.fetchWebsiteIcon",
+        "path": "LinkStow/View/MainView.swift",
+        "symbol": "MainView.pasteButtonPressed calls MainController.fetchWebsiteIcon",
+        "start_line": 304,
+        "end_line": 304,
+        "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+        "role": "call-site",
+        "id": "code-artifact-5e5b7444-6206-428b-adc2-c1453912885d"
+      },
+      "callee": {
+        "key": "MainController.fetchWebsiteIcon",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.fetchWebsiteIcon",
+        "start_line": 135,
+        "end_line": 137,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "definition",
+        "id": "code-artifact-6e5d9344-261d-4f96-8d83-f65b8f67ad0e"
+      }
+    },
+    {
+      "id": "CODE-009",
+      "category": "metadata",
+      "caller": "MainController.verifyLink",
+      "expression": "linkService.verifyLink",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainController.verifyLink invokes LinkMetadataService.verifyLink via linkService.verifyLink. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainController.verifyLink.calls.LinkMetadataService.verifyLink",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.verifyLink calls LinkMetadataService.verifyLink",
+        "start_line": 121,
+        "end_line": 121,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "call-site",
+        "id": "code-artifact-3f34a427-203b-4aa4-a5d0-b2b043a1a24d"
+      },
+      "callee": {
+        "key": "LinkMetadataService.verifyLink",
+        "path": "LinkStow/Services/LinkMetadataService.swift",
+        "symbol": "LinkMetadataService.verifyLink",
+        "start_line": 19,
+        "end_line": 62,
+        "sha256": "87bebc8d05fb00815c4ec40b10ff3d7d504a5948d922a4ebf88444fd1fb11979",
+        "role": "definition",
+        "id": "code-artifact-dcecc3b6-267c-4c54-9a55-15dd23cd2f37"
+      }
+    },
+    {
+      "id": "CODE-010",
+      "category": "metadata",
+      "caller": "MainController.fetchWebsiteTitle",
+      "expression": "linkService.fetchWebsiteTitle",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainController.fetchWebsiteTitle invokes LinkMetadataService.fetchWebsiteTitle via linkService.fetchWebsiteTitle. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainController.fetchWebsiteTitle.calls.LinkMetadataService.fetchWebsiteTitle",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.fetchWebsiteTitle calls LinkMetadataService.fetchWebsiteTitle",
+        "start_line": 126,
+        "end_line": 126,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "call-site",
+        "id": "code-artifact-ef9fba11-8583-4cc5-856d-b36331413a5d"
+      },
+      "callee": {
+        "key": "LinkMetadataService.fetchWebsiteTitle",
+        "path": "LinkStow/Services/LinkMetadataService.swift",
+        "symbol": "LinkMetadataService.fetchWebsiteTitle",
+        "start_line": 69,
+        "end_line": 87,
+        "sha256": "87bebc8d05fb00815c4ec40b10ff3d7d504a5948d922a4ebf88444fd1fb11979",
+        "role": "definition",
+        "id": "code-artifact-04d08a98-e901-4ccf-90ff-926108210c85"
+      }
+    },
+    {
+      "id": "CODE-011",
+      "category": "metadata",
+      "caller": "MainController.fetchWebsiteDescription",
+      "expression": "linkService.fetchWebsiteDescription",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainController.fetchWebsiteDescription invokes LinkMetadataService.fetchWebsiteDescription via linkService.fetchWebsiteDescription. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainController.fetchWebsiteDescription.calls.LinkMetadataService.fetchWebsiteDescription",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.fetchWebsiteDescription calls LinkMetadataService.fetchWebsiteDescription",
+        "start_line": 131,
+        "end_line": 131,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "call-site",
+        "id": "code-artifact-22eda99a-7f52-492c-b8f7-8dc3b1a2dcc3"
+      },
+      "callee": {
+        "key": "LinkMetadataService.fetchWebsiteDescription",
+        "path": "LinkStow/Services/LinkMetadataService.swift",
+        "symbol": "LinkMetadataService.fetchWebsiteDescription",
+        "start_line": 94,
+        "end_line": 115,
+        "sha256": "87bebc8d05fb00815c4ec40b10ff3d7d504a5948d922a4ebf88444fd1fb11979",
+        "role": "definition",
+        "id": "code-artifact-c96f99f6-f675-4ac0-b0c5-15ad43f31f6f"
+      }
+    },
+    {
+      "id": "CODE-012",
+      "category": "metadata",
+      "caller": "MainController.fetchWebsiteIcon",
+      "expression": "linkService.fetchWebsiteIcon",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainController.fetchWebsiteIcon invokes LinkMetadataService.fetchWebsiteIcon via linkService.fetchWebsiteIcon. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainController.fetchWebsiteIcon.calls.LinkMetadataService.fetchWebsiteIcon",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.fetchWebsiteIcon calls LinkMetadataService.fetchWebsiteIcon",
+        "start_line": 136,
+        "end_line": 136,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "call-site",
+        "id": "code-artifact-22f4bf64-d877-46b9-a2bc-da3cc1781de8"
+      },
+      "callee": {
+        "key": "LinkMetadataService.fetchWebsiteIcon",
+        "path": "LinkStow/Services/LinkMetadataService.swift",
+        "symbol": "LinkMetadataService.fetchWebsiteIcon",
+        "start_line": 122,
+        "end_line": 203,
+        "sha256": "87bebc8d05fb00815c4ec40b10ff3d7d504a5948d922a4ebf88444fd1fb11979",
+        "role": "definition",
+        "id": "code-artifact-69e9bfae-a674-47df-a734-e243c5a8114e"
+      }
+    },
+    {
+      "id": "CODE-013",
+      "category": "capture",
+      "caller": "MainView.addButtonPressed",
+      "expression": "mainController.createLink",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainView.addButtonPressed invokes MainController.createLink via mainController.createLink. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainView.addButtonPressed.calls.MainController.createLink",
+        "path": "LinkStow/View/MainView.swift",
+        "symbol": "MainView.addButtonPressed calls MainController.createLink",
+        "start_line": 322,
+        "end_line": 327,
+        "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+        "role": "call-site",
+        "id": "code-artifact-55d6f8a7-34fe-4798-9d3e-6a824efed187"
+      },
+      "callee": {
+        "key": "MainController.createLink",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.createLink",
+        "start_line": 21,
+        "end_line": 34,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "definition",
+        "id": "code-artifact-d9f01bc0-b379-4149-afc9-756eb374f3d2"
+      }
+    },
+    {
+      "id": "CODE-014",
+      "category": "capture",
+      "caller": "MainController.createLink",
+      "expression": "LinkModel",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainController.createLink invokes LinkModel.init via LinkModel. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainController.createLink.calls.LinkModel.init",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.createLink calls LinkModel.init",
+        "start_line": 27,
+        "end_line": 32,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "call-site",
+        "id": "code-artifact-0e480c21-4e80-469e-965f-e33601bf5d1a"
+      },
+      "callee": {
+        "key": "LinkModel.init",
+        "path": "LinkStow/Models/Link.swift",
+        "symbol": "LinkModel.init",
+        "start_line": 41,
+        "end_line": 58,
+        "sha256": "0478925de337d9a360b03ecd3ff5d0787e3188b259fcf094ba806cc4fde36f48",
+        "role": "definition",
+        "id": "code-artifact-5aeaaf8d-ff69-44a5-8818-27c177ddccad"
+      }
+    },
+    {
+      "id": "CODE-015",
+      "category": "editor",
+      "caller": "LinkEditorView.body",
+      "expression": "viewModel.save",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: LinkEditorView.body invokes LinkEditorViewModel.save via viewModel.save. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "LinkEditorView.body.calls.LinkEditorViewModel.save",
+        "path": "LinkStow/View/LinkEditorView.swift",
+        "symbol": "LinkEditorView.body calls LinkEditorViewModel.save",
+        "start_line": 60,
+        "end_line": 60,
+        "sha256": "e12a95e027d3d55dcd2bbd249b37ecdd6e3dcff5f8da1c909660702f769ffa05",
+        "role": "call-site",
+        "id": "code-artifact-5a344b54-2e21-4a1a-b9aa-395b996cb65c"
+      },
+      "callee": {
+        "key": "LinkEditorViewModel.save",
+        "path": "LinkStow/ViewModels/LinkEditorViewModel.swift",
+        "symbol": "LinkEditorViewModel.save",
+        "start_line": 77,
+        "end_line": 110,
+        "sha256": "16f254cbcec714974df56230c46879d064410ac9c1beff41617299323b9c335a",
+        "role": "definition",
+        "id": "code-artifact-576d5fd5-63da-4828-860d-2a2c94246f9f"
+      }
+    },
+    {
+      "id": "CODE-016",
+      "category": "editor",
+      "caller": "LinkEditorView.body",
+      "expression": "viewModel.initialize",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: LinkEditorView.body invokes LinkEditorViewModel.initialize via viewModel.initialize. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "LinkEditorView.body.calls.LinkEditorViewModel.initialize",
+        "path": "LinkStow/View/LinkEditorView.swift",
+        "symbol": "LinkEditorView.body calls LinkEditorViewModel.initialize",
+        "start_line": 67,
+        "end_line": 67,
+        "sha256": "e12a95e027d3d55dcd2bbd249b37ecdd6e3dcff5f8da1c909660702f769ffa05",
+        "role": "call-site",
+        "id": "code-artifact-bb3babbb-18a0-46ea-bf89-274ea020e1c7"
+      },
+      "callee": {
+        "key": "LinkEditorViewModel.initialize",
+        "path": "LinkStow/ViewModels/LinkEditorViewModel.swift",
+        "symbol": "LinkEditorViewModel.initialize",
+        "start_line": 43,
+        "end_line": 73,
+        "sha256": "16f254cbcec714974df56230c46879d064410ac9c1beff41617299323b9c335a",
+        "role": "definition",
+        "id": "code-artifact-4f41d590-dc3c-470d-8b43-f52712096f6e"
+      }
+    },
+    {
+      "id": "CODE-017",
+      "category": "editor",
+      "caller": "LinkEditorView.body",
+      "expression": "viewModel.reset",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: LinkEditorView.body invokes LinkEditorViewModel.reset via viewModel.reset. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "LinkEditorView.body.calls.LinkEditorViewModel.reset",
+        "path": "LinkStow/View/LinkEditorView.swift",
+        "symbol": "LinkEditorView.body calls LinkEditorViewModel.reset",
+        "start_line": 52,
+        "end_line": 52,
+        "sha256": "e12a95e027d3d55dcd2bbd249b37ecdd6e3dcff5f8da1c909660702f769ffa05",
+        "role": "call-site",
+        "id": "code-artifact-116c9e6d-6d92-4a95-965e-1c1ec41b8fc3"
+      },
+      "callee": {
+        "key": "LinkEditorViewModel.reset",
+        "path": "LinkStow/ViewModels/LinkEditorViewModel.swift",
+        "symbol": "LinkEditorViewModel.reset",
+        "start_line": 114,
+        "end_line": 140,
+        "sha256": "16f254cbcec714974df56230c46879d064410ac9c1beff41617299323b9c335a",
+        "role": "definition",
+        "id": "code-artifact-f18ad5fe-f76f-4c64-a3b6-b62b3b81b9a0"
+      }
+    },
+    {
+      "id": "CODE-018",
+      "category": "persistence",
+      "caller": "LinkEditorViewModel.save",
+      "expression": "mainController.addLink",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: LinkEditorViewModel.save invokes MainController.addLink via mainController.addLink. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "LinkEditorViewModel.save.calls.MainController.addLink",
+        "path": "LinkStow/ViewModels/LinkEditorViewModel.swift",
+        "symbol": "LinkEditorViewModel.save calls MainController.addLink",
+        "start_line": 79,
+        "end_line": 92,
+        "sha256": "16f254cbcec714974df56230c46879d064410ac9c1beff41617299323b9c335a",
+        "role": "call-site",
+        "id": "code-artifact-ee0e170b-9fd8-4787-a8ed-966e5a9aebd7"
+      },
+      "callee": {
+        "key": "MainController.addLink",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.addLink",
+        "start_line": 38,
+        "end_line": 73,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "definition",
+        "id": "code-artifact-247793d7-84d4-42eb-82ae-ef009a3a637d"
+      }
+    },
+    {
+      "id": "CODE-019",
+      "category": "persistence",
+      "caller": "MainController.addLink",
+      "expression": "linkModel.updateLink",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainController.addLink invokes LinkModel.updateLink via linkModel.updateLink. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainController.addLink.calls.LinkModel.updateLink",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.addLink calls LinkModel.updateLink",
+        "start_line": 56,
+        "end_line": 71,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "call-site",
+        "id": "code-artifact-9782400f-9e23-4337-9a0e-57c8ad502ea8"
+      },
+      "callee": {
+        "key": "LinkModel.updateLink",
+        "path": "LinkStow/Models/Link.swift",
+        "symbol": "LinkModel.updateLink",
+        "start_line": 61,
+        "end_line": 109,
+        "sha256": "0478925de337d9a360b03ecd3ff5d0787e3188b259fcf094ba806cc4fde36f48",
+        "role": "definition",
+        "id": "code-artifact-525be922-2b0e-48ea-9d1c-41122e5cc83f"
+      }
+    },
+    {
+      "id": "CODE-020",
+      "category": "persistence",
+      "caller": "LinkEditorViewModel.save",
+      "expression": "mainController.updateLink",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: LinkEditorViewModel.save invokes MainController.updateLink via mainController.updateLink. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "LinkEditorViewModel.save.calls.MainController.updateLink",
+        "path": "LinkStow/ViewModels/LinkEditorViewModel.swift",
+        "symbol": "LinkEditorViewModel.save calls MainController.updateLink",
+        "start_line": 94,
+        "end_line": 107,
+        "sha256": "16f254cbcec714974df56230c46879d064410ac9c1beff41617299323b9c335a",
+        "role": "call-site",
+        "id": "code-artifact-a83aa024-c61e-49a2-8228-35b9babfbe51"
+      },
+      "callee": {
+        "key": "MainController.updateLink",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.updateLink",
+        "start_line": 76,
+        "end_line": 111,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "definition",
+        "id": "code-artifact-db390592-030b-4248-9674-c7f4adc938da"
+      }
+    },
+    {
+      "id": "CODE-021",
+      "category": "persistence",
+      "caller": "MainController.updateLink",
+      "expression": "linkModel.updateLink",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainController.updateLink invokes LinkModel.updateLink via linkModel.updateLink. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainController.updateLink.calls.LinkModel.updateLink",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.updateLink calls LinkModel.updateLink",
+        "start_line": 94,
+        "end_line": 109,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "call-site",
+        "id": "code-artifact-011dec3c-5ac6-46e2-8697-c85fb0f09253"
+      },
+      "callee": {
+        "key": "LinkModel.updateLink",
+        "path": "LinkStow/Models/Link.swift",
+        "symbol": "LinkModel.updateLink",
+        "start_line": 61,
+        "end_line": 109,
+        "sha256": "0478925de337d9a360b03ecd3ff5d0787e3188b259fcf094ba806cc4fde36f48",
+        "role": "definition",
+        "id": "code-artifact-525be922-2b0e-48ea-9d1c-41122e5cc83f"
+      }
+    },
+    {
+      "id": "CODE-022",
+      "category": "editor",
+      "caller": "LinkEditorViewModel.save",
+      "expression": "reset",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: LinkEditorViewModel.save invokes LinkEditorViewModel.reset via reset. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "LinkEditorViewModel.save.calls.LinkEditorViewModel.reset",
+        "path": "LinkStow/ViewModels/LinkEditorViewModel.swift",
+        "symbol": "LinkEditorViewModel.save calls LinkEditorViewModel.reset",
+        "start_line": 109,
+        "end_line": 109,
+        "sha256": "16f254cbcec714974df56230c46879d064410ac9c1beff41617299323b9c335a",
+        "role": "call-site",
+        "id": "code-artifact-2f84a720-9784-46d2-be91-3525adbc0c73"
+      },
+      "callee": {
+        "key": "LinkEditorViewModel.reset",
+        "path": "LinkStow/ViewModels/LinkEditorViewModel.swift",
+        "symbol": "LinkEditorViewModel.reset",
+        "start_line": 114,
+        "end_line": 140,
+        "sha256": "16f254cbcec714974df56230c46879d064410ac9c1beff41617299323b9c335a",
+        "role": "definition",
+        "id": "code-artifact-f18ad5fe-f76f-4c64-a3b6-b62b3b81b9a0"
+      }
+    },
+    {
+      "id": "CODE-023",
+      "category": "persistence",
+      "caller": "LinkModel.updateLink",
+      "expression": "self.symbol.updateSymbol",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: LinkModel.updateLink invokes SymbolModel.updateSymbol via self.symbol.updateSymbol. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "LinkModel.updateLink.calls.SymbolModel.updateSymbol",
+        "path": "LinkStow/Models/Link.swift",
+        "symbol": "LinkModel.updateLink calls SymbolModel.updateSymbol",
+        "start_line": 82,
+        "end_line": 87,
+        "sha256": "0478925de337d9a360b03ecd3ff5d0787e3188b259fcf094ba806cc4fde36f48",
+        "role": "call-site",
+        "id": "code-artifact-456ed743-983f-4e74-8a5d-72d159fc7791"
+      },
+      "callee": {
+        "key": "SymbolModel.updateSymbol",
+        "path": "LinkStow/Models/Symbol.swift",
+        "symbol": "SymbolModel.updateSymbol",
+        "start_line": 89,
+        "end_line": 99,
+        "sha256": "03f65ce1b866b381cba7c4dda60de410d6485c882d66c57929182c406ad551f9",
+        "role": "definition",
+        "id": "code-artifact-7e616e65-e75b-48ff-915c-24cade95061c"
+      }
+    },
+    {
+      "id": "CODE-024",
+      "category": "authentication",
+      "caller": "LinkEditorViewModel.toggleHidden",
+      "expression": "authenticateUser",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: LinkEditorViewModel.toggleHidden invokes authenticateUser via authenticateUser. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "LinkEditorViewModel.toggleHidden.calls.Authentication.authenticateUser",
+        "path": "LinkStow/ViewModels/LinkEditorViewModel.swift",
+        "symbol": "LinkEditorViewModel.toggleHidden calls authenticateUser",
+        "start_line": 150,
+        "end_line": 150,
+        "sha256": "16f254cbcec714974df56230c46879d064410ac9c1beff41617299323b9c335a",
+        "role": "call-site",
+        "id": "code-artifact-131bfb80-de27-451c-94a3-bd1b4809d074"
+      },
+      "callee": {
+        "key": "Authentication.authenticateUser",
+        "path": "LinkStow/Services/Authentication.swift",
+        "symbol": "authenticateUser",
+        "start_line": 6,
+        "end_line": 22,
+        "sha256": "8d415c53c9603c881a872efcb3406aa3d8889cc7478bedc40c2239bcb9bd1f88",
+        "role": "definition",
+        "id": "code-artifact-8446e60c-ab49-4893-b6df-69286282e4f0"
+      }
+    },
+    {
+      "id": "CODE-025",
+      "category": "authentication",
+      "caller": "MainView.filterHiddenView",
+      "expression": "authenticateUser",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainView.filterHiddenView invokes authenticateUser via authenticateUser. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainView.filterHiddenView.calls.Authentication.authenticateUser",
+        "path": "LinkStow/View/MainView.swift",
+        "symbol": "MainView.filterHiddenView calls authenticateUser",
+        "start_line": 498,
+        "end_line": 498,
+        "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+        "role": "call-site",
+        "id": "code-artifact-a0e28b5c-b8d2-4f2d-bfe5-ce1d02eb9106"
+      },
+      "callee": {
+        "key": "Authentication.authenticateUser",
+        "path": "LinkStow/Services/Authentication.swift",
+        "symbol": "authenticateUser",
+        "start_line": 6,
+        "end_line": 22,
+        "sha256": "8d415c53c9603c881a872efcb3406aa3d8889cc7478bedc40c2239bcb9bd1f88",
+        "role": "definition",
+        "id": "code-artifact-8446e60c-ab49-4893-b6df-69286282e4f0"
+      }
+    },
+    {
+      "id": "CODE-026",
+      "category": "authentication",
+      "caller": "PreferencesView.hiddenGroupSection",
+      "expression": "authenticateUser",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: PreferencesView.hiddenGroupSection invokes authenticateUser via authenticateUser. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "PreferencesView.hiddenGroupSection.calls.Authentication.authenticateUser",
+        "path": "LinkStow/View/PreferencesView.swift",
+        "symbol": "PreferencesView.hiddenGroupSection calls authenticateUser",
+        "start_line": 116,
+        "end_line": 116,
+        "sha256": "494a008197f5c332c97bde48ce13804ea098a14e480a4fbbc02664801dde75d0",
+        "role": "call-site",
+        "id": "code-artifact-2bc8e41b-5660-478d-b8fd-b03b1b1d14eb"
+      },
+      "callee": {
+        "key": "Authentication.authenticateUser",
+        "path": "LinkStow/Services/Authentication.swift",
+        "symbol": "authenticateUser",
+        "start_line": 6,
+        "end_line": 22,
+        "sha256": "8d415c53c9603c881a872efcb3406aa3d8889cc7478bedc40c2239bcb9bd1f88",
+        "role": "definition",
+        "id": "code-artifact-8446e60c-ab49-4893-b6df-69286282e4f0"
+      }
+    },
+    {
+      "id": "CODE-027",
+      "category": "persistence",
+      "caller": "MainView.handleDeleteConfirmation",
+      "expression": "mainController.deleteLink",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainView.handleDeleteConfirmation invokes MainController.deleteLink via mainController.deleteLink. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainView.handleDeleteConfirmation.calls.MainController.deleteLink",
+        "path": "LinkStow/View/MainView.swift",
+        "symbol": "MainView.handleDeleteConfirmation calls MainController.deleteLink",
+        "start_line": 817,
+        "end_line": 817,
+        "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+        "role": "call-site",
+        "id": "code-artifact-cf8d4caf-8733-4975-aae2-dd293c53579d"
+      },
+      "callee": {
+        "key": "MainController.deleteLink",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.deleteLink",
+        "start_line": 114,
+        "end_line": 117,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "definition",
+        "id": "code-artifact-cbeb3e99-fc1f-480a-a1c4-ceb266311fe2"
+      }
+    },
+    {
+      "id": "CODE-028",
+      "category": "groups",
+      "caller": "GroupEditorView.body",
+      "expression": "mainController.addGroup",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: GroupEditorView.body invokes MainController.addGroup via mainController.addGroup. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "GroupEditorView.body.calls.MainController.addGroup",
+        "path": "LinkStow/View/GroupEditorView.swift",
+        "symbol": "GroupEditorView.body calls MainController.addGroup",
+        "start_line": 82,
+        "end_line": 89,
+        "sha256": "5642568575313460bce6e60df85451205e6847ef80b4c66ef791589978b1db3f",
+        "role": "call-site",
+        "id": "code-artifact-94d3d9d9-9678-4b5a-a972-2bc6dda516e9"
+      },
+      "callee": {
+        "key": "MainController.addGroup",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.addGroup",
+        "start_line": 165,
+        "end_line": 175,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "definition",
+        "id": "code-artifact-79f9bc3d-1c1f-4861-8e72-2dbceaafd2a6"
+      }
+    },
+    {
+      "id": "CODE-029",
+      "category": "groups",
+      "caller": "MainController.addGroup",
+      "expression": "groupModel.updateGroup",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainController.addGroup invokes GroupModel.updateGroup via groupModel.updateGroup. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainController.addGroup.calls.GroupModel.updateGroup",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.addGroup calls GroupModel.updateGroup",
+        "start_line": 173,
+        "end_line": 173,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "call-site",
+        "id": "code-artifact-449ef081-f15d-4cd4-8fd6-ce24f8603396"
+      },
+      "callee": {
+        "key": "GroupModel.updateGroup",
+        "path": "LinkStow/Models/Group.swift",
+        "symbol": "GroupModel.updateGroup",
+        "start_line": 37,
+        "end_line": 52,
+        "sha256": "cab8212468d6b22f56bdc09f8d7f437d4e3e09d57c573fc185437583551c0233",
+        "role": "definition",
+        "id": "code-artifact-bb784ca5-8ec7-438f-afd2-1353d5dc0337"
+      }
+    },
+    {
+      "id": "CODE-030",
+      "category": "groups",
+      "caller": "GroupEditorView.body",
+      "expression": "mainController.updateGroup",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: GroupEditorView.body invokes MainController.updateGroup via mainController.updateGroup. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "GroupEditorView.body.calls.MainController.updateGroup",
+        "path": "LinkStow/View/GroupEditorView.swift",
+        "symbol": "GroupEditorView.body calls MainController.updateGroup",
+        "start_line": 73,
+        "end_line": 80,
+        "sha256": "5642568575313460bce6e60df85451205e6847ef80b4c66ef791589978b1db3f",
+        "role": "call-site",
+        "id": "code-artifact-9bc122ed-0a9a-40a1-99c9-1a63a450a7c1"
+      },
+      "callee": {
+        "key": "MainController.updateGroup",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.updateGroup",
+        "start_line": 178,
+        "end_line": 194,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "definition",
+        "id": "code-artifact-644e5cae-4ab8-4fa2-a298-7a8ead5ec85e"
+      }
+    },
+    {
+      "id": "CODE-031",
+      "category": "groups",
+      "caller": "MainController.updateGroup",
+      "expression": "groupModel.updateGroup",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainController.updateGroup invokes GroupModel.updateGroup via groupModel.updateGroup. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainController.updateGroup.calls.GroupModel.updateGroup",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.updateGroup calls GroupModel.updateGroup",
+        "start_line": 186,
+        "end_line": 192,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "call-site",
+        "id": "code-artifact-af9071d3-c839-421c-a9b3-9db2e0b11d8d"
+      },
+      "callee": {
+        "key": "GroupModel.updateGroup",
+        "path": "LinkStow/Models/Group.swift",
+        "symbol": "GroupModel.updateGroup",
+        "start_line": 37,
+        "end_line": 52,
+        "sha256": "cab8212468d6b22f56bdc09f8d7f437d4e3e09d57c573fc185437583551c0233",
+        "role": "definition",
+        "id": "code-artifact-bb784ca5-8ec7-438f-afd2-1353d5dc0337"
+      }
+    },
+    {
+      "id": "CODE-032",
+      "category": "groups",
+      "caller": "GroupEditorView.handleDeleteConfirmation",
+      "expression": "mainController.deleteGroup",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: GroupEditorView.handleDeleteConfirmation invokes MainController.deleteGroup via mainController.deleteGroup. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "GroupEditorView.handleDeleteConfirmation.calls.MainController.deleteGroup",
+        "path": "LinkStow/View/GroupEditorView.swift",
+        "symbol": "GroupEditorView.handleDeleteConfirmation calls MainController.deleteGroup",
+        "start_line": 120,
+        "end_line": 120,
+        "sha256": "5642568575313460bce6e60df85451205e6847ef80b4c66ef791589978b1db3f",
+        "role": "call-site",
+        "id": "code-artifact-bd510737-d8a0-4bec-89c9-a9716e81f8d2"
+      },
+      "callee": {
+        "key": "MainController.deleteGroup",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.deleteGroup",
+        "start_line": 197,
+        "end_line": 200,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "definition",
+        "id": "code-artifact-4aa1e217-a552-4b57-867b-aa70792ef25d"
+      }
+    },
+    {
+      "id": "CODE-033",
+      "category": "groups",
+      "caller": "GroupModel.updateGroup",
+      "expression": "SymbolModel",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: GroupModel.updateGroup invokes SymbolModel.init via SymbolModel. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "GroupModel.updateGroup.calls.SymbolModel.init",
+        "path": "LinkStow/Models/Group.swift",
+        "symbol": "GroupModel.updateGroup calls SymbolModel.init",
+        "start_line": 45,
+        "end_line": 51,
+        "sha256": "cab8212468d6b22f56bdc09f8d7f437d4e3e09d57c573fc185437583551c0233",
+        "role": "call-site",
+        "id": "code-artifact-6b3f2cb6-2ac3-4c7c-94cc-61fa2e84951f"
+      },
+      "callee": {
+        "key": "SymbolModel.init",
+        "path": "LinkStow/Models/Symbol.swift",
+        "symbol": "SymbolModel.init",
+        "start_line": 73,
+        "end_line": 85,
+        "sha256": "03f65ce1b866b381cba7c4dda60de410d6485c882d66c57929182c406ad551f9",
+        "role": "definition",
+        "id": "code-artifact-a956bf45-4c3b-42c2-9acc-327cb4f0dd03"
+      }
+    },
+    {
+      "id": "CODE-034",
+      "category": "export",
+      "caller": "QRCodeView.qrImage",
+      "expression": "qrCodeGenerator.generateQRCode",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: QRCodeView.qrImage invokes QRCodeGenerator.generateQRCode via qrCodeGenerator.generateQRCode. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "QRCodeView.qrImage.calls.QRCodeGenerator.generateQRCode",
+        "path": "LinkStow/View/QRCodeView.swift",
+        "symbol": "QRCodeView.qrImage calls QRCodeGenerator.generateQRCode",
+        "start_line": 14,
+        "end_line": 14,
+        "sha256": "f483d1621d88df0a038298b50bb806479914a6cb2de755a64bbc1e5cd3f1feee",
+        "role": "call-site",
+        "id": "code-artifact-583eefd4-4751-4e8a-9fff-5a7744d1cd33"
+      },
+      "callee": {
+        "key": "QRCodeGenerator.generateQRCode",
+        "path": "LinkStow/Services/QRCodeGenerator.swift",
+        "symbol": "QRCodeGenerator.generateQRCode",
+        "start_line": 7,
+        "end_line": 23,
+        "sha256": "ed1ed68c5e5fd5bc97b8f0bdfee933fa8f464ae2e6d900e8a1278d6ff0e33483",
+        "role": "definition",
+        "id": "code-artifact-93b28d7c-59b4-4ae4-a0b4-be8493c806e3"
+      }
+    },
+    {
+      "id": "CODE-035",
+      "category": "export",
+      "caller": "QRCodeView.body",
+      "expression": "ShareSheet",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: QRCodeView.body invokes ShareSheet (type declaration) via ShareSheet. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "QRCodeView.body.calls.ShareSheet.type",
+        "path": "LinkStow/View/QRCodeView.swift",
+        "symbol": "QRCodeView.body calls ShareSheet (type declaration)",
+        "start_line": 77,
+        "end_line": 77,
+        "sha256": "f483d1621d88df0a038298b50bb806479914a6cb2de755a64bbc1e5cd3f1feee",
+        "role": "call-site",
+        "id": "code-artifact-2ae74386-5879-494c-acd9-1b5079cd1ebb"
+      },
+      "callee": {
+        "key": "ShareSheet.type",
+        "path": "LinkStow/View/QRCodeView.swift",
+        "symbol": "ShareSheet (type declaration)",
+        "start_line": 90,
+        "end_line": 114,
+        "sha256": "f483d1621d88df0a038298b50bb806479914a6cb2de755a64bbc1e5cd3f1feee",
+        "role": "definition",
+        "id": "code-artifact-9a7c933f-0f2a-4449-bb4e-9bd95250c395"
+      }
+    },
+    {
+      "id": "CODE-036",
+      "category": "library",
+      "caller": "MainView.linkListArea",
+      "expression": "mainController.openLink",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainView.linkListArea invokes MainController.openLink via mainController.openLink. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainView.linkListArea.calls.MainController.openLink",
+        "path": "LinkStow/View/MainView.swift",
+        "symbol": "MainView.linkListArea calls MainController.openLink",
+        "start_line": 660,
+        "end_line": 660,
+        "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+        "role": "call-site",
+        "id": "code-artifact-61ca6654-f117-425c-9c28-8693665ea4e4"
+      },
+      "callee": {
+        "key": "MainController.openLink",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.openLink",
+        "start_line": 140,
+        "end_line": 143,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "definition",
+        "id": "code-artifact-86d2f6c0-4fa2-4200-9789-d6e598c92af2"
+      }
+    },
+    {
+      "id": "CODE-037",
+      "category": "library",
+      "caller": "MainView.linkListArea",
+      "expression": "LinkEditorView",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainView.linkListArea invokes LinkEditorView (type declaration) via LinkEditorView. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainView.linkListArea.calls.LinkEditorView.type",
+        "path": "LinkStow/View/MainView.swift",
+        "symbol": "MainView.linkListArea calls LinkEditorView (type declaration)",
+        "start_line": 720,
+        "end_line": 724,
+        "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+        "role": "call-site",
+        "id": "code-artifact-36ea5798-ced2-43e0-8a14-66d7643308ac"
+      },
+      "callee": {
+        "key": "LinkEditorView.type",
+        "path": "LinkStow/View/LinkEditorView.swift",
+        "symbol": "LinkEditorView (type declaration)",
+        "start_line": 10,
+        "end_line": 77,
+        "sha256": "e12a95e027d3d55dcd2bbd249b37ecdd6e3dcff5f8da1c909660702f769ffa05",
+        "role": "definition",
+        "id": "code-artifact-ddd21be2-fc57-43be-83e0-340a250028a3"
+      }
+    },
+    {
+      "id": "CODE-038",
+      "category": "library",
+      "caller": "MainView.linkListArea",
+      "expression": "QRCodeView",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainView.linkListArea invokes QRCodeView (type declaration) via QRCodeView. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainView.linkListArea.calls.QRCodeView.type",
+        "path": "LinkStow/View/MainView.swift",
+        "symbol": "MainView.linkListArea calls QRCodeView (type declaration)",
+        "start_line": 730,
+        "end_line": 730,
+        "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+        "role": "call-site",
+        "id": "code-artifact-1cff1763-4482-47de-a602-df7da5ba31e6"
+      },
+      "callee": {
+        "key": "QRCodeView.type",
+        "path": "LinkStow/View/QRCodeView.swift",
+        "symbol": "QRCodeView (type declaration)",
+        "start_line": 7,
+        "end_line": 87,
+        "sha256": "f483d1621d88df0a038298b50bb806479914a6cb2de755a64bbc1e5cd3f1feee",
+        "role": "definition",
+        "id": "code-artifact-bd0b4e39-17a5-4381-9451-dce07ed557a6"
+      }
+    },
+    {
+      "id": "CODE-039",
+      "category": "library",
+      "caller": "MainView.linkListArea",
+      "expression": "ShareSheet",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainView.linkListArea invokes ShareSheet (type declaration) via ShareSheet. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainView.linkListArea.calls.ShareSheet.type",
+        "path": "LinkStow/View/MainView.swift",
+        "symbol": "MainView.linkListArea calls ShareSheet (type declaration)",
+        "start_line": 734,
+        "end_line": 734,
+        "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+        "role": "call-site",
+        "id": "code-artifact-d9aadc5d-6c80-4fba-a828-3bc7e6af1e5f"
+      },
+      "callee": {
+        "key": "ShareSheet.type",
+        "path": "LinkStow/View/QRCodeView.swift",
+        "symbol": "ShareSheet (type declaration)",
+        "start_line": 90,
+        "end_line": 114,
+        "sha256": "f483d1621d88df0a038298b50bb806479914a6cb2de755a64bbc1e5cd3f1feee",
+        "role": "definition",
+        "id": "code-artifact-9a7c933f-0f2a-4449-bb4e-9bd95250c395"
+      }
+    },
+    {
+      "id": "CODE-040",
+      "category": "library",
+      "caller": "MainView.linkListArea",
+      "expression": "link.viewSymbol",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainView.linkListArea invokes LinkModel.viewSymbol via link.viewSymbol. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainView.linkListArea.calls.LinkModel.viewSymbol",
+        "path": "LinkStow/View/MainView.swift",
+        "symbol": "MainView.linkListArea calls LinkModel.viewSymbol",
+        "start_line": 663,
+        "end_line": 663,
+        "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+        "role": "call-site",
+        "id": "code-artifact-ed21ddb4-a4fa-4c10-ba35-555ae6a48839"
+      },
+      "callee": {
+        "key": "LinkModel.viewSymbol",
+        "path": "LinkStow/Models/Link.swift",
+        "symbol": "LinkModel.viewSymbol",
+        "start_line": 137,
+        "end_line": 148,
+        "sha256": "0478925de337d9a360b03ecd3ff5d0787e3188b259fcf094ba806cc4fde36f48",
+        "role": "definition",
+        "id": "code-artifact-e4c75792-d912-4127-938e-f1928473976e"
+      }
+    },
+    {
+      "id": "CODE-041",
+      "category": "library",
+      "caller": "MainView.filteredLinks",
+      "expression": "$0.checkLinkInGroup",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainView.filteredLinks invokes LinkModel.checkLinkInGroup via $0.checkLinkInGroup. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainView.filteredLinks.calls.LinkModel.checkLinkInGroup",
+        "path": "LinkStow/View/MainView.swift",
+        "symbol": "MainView.filteredLinks calls LinkModel.checkLinkInGroup",
+        "start_line": 761,
+        "end_line": 761,
+        "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+        "role": "call-site",
+        "id": "code-artifact-f379a419-c4bc-4f9d-b553-f2df1507b8ad"
+      },
+      "callee": {
+        "key": "LinkModel.checkLinkInGroup",
+        "path": "LinkStow/Models/Link.swift",
+        "symbol": "LinkModel.checkLinkInGroup",
+        "start_line": 120,
+        "end_line": 122,
+        "sha256": "0478925de337d9a360b03ecd3ff5d0787e3188b259fcf094ba806cc4fde36f48",
+        "role": "definition",
+        "id": "code-artifact-17bc04c3-d7cd-4ec4-9109-c87ccbfd9bc6"
+      }
+    },
+    {
+      "id": "CODE-042",
+      "category": "groups",
+      "caller": "LinkEditorView.body",
+      "expression": "GroupEditorView",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: LinkEditorView.body invokes GroupEditorView (type declaration) via GroupEditorView. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "LinkEditorView.body.calls.GroupEditorView.type",
+        "path": "LinkStow/View/LinkEditorView.swift",
+        "symbol": "LinkEditorView.body calls GroupEditorView (type declaration)",
+        "start_line": 73,
+        "end_line": 73,
+        "sha256": "e12a95e027d3d55dcd2bbd249b37ecdd6e3dcff5f8da1c909660702f769ffa05",
+        "role": "call-site",
+        "id": "code-artifact-b66fa987-7737-4f82-b18d-c6eae72bc845"
+      },
+      "callee": {
+        "key": "GroupEditorView.type",
+        "path": "LinkStow/View/GroupEditorView.swift",
+        "symbol": "GroupEditorView (type declaration)",
+        "start_line": 22,
+        "end_line": 303,
+        "sha256": "5642568575313460bce6e60df85451205e6847ef80b4c66ef791589978b1db3f",
+        "role": "definition",
+        "id": "code-artifact-c45141e5-ddb9-4958-a9cf-787970ca705b"
+      }
+    },
+    {
+      "id": "CODE-043",
+      "category": "composition",
+      "caller": "RootView.body",
+      "expression": "MainController",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: RootView.body invokes MainController.init via MainController. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "RootView.body.calls.MainController.init",
+        "path": "LinkStow/App/RootView.swift",
+        "symbol": "RootView.body calls MainController.init",
+        "start_line": 13,
+        "end_line": 13,
+        "sha256": "9fdf75e0d6631a908c3c553688a18cc129fba2648610004ce5f45ebe08532095",
+        "role": "call-site",
+        "id": "code-artifact-0ab28916-ffe8-4ae7-888d-604e96210c4d"
+      },
+      "callee": {
+        "key": "MainController.init",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.init",
+        "start_line": 12,
+        "end_line": 15,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "definition",
+        "id": "code-artifact-6d69d083-d3e9-4b2c-bb24-843d805c4139"
+      }
+    },
+    {
+      "id": "CODE-044",
+      "category": "composition",
+      "caller": "RootView.body",
+      "expression": "MainView",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: RootView.body invokes MainView.init via MainView. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "RootView.body.calls.MainView.init",
+        "path": "LinkStow/App/RootView.swift",
+        "symbol": "RootView.body calls MainView.init",
+        "start_line": 18,
+        "end_line": 18,
+        "sha256": "9fdf75e0d6631a908c3c553688a18cc129fba2648610004ce5f45ebe08532095",
+        "role": "call-site",
+        "id": "code-artifact-50a32c8c-4f2f-4e77-a01d-81fca6ae4b81"
+      },
+      "callee": {
+        "key": "MainView.init",
+        "path": "LinkStow/View/MainView.swift",
+        "symbol": "MainView.init",
+        "start_line": 90,
+        "end_line": 93,
+        "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+        "role": "definition",
+        "id": "code-artifact-635a9669-aaa1-4ecd-ae01-69df0364a5c8"
+      }
+    },
+    {
+      "id": "CODE-045",
+      "category": "composition",
+      "caller": "LinkStowApp.body",
+      "expression": "RootView",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: LinkStowApp.body invokes RootView (type declaration) via RootView. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "LinkStowApp.body.calls.RootView.type",
+        "path": "LinkStow/App/LinkStowApp.swift",
+        "symbol": "LinkStowApp.body calls RootView (type declaration)",
+        "start_line": 15,
+        "end_line": 15,
+        "sha256": "89f03649aae214848a664704494912e9a61953913db20065f2c0c3b36362d019",
+        "role": "call-site",
+        "id": "code-artifact-a6c04fe4-c582-4558-9d5f-b5668dbf5719"
+      },
+      "callee": {
+        "key": "RootView.type",
+        "path": "LinkStow/App/RootView.swift",
+        "symbol": "RootView (type declaration)",
+        "start_line": 5,
+        "end_line": 22,
+        "sha256": "9fdf75e0d6631a908c3c553688a18cc129fba2648610004ce5f45ebe08532095",
+        "role": "definition",
+        "id": "code-artifact-7121a0ad-df31-4946-9b94-2ee74bfbdaa6"
+      }
+    },
+    {
+      "id": "CODE-046",
+      "category": "capture",
+      "caller": "MainView.controlArea",
+      "expression": "LinkEditorView",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainView.controlArea invokes LinkEditorView (type declaration) via LinkEditorView. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainView.controlArea.calls.LinkEditorView.type",
+        "path": "LinkStow/View/MainView.swift",
+        "symbol": "MainView.controlArea calls LinkEditorView (type declaration)",
+        "start_line": 176,
+        "end_line": 180,
+        "sha256": "372e7cf5a70a0c4e96e50b1fe5f1cb90c4387850b2c84d536f2bb6b90c9f6299",
+        "role": "call-site",
+        "id": "code-artifact-54e56ee3-1b8d-4eed-ba3e-2e9a73148adb"
+      },
+      "callee": {
+        "key": "LinkEditorView.type",
+        "path": "LinkStow/View/LinkEditorView.swift",
+        "symbol": "LinkEditorView (type declaration)",
+        "start_line": 10,
+        "end_line": 77,
+        "sha256": "e12a95e027d3d55dcd2bbd249b37ecdd6e3dcff5f8da1c909660702f769ffa05",
+        "role": "definition",
+        "id": "code-artifact-ddd21be2-fc57-43be-83e0-340a250028a3"
+      }
+    },
+    {
+      "id": "CODE-047",
+      "category": "appearance",
+      "caller": "SymbolModel.updateSymbol",
+      "expression": "setColor",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: SymbolModel.updateSymbol invokes SymbolModel.setColor via setColor. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "SymbolModel.updateSymbol.calls.SymbolModel.setColor",
+        "path": "LinkStow/Models/Symbol.swift",
+        "symbol": "SymbolModel.updateSymbol calls SymbolModel.setColor",
+        "start_line": 97,
+        "end_line": 97,
+        "sha256": "03f65ce1b866b381cba7c4dda60de410d6485c882d66c57929182c406ad551f9",
+        "role": "call-site",
+        "id": "code-artifact-8423189c-66f5-43b2-bf48-0e4e5248701a"
+      },
+      "callee": {
+        "key": "SymbolModel.setColor",
+        "path": "LinkStow/Models/Symbol.swift",
+        "symbol": "SymbolModel.setColor",
+        "start_line": 105,
+        "end_line": 113,
+        "sha256": "03f65ce1b866b381cba7c4dda60de410d6485c882d66c57929182c406ad551f9",
+        "role": "definition",
+        "id": "code-artifact-6b8d4dab-a4b0-4181-983a-38e24875c2ff"
+      }
+    },
+    {
+      "id": "CODE-048",
+      "category": "appearance",
+      "caller": "SymbolModel.updateSymbol",
+      "expression": "setSymbolType",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: SymbolModel.updateSymbol invokes SymbolModel.setSymbolType via setSymbolType. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "SymbolModel.updateSymbol.calls.SymbolModel.setSymbolType",
+        "path": "LinkStow/Models/Symbol.swift",
+        "symbol": "SymbolModel.updateSymbol calls SymbolModel.setSymbolType",
+        "start_line": 98,
+        "end_line": 98,
+        "sha256": "03f65ce1b866b381cba7c4dda60de410d6485c882d66c57929182c406ad551f9",
+        "role": "call-site",
+        "id": "code-artifact-1a9ff52a-9f2f-403b-9160-30669c5af9fa"
+      },
+      "callee": {
+        "key": "SymbolModel.setSymbolType",
+        "path": "LinkStow/Models/Symbol.swift",
+        "symbol": "SymbolModel.setSymbolType",
+        "start_line": 124,
+        "end_line": 126,
+        "sha256": "03f65ce1b866b381cba7c4dda60de410d6485c882d66c57929182c406ad551f9",
+        "role": "definition",
+        "id": "code-artifact-3e816973-4ed1-4930-91cb-52077346486f"
+      }
+    },
+    {
+      "id": "CODE-049",
+      "category": "appearance",
+      "caller": "SymbolModel.setColor",
+      "expression": "colorComponents",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: SymbolModel.setColor invokes SymbolModel.colorComponents via colorComponents. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "SymbolModel.setColor.calls.SymbolModel.colorComponents",
+        "path": "LinkStow/Models/Symbol.swift",
+        "symbol": "SymbolModel.setColor calls SymbolModel.colorComponents",
+        "start_line": 106,
+        "end_line": 106,
+        "sha256": "03f65ce1b866b381cba7c4dda60de410d6485c882d66c57929182c406ad551f9",
+        "role": "call-site",
+        "id": "code-artifact-1eca6bae-d6aa-45e1-97c7-66cdc7f564fd"
+      },
+      "callee": {
+        "key": "SymbolModel.colorComponents",
+        "path": "LinkStow/Models/Symbol.swift",
+        "symbol": "SymbolModel.colorComponents",
+        "start_line": 138,
+        "end_line": 150,
+        "sha256": "03f65ce1b866b381cba7c4dda60de410d6485c882d66c57929182c406ad551f9",
+        "role": "definition",
+        "id": "code-artifact-4c334ac8-ec7b-4e4e-8c73-d8e0d517e3e7"
+      }
+    },
+    {
+      "id": "CODE-050",
+      "category": "export",
+      "caller": "MainController.openLink",
+      "expression": "isValidURLScheme",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: MainController.openLink invokes MainController.isValidURLScheme via isValidURLScheme. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "MainController.openLink.calls.MainController.isValidURLScheme",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.openLink calls MainController.isValidURLScheme",
+        "start_line": 141,
+        "end_line": 141,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "call-site",
+        "id": "code-artifact-aa502a60-5c96-4609-8577-9e5122a5b208"
+      },
+      "callee": {
+        "key": "MainController.isValidURLScheme",
+        "path": "LinkStow/Controllers/MainController.swift",
+        "symbol": "MainController.isValidURLScheme",
+        "start_line": 145,
+        "end_line": 148,
+        "sha256": "d4f70f8491cbf2fef84d3521a03205776f8d9f7d0fd9e375bd872cbf472ed728",
+        "role": "definition",
+        "id": "code-artifact-a584e41f-db61-414a-9c19-3c1721d0de57"
+      }
+    },
+    {
+      "id": "CODE-051",
+      "category": "export",
+      "caller": "QRCodeView.body",
+      "expression": "copyQRCode",
+      "relationship": "calls",
+      "native_kind": "represents",
+      "rationale": "CALLS: QRCodeView.body invokes QRCodeView.copyQRCode via copyQRCode. Source is the exact call expression; target is its declaration. Manually inspected static call-site mapping, not a compiler-resolved runtime call graph.",
+      "call_site": {
+        "key": "QRCodeView.body.calls.QRCodeView.copyQRCode",
+        "path": "LinkStow/View/QRCodeView.swift",
+        "symbol": "QRCodeView.body calls QRCodeView.copyQRCode",
+        "start_line": 38,
+        "end_line": 38,
+        "sha256": "f483d1621d88df0a038298b50bb806479914a6cb2de755a64bbc1e5cd3f1feee",
+        "role": "call-site",
+        "id": "code-artifact-39e575bd-4d31-4101-b1a6-b456892bf127"
+      },
+      "callee": {
+        "key": "QRCodeView.copyQRCode",
+        "path": "LinkStow/View/QRCodeView.swift",
+        "symbol": "QRCodeView.copyQRCode",
+        "start_line": 83,
+        "end_line": 86,
+        "sha256": "f483d1621d88df0a038298b50bb806479914a6cb2de755a64bbc1e5cd3f1feee",
+        "role": "definition",
+        "id": "code-artifact-3dcce78e-3748-4481-af78-19263a3bdc96"
+      }
+    }
+  ]
+}

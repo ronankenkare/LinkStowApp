@@ -1,0 +1,726 @@
+{
+  "format": "plus-c-project-part",
+  "version": 1,
+  "part": "diagram",
+  "project": {
+    "elements": [
+      {
+        "id": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "kind": "diagram",
+        "ownerId": "project-fca6d9b3-8760-406f-bef7-e6c8e48344a4",
+        "name": "09 Hidden-link security",
+        "documentation": "",
+        "properties": {
+          "diagramKind": "activity",
+          "autoOrganize": true
+        },
+        "createdAt": "2026-10-28T17:46:32.629Z",
+        "modifiedAt": "2026-10-28T18:50:49.195Z"
+      },
+      {
+        "id": "initial-efa74388-4c2e-489e-8260-517a0b8e280a",
+        "kind": "initial",
+        "ownerId": null,
+        "name": "Tap hidden filter",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z"
+      },
+      {
+        "id": "decision-419cf20d-e7c9-4ca0-8172-cac886778554",
+        "kind": "decision",
+        "ownerId": null,
+        "name": "Hidden Group active and not selected?",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z"
+      },
+      {
+        "id": "decision-9652167d-52e7-48a2-a256-3ec9dd031b97",
+        "kind": "decision",
+        "ownerId": null,
+        "name": "Authentication already running?",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z"
+      },
+      {
+        "id": "action-ced47652-4cea-4a6d-8ef6-f2f427eaef7d",
+        "kind": "action",
+        "ownerId": null,
+        "name": "authenticateUser: create LAContext",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z"
+      },
+      {
+        "id": "decision-284469ca-e619-4dc1-afa6-44aa013e59be",
+        "kind": "decision",
+        "ownerId": null,
+        "name": "canEvaluatePolicy deviceOwnerAuthentication?",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z"
+      },
+      {
+        "id": "action-1fcce497-1477-416f-8a85-947efb786a99",
+        "kind": "action",
+        "ownerId": null,
+        "name": "Await OS device-owner authentication",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z"
+      },
+      {
+        "id": "decision-ae1e9a28-0d47-4e3d-b79f-ff90407c5c7c",
+        "kind": "decision",
+        "ownerId": null,
+        "name": "Authentication succeeded?",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z"
+      },
+      {
+        "id": "action-f3fce3f2-166a-40e9-b6fe-87a1c60206de",
+        "kind": "action",
+        "ownerId": null,
+        "name": "Set hidden filter; read hidden query",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z"
+      },
+      {
+        "id": "action-bcd3651a-e890-45b8-831a-17fea30f7c50",
+        "kind": "action",
+        "ownerId": null,
+        "name": "Keep selection; reset authentication flag",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z"
+      },
+      {
+        "id": "merge-d9f71139-8c6c-464f-bb7b-874c3dfd1189",
+        "kind": "merge",
+        "ownerId": null,
+        "name": "Interaction completes",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z"
+      },
+      {
+        "id": "activity-final-140d9eeb-916a-4024-b414-123e7f38314d",
+        "kind": "activity-final",
+        "ownerId": null,
+        "name": "Return to list",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z"
+      },
+      {
+        "id": "flow-a3f490c2-faa5-4543-ac71-800fcd7c60ed",
+        "kind": "control-flow",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "guard": ""
+        },
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z",
+        "sourceId": "initial-efa74388-4c2e-489e-8260-517a0b8e280a",
+        "targetId": "decision-419cf20d-e7c9-4ca0-8172-cac886778554"
+      },
+      {
+        "id": "flow-b335f079-b86e-41cb-9aed-f7e60c32497a",
+        "kind": "control-flow",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "guard": "active; not selected"
+        },
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z",
+        "sourceId": "decision-419cf20d-e7c9-4ca0-8172-cac886778554",
+        "targetId": "decision-9652167d-52e7-48a2-a256-3ec9dd031b97"
+      },
+      {
+        "id": "flow-4241c924-a29d-4d70-a64a-71104fd8a7e4",
+        "kind": "control-flow",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "guard": "already selected: deselect; inactive: button absent"
+        },
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z",
+        "sourceId": "decision-419cf20d-e7c9-4ca0-8172-cac886778554",
+        "targetId": "merge-d9f71139-8c6c-464f-bb7b-874c3dfd1189"
+      },
+      {
+        "id": "flow-55597efe-0cde-4845-9b67-44b324f1e6dc",
+        "kind": "control-flow",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "guard": "busy: ignore"
+        },
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z",
+        "sourceId": "decision-9652167d-52e7-48a2-a256-3ec9dd031b97",
+        "targetId": "merge-d9f71139-8c6c-464f-bb7b-874c3dfd1189"
+      },
+      {
+        "id": "flow-f2f3d22a-59c4-4118-b2b6-6bf056ef38cd",
+        "kind": "control-flow",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "guard": "not busy: set busy flag"
+        },
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z",
+        "sourceId": "decision-9652167d-52e7-48a2-a256-3ec9dd031b97",
+        "targetId": "action-ced47652-4cea-4a6d-8ef6-f2f427eaef7d"
+      },
+      {
+        "id": "flow-c702a1c4-880d-4420-883c-40413487e3d6",
+        "kind": "control-flow",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "guard": ""
+        },
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z",
+        "sourceId": "action-ced47652-4cea-4a6d-8ef6-f2f427eaef7d",
+        "targetId": "decision-284469ca-e619-4dc1-afa6-44aa013e59be"
+      },
+      {
+        "id": "flow-806e696c-6815-474b-b0c8-aae1fd75ed73",
+        "kind": "control-flow",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "guard": "available"
+        },
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z",
+        "sourceId": "decision-284469ca-e619-4dc1-afa6-44aa013e59be",
+        "targetId": "action-1fcce497-1477-416f-8a85-947efb786a99"
+      },
+      {
+        "id": "flow-aa8acb3c-5b66-4f82-9688-39062cae1211",
+        "kind": "control-flow",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "guard": "unavailable: false"
+        },
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z",
+        "sourceId": "decision-284469ca-e619-4dc1-afa6-44aa013e59be",
+        "targetId": "action-bcd3651a-e890-45b8-831a-17fea30f7c50"
+      },
+      {
+        "id": "flow-e5f71194-5c9b-4f97-a198-8894f062e3d7",
+        "kind": "control-flow",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "guard": ""
+        },
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z",
+        "sourceId": "action-1fcce497-1477-416f-8a85-947efb786a99",
+        "targetId": "decision-ae1e9a28-0d47-4e3d-b79f-ff90407c5c7c"
+      },
+      {
+        "id": "flow-9668fa6a-587a-405f-90b6-b2712c2f7f8a",
+        "kind": "control-flow",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "guard": "true"
+        },
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z",
+        "sourceId": "decision-ae1e9a28-0d47-4e3d-b79f-ff90407c5c7c",
+        "targetId": "action-f3fce3f2-166a-40e9-b6fe-87a1c60206de"
+      },
+      {
+        "id": "flow-652a8daa-6b7d-4533-8d62-8e5901746b1e",
+        "kind": "control-flow",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "guard": "false or thrown error"
+        },
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z",
+        "sourceId": "decision-ae1e9a28-0d47-4e3d-b79f-ff90407c5c7c",
+        "targetId": "action-bcd3651a-e890-45b8-831a-17fea30f7c50"
+      },
+      {
+        "id": "flow-db13f2e9-50c1-40bd-b51c-04d13fd8d404",
+        "kind": "control-flow",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "guard": ""
+        },
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z",
+        "sourceId": "action-f3fce3f2-166a-40e9-b6fe-87a1c60206de",
+        "targetId": "merge-d9f71139-8c6c-464f-bb7b-874c3dfd1189"
+      },
+      {
+        "id": "flow-ed675909-2dc2-4f7e-942a-11f416ec2bc0",
+        "kind": "control-flow",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "guard": ""
+        },
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z",
+        "sourceId": "action-bcd3651a-e890-45b8-831a-17fea30f7c50",
+        "targetId": "merge-d9f71139-8c6c-464f-bb7b-874c3dfd1189"
+      },
+      {
+        "id": "flow-18fa38fc-adee-4191-b787-da1475b67a2d",
+        "kind": "control-flow",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "guard": ""
+        },
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z",
+        "sourceId": "merge-d9f71139-8c6c-464f-bb7b-874c3dfd1189",
+        "targetId": "activity-final-140d9eeb-916a-4024-b414-123e7f38314d"
+      },
+      {
+        "id": "note-9ebacb3d-6835-4d2d-b8c0-2349f2bb6413",
+        "kind": "note",
+        "ownerId": null,
+        "name": "",
+        "documentation": "Trust boundary: LocalAuthentication returns a device-owner result; policy can use biometrics or passcode. UI entry is guarded. SwiftData already queries hidden records; controller/model methods have no auth check. No app-level encrypted vault, lifecycle relock, or per-operation authorization is implemented.",
+        "properties": {
+          "targetKind": "diagram",
+          "targetId": null
+        },
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z"
+      },
+      {
+        "id": "note-007bd4c0-5762-471b-8863-0c186d893f38",
+        "kind": "note",
+        "ownerId": null,
+        "name": "",
+        "documentation": "Preferences enabling Hidden Group and editor toggling to hidden also authenticate; disabling/unhiding do not. Saving a hidden link through updateLink clears groups. Direct model mutation and toggleHideLink bypass that invariant. Turning off the preference alone does not reset an already selected hidden filter.",
+        "properties": {
+          "targetKind": "diagram",
+          "targetId": null
+        },
+        "createdAt": "2026-10-28T17:46:32.634Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z"
+      },
+      {
+        "id": "note-78f36a11-27df-4d8e-9191-c91d88fc3a7c",
+        "kind": "note",
+        "ownerId": null,
+        "name": "",
+        "documentation": "If the hidden filter is already selected, tapping it toggles selection off without authentication. The button is absent when hiddenGroupActive is false. Disabling the preference does not itself reset filterHiddenSelected.",
+        "properties": {
+          "targetKind": "diagram",
+          "targetId": null
+        },
+        "createdAt": "2026-10-28T17:53:18.632Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z"
+      },
+      {
+        "id": "note-a4fbea05-23d0-4d1a-9572-0c0af4a6fc98",
+        "kind": "note",
+        "ownerId": null,
+        "name": "",
+        "documentation": "NSFaceIDUsageDescription is supplied by project build settings in Debug and Release. It is purpose text for OS Face ID presentation, not an entitlement or authorization result. authenticateUser uses deviceOwnerAuthentication, which may also use passcode.",
+        "properties": {
+          "targetKind": "diagram",
+          "targetId": null
+        },
+        "createdAt": "2026-10-28T18:50:49.201Z",
+        "modifiedAt": "2026-10-28T18:50:49.201Z"
+      }
+    ],
+    "views": [
+      {
+        "id": "view-e605e19d-66e7-46ef-a87d-3b0f3bf688df",
+        "kind": "node",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "initial-efa74388-4c2e-489e-8260-517a0b8e280a",
+        "parentViewId": null,
+        "style": {},
+        "x": 276,
+        "y": 88
+      },
+      {
+        "id": "view-15b2ece2-0d13-4906-bfdf-fa5a5ab57827",
+        "kind": "node",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "decision-419cf20d-e7c9-4ca0-8172-cac886778554",
+        "parentViewId": null,
+        "style": {},
+        "x": 276,
+        "y": 280
+      },
+      {
+        "id": "view-385705fe-2d6f-4d5f-8d7b-e901bdda4cb9",
+        "kind": "node",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "decision-9652167d-52e7-48a2-a256-3ec9dd031b97",
+        "parentViewId": null,
+        "style": {},
+        "x": 276,
+        "y": 491
+      },
+      {
+        "id": "view-247cb2dc-2f52-4573-8c44-549658a60591",
+        "kind": "node",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "action-ced47652-4cea-4a6d-8ef6-f2f427eaef7d",
+        "parentViewId": null,
+        "style": {},
+        "x": 276,
+        "y": 696
+      },
+      {
+        "id": "view-5c4cad00-31a4-4a8c-98ae-08ea1ec08ac3",
+        "kind": "node",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "decision-284469ca-e619-4dc1-afa6-44aa013e59be",
+        "parentViewId": null,
+        "style": {},
+        "x": 276,
+        "y": 858
+      },
+      {
+        "id": "view-6741f212-0b34-4889-a969-f7769b9566e6",
+        "kind": "node",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "action-1fcce497-1477-416f-8a85-947efb786a99",
+        "parentViewId": null,
+        "style": {},
+        "x": 276,
+        "y": 1063
+      },
+      {
+        "id": "view-7c45d566-1136-427b-a6d0-8d81b0d196e3",
+        "kind": "node",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "decision-ae1e9a28-0d47-4e3d-b79f-ff90407c5c7c",
+        "parentViewId": null,
+        "style": {},
+        "x": 276,
+        "y": 1225
+      },
+      {
+        "id": "view-3c510797-f6eb-4da5-be83-8677a4dc132f",
+        "kind": "node",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "action-f3fce3f2-166a-40e9-b6fe-87a1c60206de",
+        "parentViewId": null,
+        "style": {},
+        "x": 392,
+        "y": 1430
+      },
+      {
+        "id": "view-2ee49626-b53c-442c-a7fc-d55284a3d4c0",
+        "kind": "node",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "action-bcd3651a-e890-45b8-831a-17fea30f7c50",
+        "parentViewId": null,
+        "style": {},
+        "x": 160,
+        "y": 1430
+      },
+      {
+        "id": "view-52b7b330-5107-4774-b3b7-7ba833a5028f",
+        "kind": "node",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "merge-d9f71139-8c6c-464f-bb7b-874c3dfd1189",
+        "parentViewId": null,
+        "style": {},
+        "x": 276,
+        "y": 1592
+      },
+      {
+        "id": "view-6cf21f78-3d6e-4cd1-8d58-2ca06ca5ad48",
+        "kind": "node",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "activity-final-140d9eeb-916a-4024-b414-123e7f38314d",
+        "parentViewId": null,
+        "style": {},
+        "x": 276,
+        "y": 1784
+      },
+      {
+        "id": "view-1c77d4f6-86d8-42f7-9175-5a12ce6caf90",
+        "kind": "edge",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "flow-a3f490c2-faa5-4543-ac71-800fcd7c60ed",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-9d81f8e2-3321-4029-ab90-13b16acdeafe",
+        "kind": "edge",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "flow-b335f079-b86e-41cb-9aed-f7e60c32497a",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-c6c4a71c-2430-4cb0-8626-d2edd51bc460",
+        "kind": "edge",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "flow-4241c924-a29d-4d70-a64a-71104fd8a7e4",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-03c4f1d9-7373-49a0-a276-3e7d6e6132fb",
+        "kind": "edge",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "flow-55597efe-0cde-4845-9b67-44b324f1e6dc",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-bb1ff5a4-4921-487f-8dac-5a4c3037cf26",
+        "kind": "edge",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "flow-f2f3d22a-59c4-4118-b2b6-6bf056ef38cd",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-37a0e9d5-eabf-4232-ad55-70906dddf1c5",
+        "kind": "edge",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "flow-c702a1c4-880d-4420-883c-40413487e3d6",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-619f665f-a637-4e0a-b2ff-4720f3c04861",
+        "kind": "edge",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "flow-806e696c-6815-474b-b0c8-aae1fd75ed73",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-43d3578e-bb12-462c-8bfd-6b1a6903a494",
+        "kind": "edge",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "flow-aa8acb3c-5b66-4f82-9688-39062cae1211",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-80cce8a6-b600-48ae-a050-28c0d89d2205",
+        "kind": "edge",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "flow-e5f71194-5c9b-4f97-a198-8894f062e3d7",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-912ecd04-bab2-4a36-9790-46b25e6f89cd",
+        "kind": "edge",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "flow-9668fa6a-587a-405f-90b6-b2712c2f7f8a",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-07f1fe91-422a-46db-aa4d-e07ae63d65e0",
+        "kind": "edge",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "flow-652a8daa-6b7d-4533-8d62-8e5901746b1e",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-8cde48b4-48f7-45b9-a6ad-21aad03fb3ed",
+        "kind": "edge",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "flow-db13f2e9-50c1-40bd-b51c-04d13fd8d404",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-ce2f5e02-6284-4070-9a86-8586d607081b",
+        "kind": "edge",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "flow-ed675909-2dc2-4f7e-942a-11f416ec2bc0",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-6eb8af9c-1980-401c-bff2-81558d78a26f",
+        "kind": "edge",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "flow-18fa38fc-adee-4191-b787-da1475b67a2d",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-71abac0e-4e37-4d7a-8084-81d515159f64",
+        "kind": "shape",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "note-9ebacb3d-6835-4d2d-b8c0-2349f2bb6413",
+        "parentViewId": null,
+        "style": {},
+        "x": 1076,
+        "y": 112,
+        "width": 0,
+        "height": 0,
+        "collapsed": false
+      },
+      {
+        "id": "view-bf3a848a-e8bc-41ef-8c30-d40d50b2f883",
+        "kind": "shape",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "note-007bd4c0-5762-471b-8863-0c186d893f38",
+        "parentViewId": null,
+        "style": {},
+        "x": 1076,
+        "y": 291,
+        "width": 0,
+        "height": 0,
+        "collapsed": false
+      },
+      {
+        "id": "view-9bc5db71-4b4d-43d6-8408-ed917a99f0fd",
+        "kind": "shape",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "note-78f36a11-27df-4d8e-9191-c91d88fc3a7c",
+        "parentViewId": null,
+        "style": {},
+        "x": 1076,
+        "y": 470,
+        "width": 0,
+        "height": 0,
+        "collapsed": false
+      },
+      {
+        "id": "view-373fb03e-b567-4305-a5ed-f17ae22c0526",
+        "kind": "shape",
+        "diagramId": "diagram-3b9049da-0aac-4cd0-8fb2-4d7f93b0a328",
+        "elementId": "note-a4fbea05-23d0-4d1a-9572-0c0af4a6fc98",
+        "parentViewId": null,
+        "style": {},
+        "x": 498,
+        "y": 72,
+        "width": 0,
+        "height": 0,
+        "collapsed": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,456 @@
+{
+  "format": "plus-c-project-part",
+  "version": 1,
+  "part": "diagram",
+  "project": {
+    "elements": [
+      {
+        "id": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+        "kind": "diagram",
+        "ownerId": "project-fca6d9b3-8760-406f-bef7-e6c8e48344a4",
+        "name": "02 System requirements",
+        "documentation": "",
+        "properties": {
+          "diagramKind": "requirements",
+          "markdown": "## REQ-001 Verify entered or pasted URLs\n\nThe capture UI shall ask LinkMetadataService to verify the original text, then try https:// and http:// prefixes when neither standard prefix is present. Successful HTTP responses must be 200...399 and parse as HTML. Service scheme check currently uses hasPrefix(\"http\"). Status: as implemented, not an approved future requirement.\n\n## REQ-002 Retrieve best-effort metadata\n\nAfter verification, the UI shall request title, description and icon sequentially. Missing title/description become empty strings; missing icon is nil. Icons are tried through HTML rel selectors, og:image, then /favicon.ico after successful HTML retrieval. Status: as implemented, not an approved future requirement.\n\n## REQ-003 Allow manual capture after verification failure\n\nA failed verification shall offer Add Link as Entered. Add creates an uninserted LinkModel and opens the editor; Save inserts it, Cancel dismisses it. The editor requires a nonblank title, but manual URL validity is not enforced at save. Status: as implemented, not an approved future requirement.\n\n## REQ-004 Store the library locally\n\nThe app shall use a disk-backed SwiftData ModelContainer and inject its ModelContext. Add inserts models and relies on autosave. Update/delete attempt explicit saves with try?, suppressing save errors. Container construction failure terminates startup. No application sync service is implemented. Status: as implemented, not an approved future requirement.\n\n## REQ-005 Maintain reusable groups\n\nThe app shall create, edit and delete groups and allow many links per group and multiple groups per link. SwiftData shall maintain the inverse and nullify relationships on deletion without deleting linked records. Status: as implemented, not an approved future requirement.\n\n## REQ-006 Select and sort library records\n\nMainView shall query nonhidden and hidden records separately, sorted by title. Normal/group selection uses nonhidden records; hidden selection uses hidden records. Group membership filters by identity. The sort control reverses title order. Text filtering remains dormant (see GAP-001). Status: as implemented, not an approved future requirement.\n\n## REQ-007 Guard selected hidden-link UI transitions\n\nEnabling Hidden Group, entering the hidden filter, and changing the editor to hidden shall invoke LocalAuthentication deviceOwnerAuthentication. Failure or unavailable policy shall not authorize the transition. Unhide and disable do not require auth. UI guards do not authorize model/controller operations. Status: as implemented, not an approved future requirement.\n\n## REQ-008 Clear groups when saving a hidden link\n\nLinkModel.updateLink shall clear group membership when isHidden is true. Editor initialization shall exclude groups on hidden links. This invariant is enforced on updateLink, not on direct property writes or toggleHideLink. Status: as implemented, not an approved future requirement.\n\n## REQ-009 Customize visual symbols\n\nLink and group editors shall allow SF Symbol or emoji and color selection; links may retain a favicon. SymbolModel shall store the type raw value and RGBA components, defaulting unknown types to icon. Status: as implemented, not an approved future requirement.\n\n## REQ-010 Persist appearance preferences\n\nPreferences shall store title and caption line limits through AppStorage with UI bounds 1...5 and defaults 3 and 2; MainView shall apply the limits to link rows. Status: as implemented, not an approved future requirement.\n\n## REQ-011 Open only standard web schemes\n\nMainController.openLink shall open URLs with case-insensitive exact http or https schemes through UIApplication.shared.open and ignore unsupported schemes or failed URL parsing. This guard is separate from metadata verification. Status: as implemented, not an approved future requirement.\n\n## REQ-012 Generate and export QR images\n\nQRCodeGenerator shall encode UTF-8 URL text with CoreImage QR filtering and scale the image tenfold. QRCodeView shall display the image or a failure label, and enable copying/sharing only when an image exists. Status: as implemented, not an approved future requirement.\n\n## REQ-013 Share saved URLs\n\nMainView shall present a UIActivityViewController-backed ShareSheet with a URL value when URL(string:) succeeds. QRCodeView shall share an image through the same wrapper. Sharing has no separate http/https guard. Status: as implemented, not an approved future requirement.\n\n## REQ-014 Store reminder intent only\n\nLinkModel.updateLink shall store reminder enabled/date/all-day fields, and clear date/all-day when disabled. No notification permission, scheduling or delivery is implemented. The editor currently passes reminderTimeToggleOn as reminderAllDay (GAP-002). Status: as implemented, not an approved future requirement.\n\n## REQ-015 Isolate and reset editor state\n\nLinkEditorViewModel shall initialize new/existing link form state, save through MainController, and reset after save. The view shall dismiss on Save or Cancel. Persisted URL is displayed by the editor; save updates details rather than the URL. Status: as implemented, not an approved future requirement.\n\n## REQ-016 Represent implemented main-button states\n\nMainButtonState shall contain pasteLink, searchLink, linkNotFound, addLink and filterLink. The first four are reached by current capture interactions. Filtering selects data through separate flags; no code sets mainState to filterLink. Status: as implemented, not an approved future requirement.\n"
+        },
+        "createdAt": "2026-10-28T17:42:40.458Z",
+        "modifiedAt": "2026-10-28T17:42:40.458Z"
+      },
+      {
+        "id": "document-requirement-70367ae8-c080-4b89-a469-84f5bc7aea0f",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "REQ-001 Verify entered or pasted URLs",
+        "documentation": "The capture UI shall ask LinkMetadataService to verify the original text, then try https:// and http:// prefixes when neither standard prefix is present. Successful HTTP responses must be 200...399 and parse as HTML. Service scheme check currently uses hasPrefix(\"http\"). Status: as implemented, not an approved future requirement.",
+        "properties": {
+          "key": "REQ-001",
+          "title": "Verify entered or pasted URLs",
+          "statement": "The capture UI shall ask LinkMetadataService to verify the original text, then try https:// and http:// prefixes when neither standard prefix is present. Successful HTTP responses must be 200...399 and parse as HTML. Service scheme check currently uses hasPrefix(\"http\"). Status: as implemented, not an approved future requirement."
+        },
+        "createdAt": "2026-10-28T17:42:40.463Z",
+        "modifiedAt": "2026-10-28T18:50:47.395Z"
+      },
+      {
+        "id": "document-requirement-3e3f7f7c-8b60-459a-97a1-3b38d387a771",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "REQ-002 Retrieve best-effort metadata",
+        "documentation": "After verification, the UI shall request title, description and icon sequentially. Missing title/description become empty strings; missing icon is nil. Icons are tried through HTML rel selectors, og:image, then /favicon.ico after successful HTML retrieval. Status: as implemented, not an approved future requirement.",
+        "properties": {
+          "key": "REQ-002",
+          "title": "Retrieve best-effort metadata",
+          "statement": "After verification, the UI shall request title, description and icon sequentially. Missing title/description become empty strings; missing icon is nil. Icons are tried through HTML rel selectors, og:image, then /favicon.ico after successful HTML retrieval. Status: as implemented, not an approved future requirement."
+        },
+        "createdAt": "2026-10-28T17:42:40.463Z",
+        "modifiedAt": "2026-10-28T18:50:47.395Z"
+      },
+      {
+        "id": "document-requirement-8c08d0b3-7588-45ef-bd55-3035c2eb59eb",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "REQ-003 Allow manual capture after verification failure",
+        "documentation": "A failed verification shall offer Add Link as Entered. Add creates an uninserted LinkModel and opens the editor; Save inserts it, Cancel dismisses it. The editor requires a nonblank title, but manual URL validity is not enforced at save. Status: as implemented, not an approved future requirement.",
+        "properties": {
+          "key": "REQ-003",
+          "title": "Allow manual capture after verification failure",
+          "statement": "A failed verification shall offer Add Link as Entered. Add creates an uninserted LinkModel and opens the editor; Save inserts it, Cancel dismisses it. The editor requires a nonblank title, but manual URL validity is not enforced at save. Status: as implemented, not an approved future requirement."
+        },
+        "createdAt": "2026-10-28T17:42:40.463Z",
+        "modifiedAt": "2026-10-28T18:50:47.395Z"
+      },
+      {
+        "id": "document-requirement-aa931a72-b8b4-4e68-bebf-a4e872be836f",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "REQ-004 Store the library locally",
+        "documentation": "The app shall use a disk-backed SwiftData ModelContainer and inject its ModelContext. Add inserts models and relies on autosave. Update/delete attempt explicit saves with try?, suppressing save errors. Container construction failure terminates startup. No application sync service is implemented. Status: as implemented, not an approved future requirement.",
+        "properties": {
+          "key": "REQ-004",
+          "title": "Store the library locally",
+          "statement": "The app shall use a disk-backed SwiftData ModelContainer and inject its ModelContext. Add inserts models and relies on autosave. Update/delete attempt explicit saves with try?, suppressing save errors. Container construction failure terminates startup. No application sync service is implemented. Status: as implemented, not an approved future requirement."
+        },
+        "createdAt": "2026-10-28T17:42:40.463Z",
+        "modifiedAt": "2026-10-28T18:50:47.395Z"
+      },
+      {
+        "id": "document-requirement-49884684-ea7b-456f-a114-9c619eea4f8f",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "REQ-005 Maintain reusable groups",
+        "documentation": "The app shall create, edit and delete groups and allow many links per group and multiple groups per link. SwiftData shall maintain the inverse and nullify relationships on deletion without deleting linked records. Status: as implemented, not an approved future requirement.",
+        "properties": {
+          "key": "REQ-005",
+          "title": "Maintain reusable groups",
+          "statement": "The app shall create, edit and delete groups and allow many links per group and multiple groups per link. SwiftData shall maintain the inverse and nullify relationships on deletion without deleting linked records. Status: as implemented, not an approved future requirement."
+        },
+        "createdAt": "2026-10-28T17:42:40.463Z",
+        "modifiedAt": "2026-10-28T18:50:47.395Z"
+      },
+      {
+        "id": "document-requirement-3e786509-9ead-4cb4-a415-9a44cd8a4a78",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "REQ-006 Select and sort library records",
+        "documentation": "MainView shall query nonhidden and hidden records separately, sorted by title. Normal/group selection uses nonhidden records; hidden selection uses hidden records. Group membership filters by identity. The sort control reverses title order. Text filtering remains dormant (see GAP-001). Status: as implemented, not an approved future requirement.",
+        "properties": {
+          "key": "REQ-006",
+          "title": "Select and sort library records",
+          "statement": "MainView shall query nonhidden and hidden records separately, sorted by title. Normal/group selection uses nonhidden records; hidden selection uses hidden records. Group membership filters by identity. The sort control reverses title order. Text filtering remains dormant (see GAP-001). Status: as implemented, not an approved future requirement."
+        },
+        "createdAt": "2026-10-28T17:42:40.463Z",
+        "modifiedAt": "2026-10-28T18:50:47.395Z"
+      },
+      {
+        "id": "document-requirement-73920a9d-7f2e-49bb-86bd-538eeaaf7a4c",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "REQ-007 Guard selected hidden-link UI transitions",
+        "documentation": "Enabling Hidden Group, entering the hidden filter, and changing the editor to hidden shall invoke LocalAuthentication deviceOwnerAuthentication. Failure or unavailable policy shall not authorize the transition. Unhide and disable do not require auth. UI guards do not authorize model/controller operations. Status: as implemented, not an approved future requirement.",
+        "properties": {
+          "key": "REQ-007",
+          "title": "Guard selected hidden-link UI transitions",
+          "statement": "Enabling Hidden Group, entering the hidden filter, and changing the editor to hidden shall invoke LocalAuthentication deviceOwnerAuthentication. Failure or unavailable policy shall not authorize the transition. Unhide and disable do not require auth. UI guards do not authorize model/controller operations. Status: as implemented, not an approved future requirement."
+        },
+        "createdAt": "2026-10-28T17:42:40.463Z",
+        "modifiedAt": "2026-10-28T18:50:47.395Z"
+      },
+      {
+        "id": "document-requirement-e3ea2da4-5a97-4c9b-8a12-62fe4ec119c5",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "REQ-008 Clear groups when saving a hidden link",
+        "documentation": "LinkModel.updateLink shall clear group membership when isHidden is true. Editor initialization shall exclude groups on hidden links. This invariant is enforced on updateLink, not on direct property writes or toggleHideLink. Status: as implemented, not an approved future requirement.",
+        "properties": {
+          "key": "REQ-008",
+          "title": "Clear groups when saving a hidden link",
+          "statement": "LinkModel.updateLink shall clear group membership when isHidden is true. Editor initialization shall exclude groups on hidden links. This invariant is enforced on updateLink, not on direct property writes or toggleHideLink. Status: as implemented, not an approved future requirement."
+        },
+        "createdAt": "2026-10-28T17:42:40.463Z",
+        "modifiedAt": "2026-10-28T18:50:47.395Z"
+      },
+      {
+        "id": "document-requirement-5965dc19-09f0-4a57-b79d-89de080a682e",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "REQ-009 Customize visual symbols",
+        "documentation": "Link and group editors shall allow SF Symbol or emoji and color selection; links may retain a favicon. SymbolModel shall store the type raw value and RGBA components, defaulting unknown types to icon. Status: as implemented, not an approved future requirement.",
+        "properties": {
+          "key": "REQ-009",
+          "title": "Customize visual symbols",
+          "statement": "Link and group editors shall allow SF Symbol or emoji and color selection; links may retain a favicon. SymbolModel shall store the type raw value and RGBA components, defaulting unknown types to icon. Status: as implemented, not an approved future requirement."
+        },
+        "createdAt": "2026-10-28T17:42:40.463Z",
+        "modifiedAt": "2026-10-28T18:50:47.395Z"
+      },
+      {
+        "id": "document-requirement-287de716-22ce-4df5-b8e8-34060ee681b8",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "REQ-010 Persist appearance preferences",
+        "documentation": "Preferences shall store title and caption line limits through AppStorage with UI bounds 1...5 and defaults 3 and 2; MainView shall apply the limits to link rows. Status: as implemented, not an approved future requirement.",
+        "properties": {
+          "key": "REQ-010",
+          "title": "Persist appearance preferences",
+          "statement": "Preferences shall store title and caption line limits through AppStorage with UI bounds 1...5 and defaults 3 and 2; MainView shall apply the limits to link rows. Status: as implemented, not an approved future requirement."
+        },
+        "createdAt": "2026-10-28T17:42:40.463Z",
+        "modifiedAt": "2026-10-28T18:50:47.395Z"
+      },
+      {
+        "id": "document-requirement-90825e13-1f96-4ff5-9b25-a0d984fed9eb",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "REQ-011 Open only standard web schemes",
+        "documentation": "MainController.openLink shall open URLs with case-insensitive exact http or https schemes through UIApplication.shared.open and ignore unsupported schemes or failed URL parsing. This guard is separate from metadata verification. Status: as implemented, not an approved future requirement.",
+        "properties": {
+          "key": "REQ-011",
+          "title": "Open only standard web schemes",
+          "statement": "MainController.openLink shall open URLs with case-insensitive exact http or https schemes through UIApplication.shared.open and ignore unsupported schemes or failed URL parsing. This guard is separate from metadata verification. Status: as implemented, not an approved future requirement."
+        },
+        "createdAt": "2026-10-28T17:42:40.463Z",
+        "modifiedAt": "2026-10-28T18:50:47.395Z"
+      },
+      {
+        "id": "document-requirement-e99aabb4-f544-4374-a85e-f5e6d8ef783c",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "REQ-012 Generate and export QR images",
+        "documentation": "QRCodeGenerator shall encode UTF-8 URL text with CoreImage QR filtering and scale the image tenfold. QRCodeView shall display the image or a failure label, and enable copying/sharing only when an image exists. Status: as implemented, not an approved future requirement.",
+        "properties": {
+          "key": "REQ-012",
+          "title": "Generate and export QR images",
+          "statement": "QRCodeGenerator shall encode UTF-8 URL text with CoreImage QR filtering and scale the image tenfold. QRCodeView shall display the image or a failure label, and enable copying/sharing only when an image exists. Status: as implemented, not an approved future requirement."
+        },
+        "createdAt": "2026-10-28T17:42:40.463Z",
+        "modifiedAt": "2026-10-28T18:50:47.395Z"
+      },
+      {
+        "id": "document-requirement-8cf42bbf-f27c-4df0-a493-eb4974e24959",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "REQ-013 Share saved URLs",
+        "documentation": "MainView shall present a UIActivityViewController-backed ShareSheet with a URL value when URL(string:) succeeds. QRCodeView shall share an image through the same wrapper. Sharing has no separate http/https guard. Status: as implemented, not an approved future requirement.",
+        "properties": {
+          "key": "REQ-013",
+          "title": "Share saved URLs",
+          "statement": "MainView shall present a UIActivityViewController-backed ShareSheet with a URL value when URL(string:) succeeds. QRCodeView shall share an image through the same wrapper. Sharing has no separate http/https guard. Status: as implemented, not an approved future requirement."
+        },
+        "createdAt": "2026-10-28T17:42:40.463Z",
+        "modifiedAt": "2026-10-28T18:50:47.395Z"
+      },
+      {
+        "id": "document-requirement-b54a020e-5606-4658-9eae-7ffc57ed5392",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "REQ-014 Store reminder intent only",
+        "documentation": "LinkModel.updateLink shall store reminder enabled/date/all-day fields, and clear date/all-day when disabled. No notification permission, scheduling or delivery is implemented. The editor currently passes reminderTimeToggleOn as reminderAllDay (GAP-002). Status: as implemented, not an approved future requirement.",
+        "properties": {
+          "key": "REQ-014",
+          "title": "Store reminder intent only",
+          "statement": "LinkModel.updateLink shall store reminder enabled/date/all-day fields, and clear date/all-day when disabled. No notification permission, scheduling or delivery is implemented. The editor currently passes reminderTimeToggleOn as reminderAllDay (GAP-002). Status: as implemented, not an approved future requirement."
+        },
+        "createdAt": "2026-10-28T17:42:40.463Z",
+        "modifiedAt": "2026-10-28T18:50:47.395Z"
+      },
+      {
+        "id": "document-requirement-99805f42-cc09-43f1-ad07-52bb7e0c91a6",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "REQ-015 Isolate and reset editor state",
+        "documentation": "LinkEditorViewModel shall initialize new/existing link form state, save through MainController, and reset after save. The view shall dismiss on Save or Cancel. Persisted URL is displayed by the editor; save updates details rather than the URL. Status: as implemented, not an approved future requirement.",
+        "properties": {
+          "key": "REQ-015",
+          "title": "Isolate and reset editor state",
+          "statement": "LinkEditorViewModel shall initialize new/existing link form state, save through MainController, and reset after save. The view shall dismiss on Save or Cancel. Persisted URL is displayed by the editor; save updates details rather than the URL. Status: as implemented, not an approved future requirement."
+        },
+        "createdAt": "2026-10-28T17:42:40.463Z",
+        "modifiedAt": "2026-10-28T18:50:47.395Z"
+      },
+      {
+        "id": "document-requirement-a4f2ba2a-2be6-4ae8-809b-f9f7c021237e",
+        "kind": "document-requirement",
+        "ownerId": null,
+        "name": "REQ-016 Represent implemented main-button states",
+        "documentation": "MainButtonState shall contain pasteLink, searchLink, linkNotFound, addLink and filterLink. The first four are reached by current capture interactions. Filtering selects data through separate flags; no code sets mainState to filterLink. Status: as implemented, not an approved future requirement.",
+        "properties": {
+          "key": "REQ-016",
+          "title": "Represent implemented main-button states",
+          "statement": "MainButtonState shall contain pasteLink, searchLink, linkNotFound, addLink and filterLink. The first four are reached by current capture interactions. Filtering selects data through separate flags; no code sets mainState to filterLink. Status: as implemented, not an approved future requirement."
+        },
+        "createdAt": "2026-10-28T17:42:40.463Z",
+        "modifiedAt": "2026-10-28T18:50:47.395Z"
+      }
+    ],
+    "views": [
+      {
+        "id": "view-7bf0f8be-fc00-443d-a44b-0c87aad3796f",
+        "kind": "list",
+        "diagramId": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+        "elementId": "document-requirement-70367ae8-c080-4b89-a469-84f5bc7aea0f",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 2
+        },
+        "row": 0
+      },
+      {
+        "id": "view-4015a195-0cc5-4b8a-8f1a-777ad736bf58",
+        "kind": "list",
+        "diagramId": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+        "elementId": "document-requirement-3e3f7f7c-8b60-459a-97a1-3b38d387a771",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 6
+        },
+        "row": 4
+      },
+      {
+        "id": "view-13d50069-59ca-42b1-99e5-be45a0a0bbf8",
+        "kind": "list",
+        "diagramId": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+        "elementId": "document-requirement-8c08d0b3-7588-45ef-bd55-3035c2eb59eb",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 10
+        },
+        "row": 8
+      },
+      {
+        "id": "view-00c5bc7c-eb53-4708-b492-93ebe82319fa",
+        "kind": "list",
+        "diagramId": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+        "elementId": "document-requirement-aa931a72-b8b4-4e68-bebf-a4e872be836f",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 14
+        },
+        "row": 12
+      },
+      {
+        "id": "view-ad458737-b314-41ba-b099-450d90c3f2ae",
+        "kind": "list",
+        "diagramId": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+        "elementId": "document-requirement-49884684-ea7b-456f-a114-9c619eea4f8f",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 18
+        },
+        "row": 16
+      },
+      {
+        "id": "view-947fffac-7546-4487-b48b-330ceae7ce7a",
+        "kind": "list",
+        "diagramId": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+        "elementId": "document-requirement-3e786509-9ead-4cb4-a415-9a44cd8a4a78",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 22
+        },
+        "row": 20
+      },
+      {
+        "id": "view-0cf14868-ae10-4681-b117-0e92349d93a6",
+        "kind": "list",
+        "diagramId": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+        "elementId": "document-requirement-73920a9d-7f2e-49bb-86bd-538eeaaf7a4c",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 26
+        },
+        "row": 24
+      },
+      {
+        "id": "view-677b9321-aa9c-48ec-a50a-e9546d2c9c67",
+        "kind": "list",
+        "diagramId": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+        "elementId": "document-requirement-e3ea2da4-5a97-4c9b-8a12-62fe4ec119c5",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 30
+        },
+        "row": 28
+      },
+      {
+        "id": "view-dcfdecad-6b44-4255-910a-2f4c6aecbec3",
+        "kind": "list",
+        "diagramId": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+        "elementId": "document-requirement-5965dc19-09f0-4a57-b79d-89de080a682e",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 34
+        },
+        "row": 32
+      },
+      {
+        "id": "view-3d33a3ec-feee-4e2b-a7cb-63b0ee4206d5",
+        "kind": "list",
+        "diagramId": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+        "elementId": "document-requirement-287de716-22ce-4df5-b8e8-34060ee681b8",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 38
+        },
+        "row": 36
+      },
+      {
+        "id": "view-a82b8df9-26da-4ff0-96b1-5cb4eaea2cb2",
+        "kind": "list",
+        "diagramId": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+        "elementId": "document-requirement-90825e13-1f96-4ff5-9b25-a0d984fed9eb",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 42
+        },
+        "row": 40
+      },
+      {
+        "id": "view-cd4cc403-1d08-40ad-9e74-6d7b4e7c9184",
+        "kind": "list",
+        "diagramId": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+        "elementId": "document-requirement-e99aabb4-f544-4374-a85e-f5e6d8ef783c",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 46
+        },
+        "row": 44
+      },
+      {
+        "id": "view-2b4f4fcf-f894-4a57-a994-743893e8f79e",
+        "kind": "list",
+        "diagramId": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+        "elementId": "document-requirement-8cf42bbf-f27c-4df0-a493-eb4974e24959",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 50
+        },
+        "row": 48
+      },
+      {
+        "id": "view-c72e9c19-bd17-432a-b487-56f630270129",
+        "kind": "list",
+        "diagramId": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+        "elementId": "document-requirement-b54a020e-5606-4658-9eae-7ffc57ed5392",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 54
+        },
+        "row": 52
+      },
+      {
+        "id": "view-746144de-bfd5-47ea-babf-2cd28a430d31",
+        "kind": "list",
+        "diagramId": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+        "elementId": "document-requirement-99805f42-cc09-43f1-ad07-52bb7e0c91a6",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 58
+        },
+        "row": 56
+      },
+      {
+        "id": "view-6f337d4e-d957-4fd0-8f96-8961a890567a",
+        "kind": "list",
+        "diagramId": "diagram-d9e5031a-ef8e-45ff-be16-0a57debec8c0",
+        "elementId": "document-requirement-a4f2ba2a-2be6-4ae8-809b-f9f7c021237e",
+        "parentViewId": null,
+        "style": {
+          "form": "heading",
+          "level": 2,
+          "end": 62
+        },
+        "row": 60
+      }
+    ]
+  }
+}

@@ -1,0 +1,502 @@
+{
+  "format": "plus-c-project-part",
+  "version": 1,
+  "part": "diagram",
+  "project": {
+    "elements": [
+      {
+        "id": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+        "kind": "diagram",
+        "ownerId": "project-fca6d9b3-8760-406f-bef7-e6c8e48344a4",
+        "name": "08 Main state machine",
+        "documentation": "",
+        "properties": {
+          "diagramKind": "state-machine"
+        },
+        "createdAt": "2026-10-28T17:46:31.369Z",
+        "modifiedAt": "2026-10-28T17:46:31.369Z"
+      },
+      {
+        "id": "state-initial-b0a3f566-2e4c-4197-9a93-012d62516f84",
+        "kind": "state-initial",
+        "ownerId": null,
+        "name": "Initial",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:46:31.376Z",
+        "modifiedAt": "2026-10-28T18:14:13.810Z"
+      },
+      {
+        "id": "state-f88d0b13-eacd-465b-8eb3-a4c93c8e3b65",
+        "kind": "state",
+        "ownerId": null,
+        "name": "pasteLink",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:46:31.376Z",
+        "modifiedAt": "2026-10-28T18:14:13.810Z"
+      },
+      {
+        "id": "state-217eb0f0-4862-400d-9d35-571765c41e3f",
+        "kind": "state",
+        "ownerId": null,
+        "name": "searchLink",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:46:31.376Z",
+        "modifiedAt": "2026-10-28T18:14:13.810Z"
+      },
+      {
+        "id": "state-ff66f8dd-afb1-4a8b-85d7-ec15e8ccc1f4",
+        "kind": "state",
+        "ownerId": null,
+        "name": "linkNotFound",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:46:31.376Z",
+        "modifiedAt": "2026-10-28T18:14:13.810Z"
+      },
+      {
+        "id": "state-0bdecd92-c778-4163-8206-cb27ae0300b4",
+        "kind": "state",
+        "ownerId": null,
+        "name": "addLink",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:46:31.376Z",
+        "modifiedAt": "2026-10-28T18:14:13.810Z"
+      },
+      {
+        "id": "state-51e4caf4-6610-4222-9cc5-0d8bbc165483",
+        "kind": "state",
+        "ownerId": null,
+        "name": "filterLink (dormant)",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:46:31.376Z",
+        "modifiedAt": "2026-10-28T18:14:13.810Z"
+      },
+      {
+        "id": "transition-457b1880-00b6-48f0-8249-010da30eec90",
+        "kind": "transition",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:46:31.376Z",
+        "modifiedAt": "2026-10-28T18:14:13.810Z",
+        "sourceId": "state-initial-b0a3f566-2e4c-4197-9a93-012d62516f84",
+        "targetId": "state-f88d0b13-eacd-465b-8eb3-a4c93c8e3b65"
+      },
+      {
+        "id": "transition-65499422-8efc-408a-9978-1b49a77d1947",
+        "kind": "transition",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "trigger": "text changes",
+          "guard": "nonempty and not suppressed"
+        },
+        "createdAt": "2026-10-28T17:46:31.376Z",
+        "modifiedAt": "2026-10-28T18:14:13.810Z",
+        "sourceId": "state-f88d0b13-eacd-465b-8eb3-a4c93c8e3b65",
+        "targetId": "state-217eb0f0-4862-400d-9d35-571765c41e3f"
+      },
+      {
+        "id": "transition-de7d5b55-cc18-4fdd-81d3-8026515c2790",
+        "kind": "transition",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "trigger": "text changes",
+          "guard": "empty"
+        },
+        "createdAt": "2026-10-28T17:46:31.376Z",
+        "modifiedAt": "2026-10-28T18:14:13.810Z",
+        "sourceId": "state-217eb0f0-4862-400d-9d35-571765c41e3f",
+        "targetId": "state-f88d0b13-eacd-465b-8eb3-a4c93c8e3b65"
+      },
+      {
+        "id": "transition-75342afc-98e5-438c-a2ac-41769f6d6c7c",
+        "kind": "transition",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "trigger": "Paste verification completes",
+          "guard": "verified",
+          "effect": "load metadata"
+        },
+        "createdAt": "2026-10-28T17:46:31.376Z",
+        "modifiedAt": "2026-10-28T18:14:13.810Z",
+        "sourceId": "state-f88d0b13-eacd-465b-8eb3-a4c93c8e3b65",
+        "targetId": "state-0bdecd92-c778-4163-8206-cb27ae0300b4"
+      },
+      {
+        "id": "transition-8eece4d8-d7ac-4e72-88f9-fbd52066a237",
+        "kind": "transition",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "trigger": "Paste verification completes",
+          "guard": "not verified"
+        },
+        "createdAt": "2026-10-28T17:46:31.376Z",
+        "modifiedAt": "2026-10-28T18:14:13.810Z",
+        "sourceId": "state-f88d0b13-eacd-465b-8eb3-a4c93c8e3b65",
+        "targetId": "state-ff66f8dd-afb1-4a8b-85d7-ec15e8ccc1f4"
+      },
+      {
+        "id": "transition-ce821e05-a15e-4e74-b921-5df3241bfc4d",
+        "kind": "transition",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "trigger": "Search completes",
+          "guard": "verified",
+          "effect": "load metadata"
+        },
+        "createdAt": "2026-10-28T17:46:31.376Z",
+        "modifiedAt": "2026-10-28T18:14:13.810Z",
+        "sourceId": "state-217eb0f0-4862-400d-9d35-571765c41e3f",
+        "targetId": "state-0bdecd92-c778-4163-8206-cb27ae0300b4"
+      },
+      {
+        "id": "transition-8f290dbd-8a09-4de5-845b-07c6380794d6",
+        "kind": "transition",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "trigger": "Search completes",
+          "guard": "not verified"
+        },
+        "createdAt": "2026-10-28T17:46:31.376Z",
+        "modifiedAt": "2026-10-28T18:14:13.810Z",
+        "sourceId": "state-217eb0f0-4862-400d-9d35-571765c41e3f",
+        "targetId": "state-ff66f8dd-afb1-4a8b-85d7-ec15e8ccc1f4"
+      },
+      {
+        "id": "transition-e0871ef0-9e87-49a3-baf3-9b1319ef5e16",
+        "kind": "transition",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "trigger": "text changes",
+          "guard": "nonempty"
+        },
+        "createdAt": "2026-10-28T17:46:31.376Z",
+        "modifiedAt": "2026-10-28T18:14:13.810Z",
+        "sourceId": "state-ff66f8dd-afb1-4a8b-85d7-ec15e8ccc1f4",
+        "targetId": "state-217eb0f0-4862-400d-9d35-571765c41e3f"
+      },
+      {
+        "id": "transition-b9e29bb7-ed71-4354-a1a2-0e1324043a8c",
+        "kind": "transition",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "trigger": "text changes",
+          "guard": "nonempty and not suppressed"
+        },
+        "createdAt": "2026-10-28T17:46:31.376Z",
+        "modifiedAt": "2026-10-28T18:14:13.810Z",
+        "sourceId": "state-0bdecd92-c778-4163-8206-cb27ae0300b4",
+        "targetId": "state-217eb0f0-4862-400d-9d35-571765c41e3f"
+      },
+      {
+        "id": "transition-15a4e84c-e699-4034-bdaf-24263c63891a",
+        "kind": "transition",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "trigger": "Add or clear text",
+          "effect": "button: create draft and show editor; clear: reset"
+        },
+        "createdAt": "2026-10-28T17:46:31.376Z",
+        "modifiedAt": "2026-10-28T18:14:13.810Z",
+        "sourceId": "state-0bdecd92-c778-4163-8206-cb27ae0300b4",
+        "targetId": "state-f88d0b13-eacd-465b-8eb3-a4c93c8e3b65"
+      },
+      {
+        "id": "transition-8addb03a-068c-47a6-b19e-78febe7c04b7",
+        "kind": "transition",
+        "ownerId": null,
+        "name": "",
+        "documentation": "",
+        "properties": {
+          "trigger": "Add as Entered or clear text",
+          "effect": "button: create draft and show editor; clear: reset"
+        },
+        "createdAt": "2026-10-28T17:46:31.376Z",
+        "modifiedAt": "2026-10-28T18:14:13.810Z",
+        "sourceId": "state-ff66f8dd-afb1-4a8b-85d7-ec15e8ccc1f4",
+        "targetId": "state-f88d0b13-eacd-465b-8eb3-a4c93c8e3b65"
+      },
+      {
+        "id": "note-f384e331-194e-4cbb-ad55-348b7147d0d6",
+        "kind": "note",
+        "ownerId": null,
+        "name": "",
+        "documentation": "filterLink is declared but unreachable: no setter assigns it. Text filtering requires that state and is dormant (GAP-001). All/group/hidden filtering uses separate flags. changeFilterState resets capture fields and sort direction; resetMainController(true) does not enter filterLink.",
+        "properties": {
+          "targetKind": "diagram",
+          "targetId": null
+        },
+        "createdAt": "2026-10-28T17:46:31.376Z",
+        "modifiedAt": "2026-10-28T18:14:13.810Z"
+      },
+      {
+        "id": "note-0f14f2ad-9ed6-43b8-a65a-43edc9fedf0c",
+        "kind": "note",
+        "ownerId": null,
+        "name": "",
+        "documentation": "No explicit loading state, cancellation token, or request-generation guard exists for async verification/metadata. Results can arrive after input changes. The editor is a sheet outside MainButtonState; capture resets before it opens.",
+        "properties": {
+          "targetKind": "diagram",
+          "targetId": null
+        },
+        "createdAt": "2026-10-28T17:46:31.376Z",
+        "modifiedAt": "2026-10-28T18:14:13.810Z"
+      }
+    ],
+    "views": [
+      {
+        "id": "view-93491913-05ae-489d-9eb6-359bbe7d1f81",
+        "kind": "node",
+        "diagramId": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+        "elementId": "state-initial-b0a3f566-2e4c-4197-9a93-012d62516f84",
+        "parentViewId": null,
+        "style": {},
+        "x": 320,
+        "y": 160
+      },
+      {
+        "id": "view-a4087b0a-362e-4b92-9656-5568541b083a",
+        "kind": "node",
+        "diagramId": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+        "elementId": "state-f88d0b13-eacd-465b-8eb3-a4c93c8e3b65",
+        "parentViewId": null,
+        "style": {},
+        "x": 540,
+        "y": 160
+      },
+      {
+        "id": "view-f7c255bc-4496-44f6-8adc-0c8d1350fe54",
+        "kind": "node",
+        "diagramId": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+        "elementId": "state-217eb0f0-4862-400d-9d35-571765c41e3f",
+        "parentViewId": null,
+        "style": {},
+        "x": 760,
+        "y": 160
+      },
+      {
+        "id": "view-ab94fc5e-e6c3-48d6-8131-67993ecf22e9",
+        "kind": "node",
+        "diagramId": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+        "elementId": "state-ff66f8dd-afb1-4a8b-85d7-ec15e8ccc1f4",
+        "parentViewId": null,
+        "style": {},
+        "x": 980,
+        "y": 160
+      },
+      {
+        "id": "view-d817e9ed-e9de-4138-b8dc-58464d2cc3dd",
+        "kind": "node",
+        "diagramId": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+        "elementId": "state-0bdecd92-c778-4163-8206-cb27ae0300b4",
+        "parentViewId": null,
+        "style": {},
+        "x": 320,
+        "y": 310
+      },
+      {
+        "id": "view-7c4704e1-38d5-4f81-a2b7-9e8523186606",
+        "kind": "node",
+        "diagramId": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+        "elementId": "state-51e4caf4-6610-4222-9cc5-0d8bbc165483",
+        "parentViewId": null,
+        "style": {},
+        "x": 540,
+        "y": 310
+      },
+      {
+        "id": "view-47daa4d1-52b7-479f-951d-94bcbc1c592e",
+        "kind": "edge",
+        "diagramId": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+        "elementId": "transition-457b1880-00b6-48f0-8249-010da30eec90",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-8006bf08-1d96-40b9-9a58-0f0db4db9c55",
+        "kind": "edge",
+        "diagramId": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+        "elementId": "transition-65499422-8efc-408a-9978-1b49a77d1947",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-7afbee78-466e-47da-b622-e53917cf910f",
+        "kind": "edge",
+        "diagramId": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+        "elementId": "transition-de7d5b55-cc18-4fdd-81d3-8026515c2790",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-23965fa1-9ac3-47f7-bf34-81e47760ebf4",
+        "kind": "edge",
+        "diagramId": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+        "elementId": "transition-75342afc-98e5-438c-a2ac-41769f6d6c7c",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-8f701f61-f847-4e47-9d83-fc27d086bfaf",
+        "kind": "edge",
+        "diagramId": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+        "elementId": "transition-8eece4d8-d7ac-4e72-88f9-fbd52066a237",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-be41b9af-c307-46a2-9975-41ef0f39ae29",
+        "kind": "edge",
+        "diagramId": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+        "elementId": "transition-ce821e05-a15e-4e74-b921-5df3241bfc4d",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-f80c862f-6610-42b5-961a-e57e57091142",
+        "kind": "edge",
+        "diagramId": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+        "elementId": "transition-8f290dbd-8a09-4de5-845b-07c6380794d6",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-f33394e1-f69c-4bd6-9cdb-b699517e4eb2",
+        "kind": "edge",
+        "diagramId": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+        "elementId": "transition-e0871ef0-9e87-49a3-baf3-9b1319ef5e16",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-caaf1329-7007-4b82-9ca2-d407a7ec4601",
+        "kind": "edge",
+        "diagramId": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+        "elementId": "transition-b9e29bb7-ed71-4354-a1a2-0e1324043a8c",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-9358bd01-a192-474c-a333-8c874ab625d4",
+        "kind": "edge",
+        "diagramId": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+        "elementId": "transition-15a4e84c-e699-4034-bdaf-24263c63891a",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-0a351c8a-7e2f-4c93-af7d-5593f9a45ab4",
+        "kind": "edge",
+        "diagramId": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+        "elementId": "transition-8addb03a-068c-47a6-b19e-78febe7c04b7",
+        "parentViewId": null,
+        "style": {},
+        "routeStyle": "straight",
+        "sourceAnchor": null,
+        "targetAnchor": null,
+        "routeBerth": null,
+        "waypoints": []
+      },
+      {
+        "id": "view-ff458c00-1b31-4706-bf4f-ab2c97bada40",
+        "kind": "shape",
+        "diagramId": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+        "elementId": "note-f384e331-194e-4cbb-ad55-348b7147d0d6",
+        "parentViewId": null,
+        "style": {},
+        "x": 1086,
+        "y": 124,
+        "width": 0,
+        "height": 0,
+        "collapsed": false
+      },
+      {
+        "id": "view-d218f675-a10e-49f1-9c43-792a75de6120",
+        "kind": "shape",
+        "diagramId": "diagram-06364d70-911a-43dc-9572-4a9a9cd2a97f",
+        "elementId": "note-0f14f2ad-9ed6-43b8-a65a-43edc9fedf0c",
+        "parentViewId": null,
+        "style": {},
+        "x": 1086,
+        "y": 288,
+        "width": 0,
+        "height": 0,
+        "collapsed": false
+      }
+    ]
+  }
+}
