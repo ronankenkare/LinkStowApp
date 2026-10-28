@@ -1,0 +1,21 @@
+{
+  "format": "plus-c-project-part",
+  "version": 1,
+  "part": "project",
+  "savedAt": "2026-10-28T17:35:38.847Z",
+  "project": {
+    "elements": [
+      {
+        "id": "project-fca6d9b3-8760-406f-bef7-e6c8e48344a4",
+        "kind": "project",
+        "ownerId": null,
+        "name": "LinkStowApp",
+        "documentation": "",
+        "properties": {},
+        "createdAt": "2026-10-28T17:35:38.847Z",
+        "modifiedAt": "2026-10-28T17:35:38.847Z"
+      }
+    ],
+    "views": []
+  }
+}
